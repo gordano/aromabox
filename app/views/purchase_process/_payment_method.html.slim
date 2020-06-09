@@ -1,0 +1,68 @@
+.payment-method
+  span.choice-payment__title Выберите способ оплаты
+
+
+  .choice-payment__list
+
+    .payment__item.payment__item__online.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_1'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__visa__min
+            span.icon__mastercard__min
+          span.radio__title Онлайн-оплата банковской картой (Visa, MasterCard и др.)
+          input type='radio' id='payment_item_1' name='payment_item'
+          span.radio__pseudo
+
+    .payment__item.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_2'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__yandex-money__min
+          span.radio__title Яндекс-деньги
+          input type='radio' id='payment_item_2' name='payment_item'
+          span.radio__pseudo
+
+    .payment__item.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_3'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__webmoney__min
+          span.radio__title Webmoney
+          input type='radio' id='payment_item_3' name='payment_item'
+          span.radio__pseudo
+
+    .payment__item.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_4'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__cash__min
+          span.radio__title Наличными при получении
+          input type='radio' id='payment_item_4' name='payment_item'
+          span.radio__pseudo
+
+    .payment__item.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_5'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__bill__min
+          span.radio__title Оплата по реквизитам
+          input type='radio' id='payment_item_5' name='payment_item'
+          span.radio__pseudo
+      .payment__surcharge
+        |доплата&nbsp;
+        b 200&nbsp;
+        | руб.
+
+    .payment__item.row.middle-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='payment_item_6'
+          span.radio__image.row.center-xs.middle-xs
+            span.icon__post__min
+          span.radio__title Наложенным платежом
+          input type='radio' id='payment_item_6' name='payment_item'
+          span.radio__pseudo
+      .payment__surcharge
+        |доплата&nbsp;
+        b 160&nbsp;
+        | руб.

@@ -1,0 +1,41 @@
+.ordering__wrapper
+  .wrapper.row.between-xs
+    .delivery__composition.center-xs
+      .delivery__trigger.ordering__trigger.row.start-xs.middle-xs
+        a.ordering-trigger__item.executed href=cart_path
+          span.trigger__line
+          span.trigger__title Корзина
+        .ordering-trigger__item.executed__last
+          span.trigger__line
+          span.trigger__title Способ доставки
+        .ordering-trigger__item.expects
+          span.trigger__line
+          span.trigger__title Оплата
+
+      .choice-delivery.ordering__choice
+        form.form.row.start-xs
+          .choice__city
+            span.choice-delivery__title Ваш город
+            select@@custom_select
+              option Москва
+              option Санкт-Перетрург
+              option Тула
+              option Новосибирск
+              option Уренгой
+
+          = render 'purchase_process/delivery_method'
+          = render 'purchase_process/delivery_form'
+
+
+        = render 'purchase_process/ordering_controls'
+
+
+
+
+    .cart__information
+      = render 'cart/cart_in_total'
+      = render 'purchase_process/ordering_info'
+
+
+
+

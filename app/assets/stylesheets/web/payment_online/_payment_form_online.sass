@@ -1,0 +1,61 @@
+.payment-go
+  form.form
+    input
+      padding: 0 20px
+
+    .SumoSelect
+      width: 100px
+
+      & > .CaptionCont
+        height: 48px
+        line-height: 48px
+        padding-left: 20px
+
+        & > span.placeholder
+          text-transform: lowercase
+
+      & > .optWrapper
+        & > .options
+          & > li.opt
+            padding-left: 20px
+            text-transform: lowercase
+
+      &:not(:last-of-type)
+        margin-right: 10px
+
+    ::placeholder
+      @extend %placeholder
+
+    %placeholder
+      color: #aaa
+      font-size: 13px
+      text-transform: lowercase
+      opacity: 1
+
+    select
+      color: #aaa
+      font-size: 13px
+      text-transform: lowercase
+
+  .input-group
+    width: 510px
+    margin-bottom: 20px
+
+    position: relative
+
+    .input-group__image
+      flex-wrap: nowrap
+
+      position: absolute
+      top: 14px
+      left: calc(100% + 20px)
+
+  .cvc__value
+    width: 90px
+    margin-left: 15px
+
+  .cvc__description
+    color: #888
+    font-size: 11px
+    font-weight: 500
+    line-height: 15px

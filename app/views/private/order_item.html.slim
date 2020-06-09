@@ -1,0 +1,73 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.active.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+
+        section#my_orders.office-content.my-orders
+          .order-composition
+            h1 Заказ №3214
+
+            .order-composition__closed.hidden Отменен
+
+            .order-composition__trigger.ordering__trigger.row.start-xs.middle-xs
+              .ordering-trigger__item.executed
+                span.trigger__line
+                span.trigger__title В обработке
+              .ordering-trigger__item.executed
+                span.trigger__line
+                span.trigger__title Подтвержден
+              .ordering-trigger__item.executed__last
+                span.trigger__line
+                span.trigger__title Отправлен
+              .ordering-trigger__item.expects
+                span.trigger__line
+                span.trigger__title Доставлен
+
+            .property__list__frame
+              h2.title Данные о заказе
+
+              table.property__list
+
+                tr.property__item
+                  td: span Номер заказа
+                  td: span 3214
+                tr.property__item
+                  td: span Дата и время
+                  td: span 25.05.2017 12:45
+                tr.property__item
+                  td: span Адрес доставки
+                  td: span Россия, г. Москва, ул. Петровская, д. 1, корп. б, кв. 66
+                tr.property__item
+                  td: span Имя и фамилия
+                  td: span Александр Константинопольский
+
+
+            .private-office__subtitle Состав заказа
+
+            = render 'cart/cart_list'
+
+            .order-composition__sum.row.between-xs.middle-xs
+              .sum__title Всего
+              .sum__counter
+                strong 5&nbsp;
+                | товаров
+
+              .sum__counter
+                strong 29&nbsp;000&nbsp;
+                | руб.
+
+            a.button.button__transparent__black href=private_orders_path Вернуться к заказам

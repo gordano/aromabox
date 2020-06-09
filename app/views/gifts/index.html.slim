@@ -1,0 +1,24 @@
+aside.product-sets__header.col-xs-12
+  .wrapper
+    .row.center-xs.between-sm
+      .about__text.col-xs.start-xs
+        .text__title.center-xs
+          h1
+            | Подарочные&nbsp;наборы DreamBox
+          span.separator
+          p Подборка оригинальных ароматов в миниатюре
+      .about__photo.col-xs
+        = image_tag('catalog/product-sets_header_box.png', alt: 'Пробники')
+.wrapper
+  .product-sets.row.top-xs.center-xs
+
+    = render 'shared/catalog/brand'
+    = render 'shared/catalog/category'
+
+    = render 'shared/filter/filter'
+
+    = render 'product_sets/catalog'
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'

@@ -1,0 +1,53 @@
+dt.filter__title Сегмент
+dd.filter__checkbox-group
+  /- unless controller_name == 'product_samples'
+    span.filter__checkbox-subtitle Парфюм
+  ul
+    li.filter-checkbox
+      label.label-chk
+        | Селективный
+        input type="checkbox" name="segment_1" id="segment_1" value="segment_1"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Элитный
+        input type="checkbox" name="segment_2" id="segment_2" value="segment_2"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Винтажный
+        input type="checkbox" name="segment_3" id="segment_3" value="segment_3"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Восточный
+        input type="checkbox" name="segment_4" id="segment_4" value="segment_4"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Celebrity
+        input type="checkbox" name="segment_5" id="segment_5" value="segment_5"
+        span.pseudo-chk.icon.icon_close
+  / - unless controller_name == 'product_samples'
+    span.filter__checkbox-subtitle Косметика
+    ul
+      li.filter-checkbox
+        label.label-chk
+          | Макияж
+          input type="checkbox" name="makeup" id="makeup" value="makeup"
+          span.pseudo-chk.icon.icon_close
+      li.filter-checkbox
+        label.label-chk
+          | Уход за кожей
+          input type="checkbox" name="skin_care" id="skin_care" value="skin_care"
+          span.pseudo-chk.icon.icon_close
+      li.filter-checkbox
+        label.label-chk
+          | Уход за волосами
+          input type="checkbox" name="hair_care" id="hair_care" value="hair_care"
+          span.pseudo-chk.icon.icon_close
+      li.filter-checkbox
+        label.label-chk
+          | Для ногтей
+          input type="checkbox" name="for_nails" id="for_nails" value="for_nails"
+          span.pseudo-chk.icon.icon_close

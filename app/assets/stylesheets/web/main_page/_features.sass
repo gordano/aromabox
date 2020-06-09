@@ -1,0 +1,111 @@
+%feature
+  height: 410px
+  margin-bottom: 20px
+  overflow: hidden
+  position: relative
+
+  img
+    display: block
+    width: 660px
+    height: 410px
+    position: absolute
+    z-index: 2
+
+.features-list
+  .button
+    width: 210px
+    height: 51px
+    line-height: 51px
+    padding: 0
+
+.feature__sets
+  @extend %feature
+  padding-right: 40px
+
+  background-color: #f8ecea
+
+  img
+    left: 0
+
+.feature__samples
+  @extend %feature
+  padding-left: 40px
+
+  background-color: #eaf6f8
+
+  img
+    right: 0
+
+.feature__other
+  position: relative
+  height: 410px
+  padding-left: 40px
+  padding-right: 40px
+  overflow: hidden
+
+  img
+    display: inline-block
+    width: 590px
+    height: 410px
+    position: absolute
+
+    &:first-child
+      right: calc(50% + 10px)
+
+    &:last-child
+      left: calc(50% + 10px)
+
+.feature__description
+  width: 540px
+  height: 410px
+
+  position: absolute
+
+  z-index: 1
+
+  p
+    margin: 0
+    margin-bottom: 35px
+    color: #555555
+    font-size: 17px
+    line-height: 26px
+
+  .separator
+    width: 90px
+    margin-top: 20px
+
+  .feature__title
+    color: #222222
+    font-size: 45px
+    font-weight: 500
+    line-height: 50px
+
+.feature__samples
+  .feature__description
+    left: 0px
+
+.feature__sets
+  .feature__description
+    right: 0px
+
+.feature__description__other
+  width: calc(50% - 10px)
+
+  position: absolute
+  bottom: 50px
+  z-index: 2
+
+  text-align: center
+
+  .feature__title
+    margin-bottom: 22px
+    color: #000
+    font-size: 40px
+    font-weight: 500
+    line-height: 45px
+
+  &.feature__description__left
+    left: 0
+
+  &.feature__description__right
+    right: 0

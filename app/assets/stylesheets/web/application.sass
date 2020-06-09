@@ -1,0 +1,68 @@
+//= require jquery-ui
+//= require normalize
+//= require flexboxgrid
+
+//= require slick
+//= require slick_theme
+//= require jquery.webui-popover
+//= require jquery.mCustomScrollbar
+//= require jquery.flipster
+//= require sumoselect
+
+//= require web/_fonts
+//= require web/_font_dreambox
+
+//= require web/_common
+//= require web/_typography
+//= require web/elements/_icons
+//= require web/elements/_icons_svg
+//= require web/elements/_buttons
+//= require web/elements/_breadcrumbs
+//= require web/elements/_slogans
+//= require web/_popovers
+
+//= require web/elements/_carousel
+//= require web/forms/_form
+//= require web/elements/_instagram_feed
+
+//= require web/_header
+//= require web/_footer
+
+//= require web/_main_page
+//= require web/_brands
+//= require web/product_sets/_show
+//= require web/_product_sets
+//= require web/product_samples/_show
+//= require web/_product_samples
+//= require web/_cart
+//= require web/_authorization
+//= require web/_purchase_process
+//= require web/_payment
+//= require web/_private
+//= require web/_contacts
+//= require web/_info_pages
+//= require web/_closed_section
+//= require web/_sample_request
+
+//= require web/_shared
+
+//= require web/_filter
+//= require web/_sorting
+//= require web/elements/_badges
+//= require web/elements/_rating_form
+//= require web/_modals
+
+
+@import 'web/variables'
+
+.product-sets__catalog, .product-samples__catalog
+  flex-basis: calc(100% - #{$filter_width} - #{$filter_margin_right})
+  max-width: calc(100% - #{$filter_width} - #{$filter_margin_right})
+  padding: 0
+  min-height: 100px
+
+.lightbox
+  z-index: 11000
+
+.lightboxOverlay
+  z-index: 10999

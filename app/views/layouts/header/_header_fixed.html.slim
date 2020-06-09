@@ -1,0 +1,10 @@
+header.header.header__base.header__fixed@@header_sticky
+  .header__container
+    .wrapper
+      .header__content.row.middle-xs.between-xs
+        = render 'layouts/header/header_content_left'
+
+        a.logo href=root_path title="Главная DreamBox"
+          = render 'layouts/header/logo_svg_fixed'
+
+        = render 'layouts/header/header_content_right'

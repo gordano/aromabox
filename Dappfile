@@ -1,0 +1,48 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+dimg_group do
+  docker.from 'gitlab.randewoo.ru:4567/infra/ubuntu-base:v1'
+  docker.workdir '/app'
+
+  chef.attributes['ruby-version'] = "2.3.3"
+  chef.attributes['additional_packages' ] = 'imagemagick, libmagickwand-dev, nodejs'
+  chef.attributes['external_repo_site'] = 'github.com, gitlab.randewoo.ru'
+  chef.attributes['bundler_extra_groups'] = 'assets'
+  chef.attributes['host'] = 'http://dreambox.infirst.ru'
+
+  mount '/var/cache/bundle' do
+    from :build_dir
+  end
+
+
+  git do
+    owner 'app'
+    group 'app'
+    add '/' do
+      to '/app'
+      exclude_paths 'public/assets', '.helm', '.dapp_chef'
+      stage_dependencies.install 'Gemfile', 'Gemfile.lock', 'lib', 'app'
+    end #add
+  end #git
+
+  artifact do
+    chef.recipe 'rails'
+    chef.recipe 'rails-assets'
+    export '/app' do
+      include_paths 'public/assets'
+      after :setup
+      to '/app'
+    end
+  end
+
+  dimg 'rails' do
+    chef.recipe 'rails'
+    docker.expose 8080
+    docker.user 'app'
+  end
+
+  dimg 'assets' do
+    chef.recipe 'frontend'
+    docker.expose 80
+  end #dimg
+end #dimg_group

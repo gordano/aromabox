@@ -1,0 +1,46 @@
+aside.filter-panel
+  .filter-panel__header.row.middle-xs.between-xs
+    span.title Фильтр
+    a.reset-filter href="#" Сбросить все
+    - unless controller_name == 'closed_section'
+      .active-filters.col-xs-12
+        ul
+          li.row.middle-xs.between-xs
+            span Новинки
+            a.icon.icon_close href="#" title="Отменить фильтр"
+          li.row.middle-xs.between-xs
+            span Ограниченный тираж
+            a.icon.icon_close href="#" title="Отменить фильтр"
+
+          - if controller_name == 'gifts'
+            li.row.middle-xs.between-xs
+              span В подарок
+              a.icon.icon_close href="#" title="Отменить фильтр"
+
+
+  form.filter-panel__body.start-xs
+    dl
+
+      = render 'shared/filter/filter_general' unless controller_name == 'closed_section'
+
+      = render 'shared/filter/filter_gender'
+
+      = render 'shared/filter/filter_category' unless controller_name == 'product_samples' || 'closed_section'
+
+      = render 'shared/filter/filter_brand'
+
+      = render 'shared/filter/filter_price'
+
+      = render 'shared/filter/filter_type' unless controller_name == 'closed_section'
+
+      = render 'shared/filter/filter_year' if controller_name == 'closed_section'
+
+      = render 'shared/filter/filter_groups'
+
+      = render 'shared/filter/filter_notes'
+
+      - unless controller_name == 'product_sets' || controller_name == 'gifts'
+        = render 'shared/filter/filter_countries'
+        = render 'shared/filter/filter_year' unless controller_name == 'closed_section'
+
+

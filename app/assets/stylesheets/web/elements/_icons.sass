@@ -1,0 +1,336 @@
+// Социальные
+%social-icon
+  display: inline-block
+  width: 32px
+  height: 32px
+
+  vertical-align: middle
+  background: asset-url('sprites/social-sprite.png') no-repeat
+  cursor: pointer
+
+.icon__fb
+  @extend %social-icon
+  background-position: -5px -5px
+
+  &:hover, &:active
+    background-position: -47px -5px
+
+.icon__ig
+  @extend %social-icon
+  background-position: -89px -5px
+
+  &:hover, &:active
+    background-position: -131px -5px
+
+.icon__ok
+  @extend %social-icon
+  background-position: -173px -5px
+
+  &:hover, &:active
+    background-position: -215px -5px
+
+.icon__vk
+  @extend %social-icon
+  background-position: -485px -5px
+
+  &:hover, &:active
+    background-position: -527px -5px
+
+.icon__share_fb
+  @extend %social-icon
+  width: 28px
+  height: 28px
+  background-position: -257px -5px
+
+  &:hover, &:active
+    background-position: -295px -5px
+
+.icon__share_ig
+  @extend %social-icon
+  width: 28px
+  height: 28px
+  background-position: -333px -5px
+
+  &:hover, &:active
+    background-position: -371px -5px
+
+.icon__share_vk
+  @extend %social-icon
+  width: 28px
+  height: 28px
+  background-position: -409px -5px
+
+  &:hover, &:active
+    background-position: -447px -5px
+
+// Авторизация через Социальные
+%authorization-social-icon
+  display: inline-block
+  width: 50px
+  height: 50px
+
+  vertical-align: middle
+  background: asset-url('sprites/social_authorization-sprite.png') #fff no-repeat
+  background-size: 420px
+  cursor: pointer
+
+  &:hover
+    opacity: 0.8
+    transition: opacity .2s ease-in-out
+
+.icon__authorization_fb
+  @extend %authorization-social-icon
+  background-position: -5px -5px
+
+.icon__authorization_gg
+  @extend %authorization-social-icon
+  background-position: -65px -5px
+
+.icon__authorization_ig
+  @extend %authorization-social-icon
+  background-position: -125px -5px
+
+.icon__authorization_ok
+  @extend %authorization-social-icon
+  background-position: -185px -5px
+
+.icon__authorization_tw
+  @extend %authorization-social-icon
+  background-position: -245px -5px
+
+.icon__authorization_vk
+  @extend %authorization-social-icon
+  background-position: -305px -5px
+
+.icon__authorization_yt
+  @extend %authorization-social-icon
+  background-position: -365px -5px
+
+
+%authorization-social-icon__min
+  display: inline-block
+  width: 38px
+  height: 38px
+
+  vertical-align: middle
+  background: asset-url('sprites/social_authorization-sprite.png') #fff no-repeat
+  background-size: 336px
+  cursor: pointer
+
+.icon__authorization_fb__min
+  @extend %authorization-social-icon__min
+  background-position: -6px -5px
+
+.icon__authorization_gg__min
+  @extend %authorization-social-icon__min
+  background-position: -53px -5px
+
+.icon__authorization_ig__min
+  @extend %authorization-social-icon__min
+  background-position: -102px -5px
+
+.icon__authorization_ok__min
+  @extend %authorization-social-icon__min
+  background-position: -149px -5px
+
+.icon__authorization_tw__min
+  @extend %authorization-social-icon__min
+  background-position: -197px -5px
+
+.icon__authorization_vk__min
+  @extend %authorization-social-icon__min
+  background-position: -245px -5px
+
+.icon__authorization_yt__min
+  @extend %authorization-social-icon__min
+  background-position: -293px -5px
+
+
+// Платежные системы
+%payment-icon
+  display: inline-block
+  vertical-align: middle
+  background: asset-url('sprites/payment-sprite.png') no-repeat
+
+.icon__mastercard
+  width: 55px
+  height: 34px
+
+  @extend %payment-icon
+  background-position: -5px -4px
+
+.icon__qiwi
+  width: 32px
+  height: 37px
+
+  @extend %payment-icon
+  background-position: -68px -4px
+
+.icon__visa
+  width: 70px
+  height: 24px
+
+  @extend %payment-icon
+  background-position: -112px -4px
+
+.icon__webmoney
+  width: 31px
+  height: 33px
+
+  @extend %payment-icon
+  background-position: -190px -4px
+
+.icon__yandex-money
+  width: 29px
+  height: 34px
+
+  @extend %payment-icon
+  background-position: -231px -4px
+
+.icon__rbk-money
+  width: 62px
+  height: 28px
+
+  @extend %payment-icon
+  background-position: -268px -4px
+
+.icon__paypal
+  width: 97px
+  height: 26px
+
+  @extend %payment-icon
+  background-position: -338px -4px
+
+.icon__verified-by-visa
+  width: 63px
+  height: 28px
+
+  @extend %payment-icon
+  background-position: -443px -4px
+
+.icon__mastercard-secure-code
+  width: 75px
+  height: 28px
+
+  @extend %payment-icon
+  background-position: -515px -4px
+
+
+// Платежные системы
+%payment-icon-min
+  display: inline-block
+  vertical-align: middle
+  background: asset-url('sprites/payment-min-sprite.png') no-repeat
+
+
+.icon__bill__min
+  width: 34px
+  height: 33px
+
+  @extend %payment-icon-min
+  background-position: -5px -5px
+
+.icon__cash__min
+  width: 44px
+  height: 25px
+
+  @extend %payment-icon-min
+  background-position: -49px -5px
+
+.icon__mastercard__min
+  width: 43px
+  height: 24px
+
+  @extend %payment-icon-min
+  background-position: -103px -5px
+
+.icon__mastercard-secure-code__min
+  width: 69px
+  height: 24px
+
+  @extend %payment-icon-min
+  background-position: -156px -5px
+
+.icon__post__min
+  width: 44px
+  height: 22px
+
+  @extend %payment-icon-min
+  background-position: -235px -5px
+
+.icon__qiwi__min
+  width: 26px
+  height: 27px
+
+  @extend %payment-icon-min
+  background-position: -289px -5px
+
+.icon__verified-by-visa__min
+  width: 58px
+  height: 24px
+
+  @extend %payment-icon-min
+  background-position: -325px -5px
+
+.icon__visa__min
+  width: 56px
+  height: 17px
+
+  @extend %payment-icon-min
+  background-position: -393px -5px
+
+.icon__webmoney__min
+  width: 25px
+  height: 24px
+
+  @extend %payment-icon-min
+  background-position: -459px -5px
+
+.icon__yandex-money__min
+  width: 22px
+  height: 25px
+
+  @extend %payment-icon-min
+  background-position: -494px -5px
+
+
+// Статусы заказов
+.icon__end
+  width: 20px
+  height: 18px
+
+  background-image: asset-url('icons/end.png')
+  background-repeat: no-repeat
+  background-size: 20px 18px
+
+.icon__wait
+  width: 13px
+  height: 17px
+
+  background-image: asset-url('icons/wait.png')
+  background-repeat: no-repeat
+  background-size: 13px 17px
+
+.icon__stop
+  width: 18px
+  height: 18px
+
+  background-image: asset-url('icons/stop.png')
+  background-repeat: no-repeat
+  background-size: 18px
+
+.icon__end__big
+  width: 30px
+  height: 27px
+
+  background-image: asset-url('icons/end__big.png')
+  background-repeat: no-repeat
+  background-size: 30px 27px
+
+.icon__wait__big
+  width: 20px
+  height: 27px
+
+  background-image: asset-url('icons/wait__big.png')
+  background-repeat: no-repeat
+  background-size: 20px 27px

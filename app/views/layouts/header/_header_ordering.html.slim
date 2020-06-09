@@ -1,0 +1,32 @@
+header.header.header__ordering
+  .wrapper
+    .header__content.row.middle-xs.between-xs
+      .header__content-left.col-xs-6
+
+        - if controller_name == 'cart'
+          a.return-to.icon.icon_back_dotted href=root_path Вернуться к шопингу
+
+
+        - if controller_name == 'authorization'
+          a.return-to.icon.icon_back_dotted href=cart_path Назад в корзину
+
+
+        - if controller_name == 'purchase_process' || controller_name == 'payment'
+          .ssl.row.middle-xs.start-xs
+            = image_tag('cart/ssl.png', alt: '')
+            .ssl__description
+              span Безопасность платежей
+              span гарантируется SSL-протоколом
+
+
+        - if controller_name == 'total_payment'
+
+          a.return-to.icon.icon_back_dotted href=root_path Вернуться к шопингу
+
+      a.logo href=root_path title="Главная DreamBox"
+        = render 'layouts/header/logo_svg'
+
+      .header__content-right.col-xs-6
+        .phone
+          span.phone__numper 8 800 775-05-26
+          span.phone__free Звонок&nbsp;бесплатный

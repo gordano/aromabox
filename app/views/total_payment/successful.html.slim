@@ -1,0 +1,20 @@
+.ordering__wrapper
+  .wrapper.row.between-xs
+    .payment-state.start-xs
+      .title-strike.title-strike_payment-state
+        h1.h3 Спасибо за покупку!
+      p.payment-state__text Заказ успешно оформлен.
+      p.payment-state__text
+        |
+          В течение ближайших 10 минут мы свяжемся с вами
+          по телефону <strong class="nowrap">+7 926 875-94-94</strong> для подтверждения.
+      p.payment-state__text
+        | Мы будем своевременно информировать вас о состоянии заказа по СМС и эл. почте.
+
+      = render 'total_payment/order_number'
+
+      = render 'total_payment/order_details'
+
+      = render 'total_payment/join_us'
+
+      = render 'total_payment/buttons'

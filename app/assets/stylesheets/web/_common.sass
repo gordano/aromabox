@@ -1,0 +1,142 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+html, body
+  height: 100%
+
+  background-color: #fff
+
+  &.ordering-page
+    background-color: #f5f5f5
+
+body
+  display: flex
+  flex-direction: column
+
+  min-width: 1240px
+  // overflow: hidden
+
+.main
+  flex: 1 0 auto
+
+.header:not(.header__fixed), .header-top, .footer
+  flex: 0 0 auto
+
+.row
+  margin: 0
+
+.col
+  display: flex
+  flex-direction: column
+
+.nowrap
+  flex-wrap: nowrap
+
+// .wrapper
+//   max-width: 1280px
+//   margin: 0 auto
+//   padding-left: 40px
+//   padding-right: 40px
+//   box-sizing: border-box
+
+//   // @media all and (max-width: 719px)
+//   //   width: 100%
+
+.wrapper
+  width: 1240px
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+  box-sizing: border-box
+
+.link__thin
+  color: #555
+
+.separator
+  display: inline-block
+  width: 85px
+  height: 1px
+  margin-top: 15px
+  margin-bottom: 20px
+  background-color: #555
+
+.hidden
+  display: none !important
+
+.nowrap
+  white-space: nowrap
+
+figure, figcaption
+  margin: 0
+
+
+.return-to
+  padding-left: 28px
+
+  position: relative
+
+  &::before
+    font-size: 15px
+    color: #222
+
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+
+  &:hover
+    &::before
+      color: $color_brand
+
+
+.scroll__top
+  position: fixed
+  right: 5%
+  bottom: 15%
+  z-index: 400
+  transition: all 0.4s ease-in-out 0s
+
+  width: 60px
+  height: 60px
+  padding: 10px 20px
+  box-sizing: border-box
+
+  background-color: #f5f5f5
+  cursor: pointer
+
+  &.icon_arrow_thin
+    &::before
+      font-size: 24px
+      color: #bbb
+
+  &::before
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(-90deg)
+  +hover(#222)
+
+  &.hide
+    opacity: 0
+    visibility: hidden
+
+  &.show
+    opacity: 1
+    visibility: visible
+
+.start-xs, .start-sm, .start-md, .start-lg
+  text-align: left
+
+.center-xs, .center-sm, .center-md, .center-lg
+  text-align: center
+
+.end-xs, .end-sm, .end-md, .end-lg
+  text-align: right
+
+
+.mCSB_scrollTools
+  right: -6px
+
+.mCSB_inside > .mCSB_container
+  margin-right: 16px
+

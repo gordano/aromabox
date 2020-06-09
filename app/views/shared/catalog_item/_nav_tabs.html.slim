@@ -1,0 +1,16 @@
+ul.nav-tabs.row.start-xs.bottom-xs
+
+  li
+    a.tablinks.active@tab_toggler href="#tab1" Описание
+
+  - if controller_name == 'product_samples'
+    li
+      a.tablinks@tab_toggler href="#tab2" Бренд и парфюмер
+  - if controller_name == 'product_sets'
+    li
+      a.tablinks@tab_toggler href="#tab2" Упаковка
+
+  li
+    a.tablinks@tab_toggler href="#tab3" Отзывы и опыт
+  li
+    a.tablinks@tab_toggler href="#tab4" Доставка и оплата

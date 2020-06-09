@@ -1,0 +1,27 @@
+.ordering__wrapper
+  .wrapper.row.between-xs
+    .payment__composition.center-xs
+      .delivery__trigger.ordering__trigger.row.start-xs.middle-xs
+        a.ordering-trigger__item.executed href=cart_path
+          span.trigger__line
+          span.trigger__title Корзина
+        a.ordering-trigger__item.executed href=delivery_path
+          span.trigger__line
+          span.trigger__title Способ доставки
+        .ordering-trigger__item.executed__last
+          span.trigger__line
+          span.trigger__title Оплата
+
+      .choice-payment.ordering__choice
+        form.form.row.start-xs
+          = render 'purchase_process/payment_method'
+
+
+        = render 'purchase_process/ordering_controls'
+
+
+
+    .cart__information
+      = render 'cart/cart_in_total'
+      = render 'purchase_process/ordering_info'
+

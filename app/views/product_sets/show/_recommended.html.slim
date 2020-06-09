@@ -1,0 +1,60 @@
+.recommended.product-sets__catalog
+  .catalog__list.row.around-xs.center-xs.top-xs
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_limited
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-1.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Невероятная парфюмерия
+                span Yves Saint Laurent
+              span.description__content
+                | Нам все равно, есть ли у наших мастеров бороды и татуировки. Нам не важно, кого стричь.
+              .description__price
+                span.price 14&nbsp;900&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_limited.badge_hit
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-2.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор мужского парфюма
+                span Viktor & Rolf
+              span.description__content
+                | Можно взять наборы для конкретного типа кожи, если вы его знаете, а можно подобрать.
+              .description__price
+                .previous_price
+                  span.price 16&nbsp;200&nbsp;
+                  span.currency руб.
+                .actual_price
+                  span.price 15&nbsp;200&nbsp;
+                  span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_new
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-3.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор женского парфюма
+                span Moschino
+              span.description__content
+                | Ни одна из наших парикмахерских, в которых вы побываете, не будет похожа на другую. Иначе и быть.
+              .description__price
+                span.price 13&nbsp;200&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее

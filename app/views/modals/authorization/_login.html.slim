@@ -1,0 +1,30 @@
+.modal__container.modal__animated@@modal@modal_login
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__auth
+
+    .auth__content.login__content.start-xs
+      .authorization__form
+        .form__title
+          span.login__title Вход
+          span.title-separator
+
+        form#authorization_form.form.row.center-xs.top-xs
+          input type='email' placeholder='E-mail'
+          label.password
+            input type='password' placeholder='Пароль'
+            a@@modal_toggler@close_link data-modal-selector='@modal_remember' href="#" title="Напомнить пароль" Забыли?
+
+        .form__controller.row.middle-xs.between-xs
+
+          a.button.button__blue@@modal_toggler@close_link data-modal-selector='@modal_login_ok' href="#" Войти
+
+          button.button.button__quick-registration.button__transparent__blue@@modal_toggler@close_link data-modal-selector='@modal_registration' type='submit' form='authorization_form' Быстрая регистрация
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__bottom-title.title-strike.center-xs
+        h3.h3 Или
+      .authorization__social.row.center-xs.middle-xs
+        a.icon.icon__authorization_vk href="" title="Авторизоваться через Вконтакте"
+        a.icon.icon__authorization_fb href="" title="Авторизоваться через Facebook"
+        a.icon.icon__authorization_ok href="" title="Авторизоваться через Одноклассники"
+        a.icon.icon__authorization_gg href="" title="Авторизоваться через Google+"

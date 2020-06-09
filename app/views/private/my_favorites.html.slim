@@ -1,0 +1,56 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.active.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+        section#my_favorites.office-content.my-favorites@@tabs
+          h1 Избранное
+
+          ul.my-favorites__nav-tabs.nav-tabs.row.start-xs.bottom-xs
+            li
+              a.active.tablinks@tab_toggler href="#tab1"
+                | Пробники
+                span 25
+            li
+              a.tablinks@tab_toggler href="#tab2"
+                | Наборы
+                span 9
+
+            li.my-favorites__sorting
+              = render 'shared/sorting'
+
+
+          section#tab1.tabcontent@tab style="display: block;"
+            = render 'product_samples/catalog'
+          section#tab2.tabcontent@tab
+            = render 'product_sets/catalog'
+
+
+= render 'shared/instagram_feed'
+
+= render 'modals/quick_view'
+.modal__overlay@modal_overlay
+
+
+
+
+
+
+
+
+
+
+

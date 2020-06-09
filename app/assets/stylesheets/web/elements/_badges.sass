@@ -1,0 +1,261 @@
+%badge-icon
+  background: asset-url('sprites/badges-sprite.png') no-repeat
+
+%badge_10
+  width: 39px
+  height: 39px
+  background-position: -5px -5px
+
+%badge_20
+  width: 39px
+  height: 39px
+  background-position: -54px -5px
+
+%badge_5
+  width: 39px
+  height: 39px
+  background-position: -103px -5px
+
+%badge_8
+  width: 39px
+  height: 39px
+  background-position: -152px -5px
+
+%badge_hit
+  width: 39px
+  height: 39px
+  background-position: -201px -5px
+
+%badge_limited
+  width: 65px
+  height: 65px
+  background-position: -250px -5px
+
+%badge_new
+  width: 39px
+  height: 39px
+  background-position: -325px -5px
+
+%badge_premium
+  width: 65px
+  height: 65px
+  background-position: -374px -5px
+
+
+
+.product-sets__item
+
+  &.badge
+    figcaption
+      z-index: 1
+
+      &:before, &:after
+        content: ''
+        display: block
+
+        position: absolute
+        top: 0
+        right: 0
+
+        z-index: 2
+
+  &.badge_20
+    figcaption
+      &:after
+        @extend %badge-icon
+        @extend %badge_20
+
+  &.badge_hit
+    figcaption
+      &:after
+        @extend %badge-icon
+        @extend %badge_hit
+
+  &.badge_limited
+    figcaption
+      &:before
+        @extend %badge-icon
+        @extend %badge_limited
+
+  &.badge_new
+    figcaption
+      &:after
+        @extend %badge-icon
+        @extend %badge_new
+
+  &.badge_premium
+    figcaption
+      &:before
+        @extend %badge-icon
+        @extend %badge_premium
+
+
+.product-samples__item
+
+  &.badge
+    figure, .samples-item__photo
+      position: relative
+      z-index: 1
+
+      &:before, &:after
+        content: ''
+        display: block
+
+        position: absolute
+        top: 0
+        right: 0
+
+        z-index: 2
+
+  &.badge_20
+    figure, .samples-item__photo
+      &:after
+        @extend %badge-icon
+        @extend %badge_20
+
+  &.badge_hit
+    figure, .samples-item__photo
+      &:after
+        @extend %badge-icon
+        @extend %badge_hit
+
+  &.badge_limited
+    figure, .samples-item__photo
+      &:before
+        @extend %badge-icon
+        @extend %badge_limited
+
+  &.badge_new
+    figure, .samples-item__photo
+      &:after
+        @extend %badge-icon
+        @extend %badge_new
+
+  &.badge_premium
+    figure, .samples-item__photo
+      &:before
+        @extend %badge-icon
+        @extend %badge_premium
+
+
+.index-page
+  .carousel__item.badge
+    figure
+      &:before, &:after
+        display: none
+        visibility: hidden
+
+
+.list__item
+
+  &.badge
+    position: relative
+    z-index: 1
+
+    &:before, &:after
+      content: ''
+      display: block
+
+      position: absolute
+      top: 0
+      left: 0
+
+      transform: rotate(-90deg)
+
+      z-index: 2
+
+  &.badge_5
+    &:after
+      @extend %badge-icon
+      @extend %badge_5
+
+  &.badge_8
+    &:after
+      @extend %badge-icon
+      @extend %badge_8
+
+  &.badge_10
+    &:after
+      @extend %badge-icon
+      @extend %badge_10
+
+  &.badge_20
+    &:after
+      @extend %badge-icon
+      @extend %badge_20
+
+  &.badge_hit
+    &:after
+      @extend %badge-icon
+      @extend %badge_hit
+
+  &.badge_limited
+    &:before
+      @extend %badge-icon
+      @extend %badge_limited
+
+  &.badge_new
+    &:after
+      @extend %badge-icon
+      @extend %badge_new
+
+  &.badge_premium
+    &:before
+      @extend %badge-icon
+      @extend %badge_premium
+
+
+.promo-gifts__personal-promo
+  &.badge
+    position: relative
+    z-index: 1
+
+    &:before, &:after
+      content: ''
+      display: block
+
+      position: absolute
+      top: -3px
+      right: -3px
+
+      z-index: 2
+
+  &.badge_5
+    &:after
+      @extend %badge-icon
+      @extend %badge_5
+
+  &.badge_8
+    &:after
+      @extend %badge-icon
+      @extend %badge_8
+
+  &.badge_10
+    &:after
+      @extend %badge-icon
+      @extend %badge_10
+
+  &.badge_20
+    &:after
+      @extend %badge-icon
+      @extend %badge_20
+
+  &.badge_hit
+    &:after
+      @extend %badge-icon
+      @extend %badge_hit
+
+  &.badge_limited
+    &:before
+      @extend %badge-icon
+      @extend %badge_limited
+
+  &.badge_new
+    &:after
+      @extend %badge-icon
+      @extend %badge_new
+
+  &.badge_premium
+    &:before
+      @extend %badge-icon
+      @extend %badge_premium

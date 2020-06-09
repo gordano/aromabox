@@ -1,0 +1,109 @@
+@import 'web/variables'
+@import 'web/mixins'
+
+$set_image_width: 100px
+$sample_image_width: 100px
+
+.cart__list
+  .list__item__wrapper
+    margin-bottom: 10px
+
+  .list__item
+    height: 100px
+    padding: 0
+    padding-right: 10px
+    background-color: #fff
+    overflow: hidden
+
+    position: relative
+
+    .item__delete
+      position: absolute
+      right: 5px
+      top: 5px
+
+      &.icon
+        &:before
+          font-size: 10px
+          color: #909090
+
+        +hover(#222)
+
+    .item__image
+      width: $sample_image_width
+      height: 100px
+      margin-right: 20px
+      overflow: hidden
+
+    &.set__item
+
+      .item__image
+        width: $set_image_width
+
+
+    figcaption
+      flex-wrap: nowrap
+      width: calc(100% - 120px)
+      padding-top: 10px
+      padding-bottom: 10px
+
+    .item__name
+      width: 58%
+
+      span
+        font-size: 13px
+        font-weight: 300
+        line-height: 22px
+
+      .brend__name
+        display: block
+        font-weight: 700
+        text-transform: uppercase
+
+      .aroma__name
+        line-height: 16px
+
+    .item__controllers
+      flex-wrap: nowrap
+      padding-left: 50px
+
+      .item__price
+        width: 140px
+        margin-right: 30px
+        box-sizing: border-box
+
+
+  .add-to-cart
+    margin: 0
+
+  .quantity
+    height: 33px
+
+    input
+      width: 49px
+      height: 29px
+      padding-top: 2px
+      padding-left: 11px
+      font-size: 16px
+      line-height: 28px
+      border-color: #e8e8e8
+
+      &:focus
+        border-color: #e8e8e8 !important
+
+    .quantity-nav
+      height: 31px
+
+    .quantity-button
+      width: 20px
+      border-color: #e8e8e8
+
+      .icon_arrow_bold
+        width: 9px
+        height: 5px
+
+        &:before
+          font-size: 5px
+
+      &.quantity-up
+        border-color: #e8e8e8

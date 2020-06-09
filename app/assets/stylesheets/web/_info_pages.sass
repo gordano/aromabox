@@ -1,0 +1,176 @@
+//= require_tree ./info_pages
+
+@import 'web/variables'
+@import 'web/mixins'
+
+.info-page
+  margin-top: 34px
+
+.info-page__content
+  // flex-flow: column nowrap
+  width: 100%
+  max-width: 960px
+  margin-bottom: 30px
+  padding: 0
+
+  h1
+    margin: 0
+    margin-bottom: 17px
+    font-size: 30px
+    line-height: 43px
+
+  h6
+    color: #555
+    margin: 0
+    margin-bottom: 10px
+
+    font-size: 17px
+    font-weight: 500
+    line-height: 25px
+
+  .info-page__subtitle
+    color: #222
+    margin: 0
+    margin-bottom: 10px
+
+    font-size: 17px
+    font-weight: 700
+    line-height: 25px
+
+  .beautiful__subtitle
+    color: $color_brand
+    font:
+      family: Georgia
+      size: 32px
+      style: italic
+      weight: 500
+    line-height: 60px
+
+  p, ul
+    margin: 0
+    margin-bottom: 8px
+    color: #555
+
+  p
+    strong
+      color: #222
+
+    a
+      color: #222
+      font-size: 13px
+      line-height: 24px
+
+      +hover
+
+  p.note
+    padding-left: 16px
+    position: relative
+
+    &:before
+      content: '*'
+      color: #555
+      position: absolute
+      left: 7px
+      top: 0
+
+  img
+    width: auto
+    height: auto
+
+    max-height: 400px
+    max-width: 960px
+
+    margin-top: 14px
+    margin-bottom: 23px
+
+  .video
+    margin-top: 14px
+    margin-bottom: 35px
+
+  .pagination
+    width: 100%
+    margin: 0
+    padding-top: 12px
+
+    border-top: 1px solid #e8e8e8
+
+  .reviews__all
+    .pagination
+      padding: 0
+      border: 0
+
+  .list__dotted, .list__numbered
+    li, a
+      font-size: 13px
+      font-weight: 500
+      line-height: 25px
+
+    a
+      display: inline-block
+
+
+  .requisites
+    margin-bottom: 12px
+
+    .property__list
+      td:first-child
+        width: 310px
+
+
+.info-page__list__separated
+  display: block
+  margin-bottom: 11px
+  padding-bottom: 23px
+  position: relative
+
+  &:after
+    content: ''
+    display: block
+    width: 200px
+    height: 1px
+
+    position: absolute
+    left: 0
+    bottom: 0
+
+    background-color: #ddd
+
+.list__content
+
+  .list__title
+    margin-top: 22px
+    margin-bottom: 12px
+
+    color: #222
+    font-size: 17px
+    font-weight: 700
+    line-height: 25px
+
+    &:before
+      display: inline-block
+      width: 22px
+      text-align: left
+
+  .list__container
+    padding-left: 24px
+
+    color: #555
+    font-size: 13px
+    line-height: 21px
+
+    li
+      margin-bottom: 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+

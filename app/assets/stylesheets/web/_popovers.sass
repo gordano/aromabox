@@ -1,0 +1,134 @@
+@import 'web/animation'
+@import 'web/variables'
+
+.popover__container
+  position: relative
+
+.webui-popover
+  border: 1px solid #e8e8e8
+  border-radius: 0
+  box-shadow: none
+  box-sizing: border-box
+  z-index: 600
+
+  .webui-popover-content
+    padding: 16px 28px
+    padding-right: 5px
+
+    p
+      margin: 0
+
+      color: #222
+      font-size: 13px
+      line-height: 23px
+      font-weight: 500
+
+.webui-no-padding
+  .webui-popover-content
+    padding: 0
+
+.webui-popover.bottom > .webui-arrow,
+.webui-popover.bottom-right > .webui-arrow,
+.webui-popover.bottom-left > .webui-arrow
+  border-bottom-color: #e8e8e8
+
+.webui-popover.left > .webui-arrow,
+.webui-popover.left-top > .webui-arrow,
+.webui-popover.left-bottom > .webui-arrow
+  border-left-color: #e8e8e8
+
+
+.webui-popover-inner .close
+  margin: 5px 5px 0 0
+  padding: 4px
+  opacity: 1
+
+  &:after
+    content: $icon_close
+    color: #909090
+    font-size: 10px
+    font-family: 'dreambox' !important
+
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  &:hover
+    opacity: 1
+
+    &:after
+      color: #222
+
+
+.popover__title
+  display: inline-block
+  margin-bottom: 5px
+
+  color: #222
+  font-size: 20px
+  line-height: 23px
+  font-weight: 700
+
+.question__popover
+  .glossary__link
+    display: inline-block
+
+    font-size: 12px
+    line-height: 23px
+    text-align: left
+    text-decoration: underline
+
+
+// Поповер Только что купили
+.webui-popover-justbought
+  border: 1px solid #ddd
+  background-color: rgba(255, 255, 255, 0.95)
+
+  &.fade
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-name: fadeInLeft
+
+  &.fade-out
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-name: fadeOutLeft
+
+  .product-set &.fade
+    animation-name: fadeInRight
+
+  .product-set &.fade-out
+    animation-name: fadeOutRight
+
+    // transition: opacity .5s ease-in-out
+
+  .webui-popover-inner .close
+    margin: 2px 2px 0 0
+
+    &::after
+      padding: 0
+
+  .webui-popover-content
+    padding: 10px
+    padding-right: 0
+    text-align: center
+
+    span
+      display: block
+      color: #222
+      font-size: 13px
+      line-height: 20px
+      font-weight: 300
+
+      &.buyer
+        font-weight: 700
+
+
+

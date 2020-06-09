@@ -1,0 +1,72 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.active.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+
+        section#my_subscription.office-content.my-subscription
+          h1 Подписка
+
+          .my-subscription__wrapper.row.around-xs.middle-xs
+            .my-subscription__item.row.center-xs.middle-xs@@subscribe_toggler data-active='false'
+
+              .item__circle.row.center-xs.middle-xs
+
+                .circle__new New
+
+              .item__title Новинки<br>на сайте
+
+              .item__controllers
+                .inactive.col.center-xs.middle-xs@subscribe_inactive
+                  button.button.button__transparent__tiffany@activating_button@@disabled_button type='button' data-remote='true' data-disable-with="Подписываем" Подписаться
+                  span.item__status Неактивна
+                .active.col.center-xs.middle-xs@subscribe_active
+                  button.button.button__transparent__gray@cansel_button@@disabled_button type='button' data-remote='true' data-disable-with="Отписываем" Отписаться
+                  span.item__status Активна
+
+            .my-subscription__item.row.center-xs.middle-xs@@subscribe_toggler data-active='true'
+
+              .item__circle.row.center-xs.middle-xs
+
+                .circle__20
+                  | -20
+                  span.persent %
+
+              .item__title Скидки<br>и акции
+
+              .item__controllers
+                .inactive.col.center-xs.middle-xs@subscribe_inactive
+                  button.button.button__transparent__tiffany@activating_button@@disabled_button  type='button' data-remote='true' data-disable-with="Подписываем" Подписаться
+                  span.item__status Неактивна
+                .active.col.center-xs.middle-xs@subscribe_active
+                  button.button.button__transparent__gray@cansel_button@@disabled_button  type='button' data-remote='true' data-disable-with="Отписываем" Отписаться
+                  span.item__status Активна
+
+            .my-subscription__item.row.center-xs.middle-xs@@subscribe_toggler data-active='false'
+
+              .item__circle.row.center-xs.middle-xs
+
+                .circle__star.icon.icon_star
+
+              .item__title Спецпредложения<br>и эксклюзив
+
+              .item__controllers
+                .inactive.col.center-xs.middle-xs@subscribe_inactive
+                  button.button.button__transparent__tiffany@activating_button@@disabled_button  type='button' data-remote='true' data-disable-with="Подписываем" Подписаться
+                  span.item__status Неактивна
+                .active.col.center-xs.middle-xs@subscribe_active
+                  button.button.button__transparent__gray@cansel_button@@disabled_button  type='button' data-remote='true' data-disable-with="Отписываем" Отписаться
+                  span.item__status Активна

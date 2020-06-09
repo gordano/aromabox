@@ -1,0 +1,33 @@
+form.form
+
+  .input-group.row.middle-xs.start-xs
+    input type='tel' placeholder='Введите номер карты'
+    .input-group__image.row.middle-xs
+      span.icon__visa__min
+      span.icon__mastercard__min
+
+  .input-group.row.middle-xs.between-xs
+    .input-group__left.row.middle-xs.start-xs
+      select.month@@custom_select data-placeholder='Месяц'
+        option selected='selected' disabled='disabled' Месяц
+        option 01
+        option 02
+        option 03
+        option 04
+
+      select.year@@custom_select data-placeholder='Год'
+        option selected='selected' disabled='disabled' Год
+        option 1989
+        option 1990
+        option 1991
+        option 1992
+
+    .input-group__right.row.middle-xs.end-xs
+      span.cvc__description
+        | последние 3 цифры кода
+        <br>
+        | на полосе для подписи
+      input.cvc__value type='text' placeholder='cvc'
+
+  .input-group.row.middle-xs.start-xs
+    input type='text' placeholder='Имя держателя карты'

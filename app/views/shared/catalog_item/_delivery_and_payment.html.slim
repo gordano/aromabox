@@ -1,0 +1,82 @@
+.delivery-and-payment.row
+  .delivery-and-payment__left.col-xs-6
+    div
+      h4 Доставка
+      ul.list__dashed
+        li У нас самая быстрая бесплатная доставка от 200 руб. по Москве в день заказа
+        li Отправим в любую точку России и СНГ от 750 руб, в Москву и СПб от 1200 руб.
+        li Бесплатная доставка в регионы России службой Pickpoint
+        li
+          | Оплата пластиковой картой (для желающих сэкономить)
+          br
+          | Оплата при получении (для сомневающихся)
+      form.form-legend
+        fieldset
+          legend Рассчитайте стоимость доставки
+
+          table.form__fields
+            tbody
+              tr
+                th: label Кол-во товаров
+                td
+                  input type="text"
+                  small.form__fields__unit шт.
+
+              tr
+                th: label Стоимость заказа
+                td
+                  input type="text"
+                  small.form__fields__unit руб.
+
+              tr
+                th: label Ваш город
+                td
+                  select@@custom_select
+                    option Санкт-Петербург
+                    option Москва
+
+              tr
+                th: label Способ доставки
+                td
+                  select@@custom_select
+                    option курьером
+                    option почтой России
+
+              tr
+                th: label Способ оплаты
+                td
+                  select@@custom_select
+                    option наличными
+                    option картой
+
+          .form__summary.row.between-xs
+            span
+              span.form__summary__lead
+                strong 700
+                '
+                | руб
+
+              | стоимость доставки в ваш город
+
+            button.button.form__summary_button.button__tiffany Рассчитать
+
+  .delivery-and-payment__right.col-xs-6
+    div
+      h4 Оплата наличными
+      p Оплата заказа наличными курьеру нашего магазина возможна в Москве и Санкт-Петербурге. В регионах возможна оплата наличными при получении заказа курьеру транспортной компании EMS, в отделениях “Почты России” при получении бандероли или при получении заказа из постамата Pickpoint.
+      h4 Оплата онлайн
+      .delivery-and-payment__payment-methods
+        span.icon__visa
+        span.icon__mastercard
+        span.icon__webmoney
+        span.icon__yandex-money
+        span.icon__qiwi
+        span.icon__rbk-money
+        span.icon__paypal
+        span.icon__verified-by-visa
+        span.icon__mastercard-secure-code
+
+      p Вы всегда можете оплатить заказ банковской картой или электронными деньгами. оплата заказов производится моментально, в любое время дня и ночи. Платежи осуществляются через сервис RBK Money, который включает в себя более 40 вариантов способов оплаты. среди них оплата любой банковской картой, web - money, яндекс деньги, смс платежи, qiwi , оплата через банк-клиент, евросеть, элекснет, связной.
+      p Обращаем ваше внимание, что Randewoo.ru  не получает и не сохраняет данные вашей кредитной карты. Вы оплачиваете только стоимость покупки, комиссия при оплате on-line не взимается.
+      h4 Банковский перевод
+      p Вы можете оплатить заказ через любой банк, действующий на территории России. Оплату по заказу необходимо внести в течение 3 суток с момента оформления заказа. Срок зачисления денежных средств - 2-3 рабочих дня.

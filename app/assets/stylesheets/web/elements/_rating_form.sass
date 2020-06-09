@@ -1,0 +1,67 @@
+@import 'web/variables'
+
+.rating__form
+  float: left
+  margin: 0
+  margin-bottom: 19px
+  padding: 0
+  border: none
+
+  input
+    display: none
+
+  label
+    margin: 0
+    padding: 0
+    float: right
+    cursor: pointer
+
+    &:before
+      content: $icon_star
+      font-size: 29px
+      color: #ffb221
+
+      font-family: 'dreambox' !important
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+
+.rating__form
+  > input:checked ~ label,
+  &:not(:checked) > label:hover,
+  &:not(:checked) > label:hover ~ label
+    &:before
+      content: $icon_star_full
+
+  > input:checked + label:hover,
+  > input:checked ~ label:hover,
+  > label:hover ~ input:checked ~ label,
+  > input:checked ~ label:hover ~ label
+    &:before
+      content: $icon_star_full
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

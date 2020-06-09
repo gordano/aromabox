@@ -1,0 +1,58 @@
+@import 'web/variables'
+
+@mixin null
+  margin: 0
+  padding: 0
+  text-indent: 0
+  list-style: none
+  list-style-position: outside
+
+@mixin clearfix
+  &:before,
+  &:after
+    display: table
+    content: ""
+
+  &:after
+    clear: both
+
+    margin: 0
+    padding: 0
+    height: 0
+    font-size: 0
+    line-height: 0
+    overflow: hidden
+
+@mixin blocks-justify
+  text-align: justify
+  text-justify: newspaper
+
+@mixin hover ($color: $color_brand)
+  &:hover, &:active
+    color: $color
+    border-color: $color
+
+    &:before, &:after
+      color: $color
+      border-color: $color
+
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite, $dpr: 1)
+  background-position: (nth($sprite, 3) / $dpr) (nth($sprite, 4) / $dpr)
+
+@mixin sprite-image($sprite)
+  background-image: url(#{nth($sprite, 7)})
+
+@mixin sprite-size($sprite, $dpr: 1)
+  background-size: (nth($sprite, 9) / $dpr) (nth($sprite, 10) / $dpr)
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite, 1)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)

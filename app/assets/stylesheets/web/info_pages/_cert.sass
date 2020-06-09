@@ -1,0 +1,109 @@
+//= require lightbox
+
+.cert__list
+  ul
+    margin: 0
+    padding: 0
+
+    list-style: none
+
+.cert__item
+  width: 180px
+  margin: 0
+  margin-right: 15px
+  margin-bottom: 11px
+  padding: 0
+
+  text-align: center
+
+  &:nth-child(5n)
+    margin-right: 0
+
+  .cert__wrapper
+    display: block
+    width: 100%
+    height: 254px
+    margin: 0
+    padding: 0
+
+    cursor: pointer
+
+    position: relative
+    z-index: 2
+
+    &:before
+      content: ''
+      width: 100%
+      height: 100%
+
+      background: asset-url('icon_zoom.png') rgba(0, 0, 0, 0.3) center center no-repeat
+      background-size: 50px
+      box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.1)
+      opacity: 0
+
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 3
+
+
+    &:hover,
+    &:active
+      &:before
+        opacity: 1
+        transition: opacity .3s ease-in
+
+    img
+      display: block
+
+      max-width: 180px
+      max-height: 254px
+
+      margin: 0 auto
+
+  .hover
+    display: inline-block
+    width: inherit
+    height: inherit
+
+    background: asset-url('icon_zoom.png') rgba(0, 0, 0, 0.3) center center no-repeat
+    background-size: 50px
+    box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.1)
+    opacity: 0
+
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 3
+
+.cert__name
+  display: block
+  margin: 12px 0
+
+  color: #222
+  font-size: 13px
+  font-weight: 500
+  line-height: 22px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

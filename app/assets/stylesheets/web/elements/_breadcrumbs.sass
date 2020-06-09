@@ -1,0 +1,50 @@
+@import 'web/mixins'
+
+.breadcrumbs
+  width: 100%
+  margin: 0
+  margin-bottom: 30px
+  border-top: 1px solid #e3e3e3
+
+  .breadcrumbs__wrapper
+    position: relative
+
+  ul
+    display: block
+    padding: 0 19px
+    font-size: 0
+
+    position: absolute
+    top: 50%
+    left: -19px
+    transform: translate(0, -50%)
+
+    background-color: #fff
+
+
+    li
+      display: inline-block
+      list-style: none
+      margin-right: 2px
+
+      a
+
+        color: #888
+        font-size: 12px
+        font-weight: 500
+        line-height: 50px
+
+        position: relative
+        padding-right: 10px
+
+        &:before
+          content: '/'
+          position: absolute
+          right: 0
+          top: 50%
+          transform: translate(0, -50%)
+
+        +hover
+
+      &:last-child
+        margin-right: 0

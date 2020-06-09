@@ -1,0 +1,24 @@
+.header__content-left.col-xs-6
+
+  nav.nav-menu.row.middla-xs.start-xs
+    ul.nav-menu__list
+      li
+        - if current_page?(product_sets_path)
+          span.nav__span Наборы
+        - else
+          a.nav__link href=product_sets_path title="Наборы" Наборы
+      li
+        - if current_page?(product_samples_path)
+          span.nav__span Пробники
+        - else
+          a.nav__link href=product_samples_path title="Пробники" Пробники
+      li
+        - if current_page?(gifts_path)
+          span.nav__span Подарки
+        - else
+          a.nav__link href=gifts_path title="Подарки" Подарки
+      li
+        - if current_page?(closed_show_path) || current_page?(closed_index_path)
+          span.nav__span Не для всех
+        - else
+          a.nav__link.nav__closed-section href=closed_show_path title="Не для всех" Не для всех

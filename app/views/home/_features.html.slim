@@ -1,0 +1,29 @@
+
+.features-list
+  .feature__sets
+    = image_tag('index/banner_sets.jpg', alt: 'Каталог пробников')
+    .feature__description.row.middle-xs.center-xs
+      .col-xs-8.middle-xs.center-xs
+        .feature__title Парфюмерные наборы
+        span.separator
+        p Собрания селективной, люксовой и винтажной парфюмерии
+        a.button.button__red href=product_sets_path title="Смотреть" Смотреть
+  .feature__samples
+    = image_tag('index/banner_samples.jpg', alt: 'Каталог пробников')
+    .feature__description.row.middle-xs.center-xs
+      .col-xs-8.middle-xs.center-xs
+        .feature__title Каталог пробников
+        span.separator
+        p Соберите свой неповторимый набор элитных ароматов
+        a.button.button__tiffany href=product_samples_path title="В каталог" В каталог
+  .feature__other
+    = image_tag('index/banner_vintage.jpg', alt: 'Каталог пробников')
+    .feature__description__other.feature__description__left
+      .feature__title Это не для всех
+      a.button.button__brown href=closed_show_path title="Подробнее" Подробнее
+    .feature__description__other.feature__description__right
+      .feature__title Дарите подарки
+      a.button.button__green href=gifts_path title="Выбрать" Выбрать
+    = image_tag('index/banner_gifts.jpg', alt: 'Каталог пробников')
+
+

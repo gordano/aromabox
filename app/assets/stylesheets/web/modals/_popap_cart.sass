@@ -1,0 +1,301 @@
+@import 'web/variables'
+
+.header__base .header__content-right
+  position: relative
+
+  .icons .cart
+    &:hover
+      .cart__popap
+        opacity: 1
+        visibility: visible
+        transform: translate(0, 0)
+        transition: padding 0.4s, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s, visibility 0s
+
+      .cart-list__content
+        transform: translate(0, 0)
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+
+.popap__container
+  padding-top: 5px
+
+  position: absolute
+  right: 0
+  top: 100%
+  z-index: 900
+
+  cursor: default
+
+  opacity: 0
+  visibility: hidden
+  transform: translate(0, -10px)
+  transition: padding .2s .4s, transform .3s .4s, opacity .2s .4s, visibility .5s ease .4s
+
+  // @media all and (max-height: 768px)
+  //   transform: scale(.9) translate(20px, -25px)
+
+
+.popap__content
+  width: 360px
+  box-sizing: border-box
+
+  background-color: #fff
+  border: 1px solid #e8e8e8
+
+  position: relative
+  z-index: 1
+
+.popap__arrow-top
+  width: 12px
+  height: 12px
+
+  background-color: #fff
+  border-top: 1px solid #e8e8e8
+  border-right: 1px solid #e8e8e8
+
+  border-left: 1px solid #fff
+  border-bottom: 1px solid #fff
+
+  position: absolute
+  top: -7px
+  right: 22px
+  z-index: 501
+
+  transform: rotate(-45deg)
+
+
+.popap__cart-list
+  overflow: hidden
+
+  .cart-list__arrow
+    width: 100%
+    height: 23px
+    box-sizing: border-box
+
+    border-bottom: 1px solid #e8e8e8
+
+    transition: all .3s ease-in
+
+    position: relative
+    z-index: 2
+
+    &::before
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%) rotate(-90deg)
+      color: #d6d6d6
+      transition: color .3s ease-in
+
+    &.arrow__active
+      box-shadow: 10px 12px 32px 20px rgba(255,255,255,1)
+      transition: all .3s ease-in
+      cursor: pointer
+
+      &::before
+        color: #161616
+        transition: color .3s ease-in
+
+      &:hover
+        &:before
+          color: $color_brand
+
+    &.cart-list__arrow__top
+      transform: rotate(0deg)
+
+    &.cart-list__arrow__bottom
+      transform: rotate(180deg)
+
+
+
+  .cart-list__content
+    width: 100%
+    height: 363px
+
+    padding: 0
+    padding-left: 20px
+    // padding-right: 20px
+    padding-right: 4px
+
+    box-sizing: border-box
+    overflow: hidden
+    overflow-y: auto
+
+    transform: translate(0, -10px)
+    transition: transform .3s .4s
+
+  .cart-list__item
+    display: block
+    height: 70px
+    margin: 0
+    padding: 10px 0
+
+    border-bottom: 1px solid #e8e8e8
+    background-color: #fff
+
+    overflow: hidden
+    box-sizing: content-box
+    cursor: pointer
+
+    &:last-of-type
+      border-bottom-width: 0px
+
+    &:hover
+      color: inherit
+
+
+    .item__image
+      width: 60px
+      height: 70px
+      margin-right: 23px
+      overflow: hidden
+
+
+    figcaption
+      flex-wrap: nowrap
+      width: calc(100% - 88px)
+
+    .item__content
+      width: 100%
+      flex-wrap: nowrap
+
+    .item__name
+      padding-right: 15px
+
+      .brend__name
+        display: block
+
+        font-size: 12px
+        font-weight: 700
+        line-height: 22px
+        text-transform: uppercase
+
+      .aroma__name, .item__count
+        display: block
+
+        font-size: 12px
+        font-weight: 300
+        line-height: 15px
+
+      .item__count
+        line-height: 22px
+
+
+.cart__popap
+  .item__price
+    padding-top: 3px
+
+    span
+      font-size: 15px
+      line-height: 18px
+      font-weight: 300
+
+    .price
+      font-weight: 700
+      text-transform: uppercase
+
+    .previous-price
+      position: relative
+
+      &:before
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+
+        background-color: $color_brand
+
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    .actual-price
+      margin-top: -3px
+      color: $color_brand
+
+
+.popap__in-total
+  width: 100%
+  padding: 10px 20px
+  box-sizing: border-box
+
+  border-top: 1px solid #e8e8e8
+  background-color: #f5f5f5
+
+  .in-total__content
+    padding-left: 88px
+
+    position: relative
+
+    .in-total__title
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0, -50%)
+
+      font-size: 13px
+      font-weight: 700
+      line-height: 18px
+      text-transform: uppercase
+
+    .in-total__counter
+      font-size: 13px
+      line-height: 18px
+      font-weight: 300
+
+      strong
+        font-weight: 700
+
+  a.button.button__popap-cart
+    width: 100%
+    height: 38px
+    line-height: 38px
+
+    margin-top: 8px
+    padding: 1px 0 0 0
+    font-size: 14px
+
+.cart__popap
+  .popap__special
+    width: 360px
+    padding: 12px 10px 11px
+    box-sizing: border-box
+
+    position: absolute
+    left: -1px
+    top: 100%
+    z-index: 502
+
+    background-color: #fff
+    border: 5px solid #4c9eab
+
+    .special__content
+      color: #222
+      font-size: 13px
+      font-weight: 500
+      line-height: 17px
+      text-transform: uppercase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

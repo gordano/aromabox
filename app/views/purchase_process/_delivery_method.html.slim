@@ -1,0 +1,77 @@
+.delivery-method
+  span.choice-delivery__title Способ доставки
+
+
+  .choice-delivery__list.row.middle-xs.between-xs
+
+    .delivery__item.row.top-xs.between-xs
+      .delivery__label
+        .delivery__free Бесплатная доставка
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='delivery_item_1'
+          span.radio__title Постамат или пункт выдачи PickPoint
+          input type='radio' id='delivery_item_1' name='delivery_item' checked='checked'
+          span.radio__pseudo
+        .delivery__description
+          p Забрать заказ самостоятельно Вы сможете через постаматы, установленные в ближайшем от вас супермаркете или торговом центре, в удобное время без очередей и ожидания курьера.
+          a href='#' title='Выбрать постамат' Выбрать постамат
+      .delivery__price.item__price.row.bottom-xs
+        .previous-price
+          span.price 200&nbsp;
+        .actual-price
+          span.price 0&nbsp;
+          span.currency руб.
+
+    .delivery__item.row.top-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='delivery_item_2'
+          span.radio__title Доставка курьером СДЭК «до двери»
+          input type='radio' id='delivery_item_2' name='delivery_item'
+          span.radio__pseudo
+        .delivery__description.hidden
+          p Заказ Вам доставит курьер транспортной компании СДЭК лично в руки. Вы будете получать смс уведомления на каждом этапе доставки.
+      .delivery__price.item__price.row.bottom-xs
+        .actual-price
+          span.price 300&nbsp;
+          span.currency руб.
+
+    .delivery__item.row.top-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='delivery_item_3'
+          span.radio__title Пункт самовывоза СДЭК
+          input type='radio' id='delivery_item_3' name='delivery_item'
+          span.radio__pseudo
+        .delivery__description.hidden
+          p Заказ вы забираете самостоятельно в выбранном пункте самовывоза.
+          a href='#' title='Выбрать постамат' Выбрать пункт выдачи
+      .delivery__price.item__price.row.bottom-xs
+        .actual-price
+          span.price 160&nbsp;
+          span.currency руб.
+
+    .delivery__item.row.top-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='delivery_item_4'
+          span.radio__title Доставка курьером EMS «до двери»
+          input type='radio' id='delivery_item_4' name='delivery_item'
+          span.radio__pseudo
+        .delivery__description.hidden
+          p Заказ Вам доставит курьер транспортной компании EMS лично в руки. ВНИМАНИЕ! При оплате заказа наложенным платежом необходимо оплатить комиссию курьеру в размере 2-7% от стоимости заказа за перевод денежных средств,т.о. делая заказ по предоплате, вы экономите около 10% на страховой стоимости и комиссии за перевод.
+      .delivery__price.item__price.row.bottom-xs
+        .actual-price
+          span.price 580&nbsp;
+          span.currency руб.
+
+    .delivery__item.row.top-xs.between-xs
+      .ordering__radiobutton.row.middle-xs
+        label.radio__label for='delivery_item_5'
+          span.radio__title Доставка Почтой России 1 классом
+          input type='radio' id='delivery_item_5' name='delivery_item'
+          span.radio__pseudo
+        .delivery__description.hidden
+          p Заказ Вы получите в почтовом отделении.
+          p ВНИМАНИЕ! При оплате заказа наложенным платежом, Почта России взимает комиссию в размере 2-7% от стоимости заказа за перевод денежных средств,т.о. делая заказ по предоплате, вы экономите около 10% на страховой стоимости и комиссии за перевод.
+      .delivery__price.item__price.row.bottom-xs
+        .actual-price
+          span.price 215&nbsp;
+          span.currency руб.

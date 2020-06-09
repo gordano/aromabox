@@ -1,0 +1,53 @@
+.ordering__wrapper
+  .wrapper.row.between-xs
+    .payment-go.start-xs
+      h1.payment-go__title
+        | Оплата заказа&nbsp;
+        span.order-number №117-203-333
+      .payment-go__description
+        p Введите данные банковской карты Visa, Visa Electron, Mastercard или Maestro.
+        p Все поля обязательный для заполнения.
+
+      = render 'payment/payment_form_online'
+
+      .payment-go__controls.row.middle-xs.start-xs
+        a.button.button__blue.button__opacity href=payment_successful_path Оплатить
+        a.cant-pay href=payment_failed_path Не получается оплатить
+
+      .payment-go__secure
+        p Все операции с банковскими картами проводятся в соответствии с требованиями Visa International и Mastercard Worldwide. Безопасность платежей гарантируется использованием протокола SSL для передачи конфиденциальной информации.
+
+    .order-data
+      .cart__in-total.order-data__content
+        table.in-total__list
+          tr
+            td
+              span.order-data__title.table__item К оплате
+              span.table-separator
+            td
+              .item__price
+                .actual-price
+                  span.price 5370&nbsp;
+                  span.currency рублей
+
+      .order-data__content
+        h2.order-data__title Данные о заказе
+
+        dl.order-data__composition
+          dt Имя и фамилия
+          dd Александр Константинопольский
+
+          dt Телефон
+          dd +7 926 875-94-94
+
+          dt Электронная почта
+          dd alex@mail.ru
+
+          dt Способ доставки
+          dd курьером по Москве в пределах МКАД
+
+          dt Адрес
+          dd Россия, г. Москва, ул. Петровская, д. 1, корп. б, кв. 66
+
+          dt Оплата
+          dd наложенным платежом

@@ -1,0 +1,814 @@
+.product-samples__catalog.col-xs-12
+  .catalog__sorting__top
+    - unless controller_name == 'private'
+      = render 'shared/sorting'
+
+  .catalog__list.row.between-xs.top-xs
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='1'
+      a href=product_samples_show_path title=""
+
+        figure
+          .product-image
+            = image_tag('product_samples/photo-1.jpg', alt: '')
+            = image_tag('product_samples/photo-2.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Lancôme
+              span.description__content Liquid Cushion Compact Foundation Gygabyte Extention
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_limited@@favorite@@heartbeat  data-id='2'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-2.jpg', alt: '')
+            = image_tag('product_samples/photo-3.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='3'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-3.jpg', alt: '')
+            = image_tag('product_samples/photo-4.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Viktor & Rolf
+              span.description__content Flowerbomb Exclusion Spiritul Energy
+
+              .description__price
+                span.price 2&nbsp;500&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='4'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-4.jpg', alt: '')
+            = image_tag('product_samples/photo-5.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale Crystal Flowers
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_new@@favorite@@heartbeat  data-id='5'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-5.jpg', alt: '')
+            = image_tag('product_samples/photo-6.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Hugo Boss
+              span.description__content Boss Bottled Adventure Grapefruit Analysis
+
+              .description__price
+                span.price 9&nbsp;100&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='6'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-6.jpg', alt: '')
+            = image_tag('product_samples/photo-7.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Jean Paul Gaultier Megalomania Elixir Ultra
+              span.description__content Liquid Cushion Compact
+
+              .description__price
+                span.price 2&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_20@@favorite@@heartbeat  data-id='7'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-7.jpg', alt: '')
+            = image_tag('product_samples/photo-8.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Marc Jacobs
+              span.description__content Daisy Eau So Fresh Nikolay Baskov
+
+              .description__price
+                .previous_price
+                  span.price 6&nbsp;200&nbsp;
+                  span.currency руб.
+                .actual_price
+                  span.price 5&nbsp;200&nbsp;
+                  span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='8'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-8.jpg', alt: '')
+            = image_tag('product_samples/photo-9.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Viktor & Rolf
+              span.description__content Flowerbomb Exclusion
+
+              .description__price
+                span.price 2&nbsp;500&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_20.badge_limited@@favorite@@heartbeat  data-id='9'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-9.jpg', alt: '')
+            = image_tag('product_samples/photo-1.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Lancôme
+              span.description__content Liquid Cushion Compact Foundation Gygabyte Extention
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='10'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-1.jpg', alt: '')
+            = image_tag('product_samples/photo-2.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Lancôme
+              span.description__content Liquid Cushion Compact Foundation Gygabyte Extention
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_hit@@favorite@@heartbeat  data-id='11'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-2.jpg', alt: '')
+            = image_tag('product_samples/photo-3.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='12'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-3.jpg', alt: '')
+            = image_tag('product_samples/photo-4.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Viktor & Rolf
+              span.description__content Flowerbomb Exclusion Spiritul Energy
+
+              .description__price
+                span.price 2&nbsp;500&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='13'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-4.jpg', alt: '')
+            = image_tag('product_samples/photo-5.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale Crystal Flowers
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_limited@@favorite@@heartbeat  data-id='14'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-5.jpg', alt: '')
+            = image_tag('product_samples/photo-6.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Hugo Boss
+              span.description__content Boss Bottled Adventure Grapefruit Analysis
+
+              .description__price
+                span.price 9&nbsp;100&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='15'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-6.jpg', alt: '')
+            = image_tag('product_samples/photo-7.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Jean Paul Gaultier Megalomania Elixir Ultra
+              span.description__content Liquid Cushion Compact
+
+              .description__price
+                span.price 2&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='16'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-7.jpg', alt: '')
+            = image_tag('product_samples/photo-8.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Marc Jacobs
+              span.description__content Daisy Eau So Fresh Nikolay Baskov
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_premium.badge_new@@favorite@@heartbeat  data-id='17'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-8.jpg', alt: '')
+            = image_tag('product_samples/photo-9.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Viktor & Rolf
+              span.description__content Flowerbomb Exclusion
+
+              .description__price
+                span.price 2&nbsp;500&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='18'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-9.jpg', alt: '')
+            = image_tag('product_samples/photo-1.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Lancôme
+              span.description__content Liquid Cushion Compact Foundation Gygabyte Extention
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_20@@favorite@@heartbeat  data-id='19'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-1.jpg', alt: '')
+            = image_tag('product_samples/photo-2.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Lancôme
+              span.description__content Liquid Cushion Compact Foundation Gygabyte Extention
+
+              .description__price
+                span.price 5&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='20'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-2.jpg', alt: '')
+            = image_tag('product_samples/photo-3.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='21'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-3.jpg', alt: '')
+            = image_tag('product_samples/photo-4.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Viktor & Rolf
+              span.description__content Flowerbomb Exclusion Spiritul Energy
+
+              .description__price
+                span.price 2&nbsp;500&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_20.badge_limited@@favorite@@heartbeat  data-id='22'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-4.jpg', alt: '')
+            = image_tag('product_samples/photo-5.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Dior
+              span.description__content Homme Intense Creative Montale Crystal Flowers
+
+              .description__price
+                span.price 1&nbsp;400&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item@@favorite@@heartbeat  data-id='23'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-5.jpg', alt: '')
+            = image_tag('product_samples/photo-6.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Hugo Boss
+              span.description__content Boss Bottled Adventure Grapefruit Analysis
+
+              .description__price
+                span.price 9&nbsp;100&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+    .catalog__item.product-samples__item.badge.badge_hit@@favorite@@heartbeat  data-id='24'
+      a href=product_samples_show_path title=""
+        figure
+          .product-image
+            = image_tag('product_samples/photo-6.jpg', alt: '')
+            = image_tag('product_samples/photo-7.jpg', class: 'hover', alt: '')
+
+          figcaption
+
+            button.button.button__in-cart.catalog__button__in-cart@add_to_cart type='button' В корзину
+
+            .description.row.col.middle-xs.between-xs
+              h4.description__title Jean Paul Gaultier Megalomania Elixir Ultra
+              span.description__content Liquid Cushion Compact
+
+              .description__price
+                span.price 2&nbsp;200&nbsp;
+                span.currency руб.
+
+        .catalog__item__controllers
+
+          - unless controller_name == 'private'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+          - if controller_name == 'private'
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+          span.icon.icon__catalog.icon_eye@@modal_toggler data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+  .catalog__sorting__bottom
+    = render 'shared/sorting'
+
+
+
+
+
+/ Для адаптивности я использовала такие классы
+  / .catalog__list.row.between-xs.center-sm.center-md.between-lg.top-xs

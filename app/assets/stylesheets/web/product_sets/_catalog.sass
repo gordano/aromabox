@@ -1,0 +1,164 @@
+@import 'web/mixins'
+
+.product-sets__catalog
+
+  .catalog__item
+    width: 310px
+    height: 400px
+    margin-bottom: 40px
+    box-sizing: border-box
+    cursor: pointer
+
+    a
+      display: block
+      position: relative
+
+      &:hover, &:active
+        color: #222
+
+      .catalog__item__controllers
+        padding: 10px
+
+        .icon__catalog
+          width: 38px
+          height: 38px
+
+          border: 1px solid #fff
+          border-radius: 50%
+
+          &:before
+            color: #fff
+
+    &:hover, &:active
+      .description__title
+        span
+          position: relative
+
+          &:before
+            content: ''
+            display: inline-block
+            width: 100%
+            // height: 1px
+            border-bottom: 1px dotted #222
+            position: absolute
+            bottom: 3px
+
+      .catalog__item__controllers
+        display: block
+
+    figure
+      position: relative
+
+    img
+      display: block
+      width: 310px
+      height: 250px
+
+    figcaption
+      width: 280px
+      // height: 185px
+      margin: 0 auto
+      padding: 10px
+      box-sizing: border-box
+
+      background: #fff
+      box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.1)
+
+      position: absolute
+      bottom: -150px
+      left: 50%
+      transform: translate(-50%, 0)
+
+    .description
+      width: 260px
+      height: 165px
+      padding: 14px 0 15px
+
+      border: 1px solid #e8e8e8
+      background-color: #ffffff
+      box-sizing: border-box
+
+      overflow: hidden
+
+      .button
+        display: inline-block
+
+        margin: 0 auto
+        margin-top: 4px
+        padding: 0 20px
+        padding-top: 6px
+        padding-bottom: 3px
+
+        font-size: 13px
+        line-height: 20px
+        border-width: 0
+
+        +hover(#fff)
+
+    .description__title
+      margin: 0
+      // margin-bottom: 8px
+      padding: 0 20px
+
+      font-size: 14px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+
+      overflow: hidden
+      text-overflow: ellipsis
+
+      span
+        display: inline-block
+        height: 20px
+        overflow: hidden
+        white-space: nowrap
+
+        &:first-of-type
+          white-space: normal
+
+    .description__content
+      display: block
+      height: 60px
+      padding: 0 20px
+
+      font-size: 13px
+      font-weight: 300
+      line-height: 20px
+
+      overflow: hidden
+      text-overflow: ellipsis
+
+    .description__price
+      margin: 0
+      padding-top: 2px
+
+      .price
+        font-size: 20px
+        font-weight: 700
+        line-height: 32px
+        text-transform: uppercase
+
+      .currency
+        font-size: 20px
+        font-weight: 300
+        line-height: 32px
+
+
+    &.catalog__item__animated
+      figcaption
+        .description
+          transition: height .6s ease
+
+          .button
+            opacity: 0
+            transition: all .4s linear
+
+      &:hover, &:active
+        .description
+          height: 208px
+          transition: height .6s ease
+
+          .button
+            opacity: 1
+            transition: all .4s linear

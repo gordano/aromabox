@@ -1,0 +1,29 @@
+.index-page
+  = render 'about'
+
+  .wrapper
+    .slogan
+      .title-strike.italic
+        h3.slogan__title Откройте мир селективной парфюмерии вместе с DreamBox
+
+    = render 'features'
+    = render 'brands'
+
+    .carousel__wrapper.title-strike__wrapper
+      .title-strike
+        h2 Только что купили
+      = render 'shared/carousel/carousel_index'
+
+  = render 'trigger'
+
+  .wrapper
+    .slogan
+      .title-separator.italic
+        h2.slogan__title DreamBox
+        .separator
+        p Этот магазин создан для того, чтобы познакомить вас с работами величайших парфюмеров мира и дизайнерским парфюмом от самых именитых домов моды. Чтобы это знакомство проходило в приятной обстановке, без спешки, и вы могли поделиться этим с близкими, а также сделать им незабываемый подарок.
+
+
+  = render 'shared/forms/index_subscribe'
+  = render 'shared/instagram_feed'
+

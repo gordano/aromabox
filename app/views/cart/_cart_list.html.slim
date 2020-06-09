@@ -1,0 +1,171 @@
+.cart__list
+  .list__item__wrapper
+    .list__item.set__item.badge.badge_10
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_1.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Hugo Boss
+            span.aroma__name Boss Bottled Adventure Grapefruit Analysis Boss Bottled Adventure Grapefruit Analysis
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .previous-price
+                span.price 2300&nbsp;
+                span.currency руб.
+              .actual-price
+                span.price 2100&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"
+
+  .list__item__wrapper
+    .list__item.badge.badge_5
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_2.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Jean Paul Gaultier
+            span.aroma__name Boss Bottled Adventure Grapefruit Analysis
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .actual-price
+                span.price 210&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"
+
+  .list__item__wrapper
+    .list__item
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_3.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Hugo Boss
+            span.aroma__name Homme Intense Creative Montale Crystal Flowers
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .actual-price
+                span.price 210&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"
+
+  .list__item__wrapper
+    .list__item
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_4.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Marc Jacobs
+            span.aroma__name Le Male Le Famele Cristian Ronaldo
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .actual-price
+                span.price 210&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"
+
+  .list__item__wrapper
+    .list__item
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_5.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Viktor & Rolf
+            span.aroma__name Daisy Eau So Fresh Nikolay Baskov
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .actual-price
+                span.price 210&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"
+
+  .list__item__wrapper
+    .list__item
+      figure.row.start-xs
+        .item__image.row.center-xs.middle-xs
+          = image_tag('cart/list_item/photo_6.png', alt: '')
+        figcaption.row.between-xs.middle-xs
+
+          .item__name
+            span.brend__name Lancôme
+            span.aroma__name Liquid Cushion Compact Gygabyte Extention
+
+          - if controller_name == 'private'
+            .item__count 1
+
+          .item__controllers.row.between-xs.middle-xs
+
+            - unless controller_name == 'private'
+              .add-to-cart
+                = render 'shared/catalog_item/quantity'
+
+            .item__price
+              .actual-price
+                span.price 210&nbsp;
+                span.currency руб.
+
+      - unless controller_name == 'private'
+        a.item__delete.icon.icon_close_thin href="#" title="Удалить из корзины"

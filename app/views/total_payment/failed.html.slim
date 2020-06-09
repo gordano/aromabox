@@ -1,0 +1,25 @@
+.ordering__wrapper
+  .wrapper.row.between-xs
+    .payment-state.start-xs
+      .title-strike.title-strike_payment-state.title-strike_payment-state_failed
+        h1.h3
+          | К сожалению, оплата не прошла
+          small но это не станет проблемой
+      p.payment-state__text
+        |
+          В ближайшее время мы свяжемся с вами по телефону <span class="nowrap">+7 000 000 00 00</span>,
+          предложим другие варианты оплаты заказа, или вышлем ссылку, по которой можно повторить
+          попытку оплаты, выбранным вами способом.
+      p.payment-state__text.payment-state__text_hint
+        |
+          Если вы пропустили звонок, просто перезвоните нам по телефонам
+          <span class="nowrap">+7 (000) 000 00 00 (для Москвы)</span>
+          или <span class="nowrap">+7 (000) 000 00 00 (для регионов)</span>
+
+      = render 'total_payment/order_number'
+
+      = render 'total_payment/order_details'
+
+      = render 'total_payment/join_us'
+
+      = render 'total_payment/buttons'

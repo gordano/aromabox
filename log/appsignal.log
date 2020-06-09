@@ -1,0 +1,260 @@
+# Logfile created on 2017-06-27 14:22:02 +0300 by logger.rb/56438
+[2017-06-27T14:22:01 (process) #5514][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-06-27T14:22:02 (process) #5514][ERROR] appsignal: Push api key not set after loading config
+[2017-06-27T14:22:02 (process) #5514][ERROR] Not starting, no valid config for this environment
+[2017-06-30T11:21:08 (process) #39684][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-06-30T11:21:09 (process) #39684][ERROR] appsignal: Push api key not set after loading config
+[2017-06-30T11:21:09 (process) #39684][ERROR] Not starting, no valid config for this environment
+[2017-06-30T11:26:50 (process) #39811][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-06-30T11:26:51 (process) #39811][ERROR] appsignal: Push api key not set after loading config
+[2017-06-30T11:26:51 (process) #39811][ERROR] Not starting, no valid config for this environment
+[2017-07-03T17:17:29 (process) #70087][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-03T17:17:30 (process) #70087][ERROR] appsignal: Push api key not set after loading config
+[2017-07-03T17:17:30 (process) #70087][ERROR] Not starting, no valid config for this environment
+[2017-07-03T17:19:01 (process) #70276][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-03T17:19:01 (process) #70276][ERROR] appsignal: Push api key not set after loading config
+[2017-07-03T17:19:01 (process) #70276][ERROR] Not starting, no valid config for this environment
+[2017-07-05T16:32:42 (process) #15081][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-05T16:32:42 (process) #15081][ERROR] appsignal: Push api key not set after loading config
+[2017-07-05T16:32:42 (process) #15081][ERROR] Not starting, no valid config for this environment
+[2017-07-11T15:08:45 (process) #42907][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-11T15:08:46 (process) #42907][ERROR] appsignal: Push api key not set after loading config
+[2017-07-11T15:08:46 (process) #42907][ERROR] Not starting, no valid config for this environment
+[2017-07-11T18:41:54 (process) #56409][INFO] appsignal: Loading Rails (5.1.0) integration
+[2017-07-11T18:41:56 (process) #56409][ERROR] appsignal: Push api key not set after loading config
+[2017-07-11T18:41:56 (process) #56409][ERROR] Not starting, no valid config for this environment
+[2017-07-12T12:29:39 (process) #60513][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-12T12:29:39 (process) #60513][ERROR] appsignal: Push api key not set after loading config
+[2017-07-12T12:29:39 (process) #60513][ERROR] Not starting, no valid config for this environment
+[2017-07-12T17:27:54 (process) #68417][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-12T17:27:54 (process) #68417][ERROR] appsignal: Push api key not set after loading config
+[2017-07-12T17:27:54 (process) #68417][ERROR] Not starting, no valid config for this environment
+[2017-07-13T12:56:13 (process) #77660][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-13T12:56:13 (process) #77660][ERROR] appsignal: Push api key not set after loading config
+[2017-07-13T12:56:13 (process) #77660][ERROR] Not starting, no valid config for this environment
+[2017-07-13T12:59:52 (process) #77839][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-13T12:59:52 (process) #77839][ERROR] appsignal: Push api key not set after loading config
+[2017-07-13T12:59:52 (process) #77839][ERROR] Not starting, no valid config for this environment
+[2017-07-14T14:45:06 (process) #98574][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-14T14:45:06 (process) #98574][ERROR] appsignal: Push api key not set after loading config
+[2017-07-14T14:45:06 (process) #98574][ERROR] Not starting, no valid config for this environment
+[2017-07-20T14:59:47 (process) #68824][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-20T14:59:48 (process) #68824][ERROR] appsignal: Push api key not set after loading config
+[2017-07-20T14:59:48 (process) #68824][ERROR] Not starting, no valid config for this environment
+[2017-07-20T15:14:34 (process) #69560][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-20T15:14:34 (process) #69560][ERROR] appsignal: Push api key not set after loading config
+[2017-07-20T15:14:34 (process) #69560][ERROR] Not starting, no valid config for this environment
+[2017-07-20T15:44:59 (process) #71253][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-20T15:44:59 (process) #71253][ERROR] appsignal: Push api key not set after loading config
+[2017-07-20T15:44:59 (process) #71253][ERROR] Not starting, no valid config for this environment
+[2017-07-25T19:05:05 (process) #34905][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-25T19:05:05 (process) #34905][ERROR] appsignal: Push api key not set after loading config
+[2017-07-25T19:05:05 (process) #34905][ERROR] Not starting, no valid config for this environment
+[2017-07-29T17:39:43 (process) #12383][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-29T17:39:43 (process) #12383][ERROR] appsignal: Push api key not set after loading config
+[2017-07-29T17:39:43 (process) #12383][ERROR] Not starting, no valid config for this environment
+[2017-07-29T19:43:25 (process) #13551][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-07-29T19:43:25 (process) #13551][ERROR] appsignal: Push api key not set after loading config
+[2017-07-29T19:43:25 (process) #13551][ERROR] Not starting, no valid config for this environment
+[2017-08-01T19:09:53 (process) #86076][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-01T19:09:54 (process) #86076][ERROR] appsignal: Push api key not set after loading config
+[2017-08-01T19:09:54 (process) #86076][ERROR] Not starting, no valid config for this environment
+[2017-08-05T00:19:22 (process) #81378][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-05T00:19:24 (process) #81378][ERROR] appsignal: Push api key not set after loading config
+[2017-08-05T00:19:24 (process) #81378][ERROR] Not starting, no valid config for this environment
+[2017-08-07T18:59:48 (process) #1699][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-07T18:59:49 (process) #1699][ERROR] appsignal: Push api key not set after loading config
+[2017-08-07T18:59:49 (process) #1699][ERROR] Not starting, no valid config for this environment
+[2017-08-08T13:41:21 (process) #17662][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T13:41:22 (process) #17662][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T13:41:22 (process) #17662][ERROR] Not starting, no valid config for this environment
+[2017-08-08T13:42:38 (process) #17873][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T13:42:39 (process) #17873][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T13:42:39 (process) #17873][ERROR] Not starting, no valid config for this environment
+[2017-08-08T13:58:22 (process) #18887][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T13:58:22 (process) #18887][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T13:58:22 (process) #18887][ERROR] Not starting, no valid config for this environment
+[2017-08-08T14:34:00 (process) #20942][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T14:34:00 (process) #20942][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T14:34:00 (process) #20942][ERROR] Not starting, no valid config for this environment
+[2017-08-08T18:31:18 (process) #33261][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T18:31:18 (process) #33261][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T18:31:18 (process) #33261][ERROR] Not starting, no valid config for this environment
+[2017-08-08T18:33:38 (process) #33434][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-08T18:33:38 (process) #33434][ERROR] appsignal: Push api key not set after loading config
+[2017-08-08T18:33:38 (process) #33434][ERROR] Not starting, no valid config for this environment
+[2017-08-09T14:07:30 (process) #47314][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-09T14:07:30 (process) #47314][ERROR] appsignal: Push api key not set after loading config
+[2017-08-09T14:07:30 (process) #47314][ERROR] Not starting, no valid config for this environment
+[2017-08-11T18:05:40 (process) #5209][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-11T18:05:40 (process) #5209][ERROR] appsignal: Push api key not set after loading config
+[2017-08-11T18:05:40 (process) #5209][ERROR] Not starting, no valid config for this environment
+[2017-08-11T18:06:39 (process) #5338][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-11T18:06:40 (process) #5338][ERROR] appsignal: Push api key not set after loading config
+[2017-08-11T18:06:40 (process) #5338][ERROR] Not starting, no valid config for this environment
+[2017-08-11T18:07:05 (process) #5400][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-11T18:07:06 (process) #5400][ERROR] appsignal: Push api key not set after loading config
+[2017-08-11T18:07:06 (process) #5400][ERROR] Not starting, no valid config for this environment
+[2017-08-14T18:11:49 (process) #26908][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-14T18:11:50 (process) #26908][ERROR] appsignal: Push api key not set after loading config
+[2017-08-14T18:11:50 (process) #26908][ERROR] Not starting, no valid config for this environment
+[2017-08-16T12:15:10 (process) #56183][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-16T12:15:10 (process) #56183][ERROR] appsignal: Push api key not set after loading config
+[2017-08-16T12:15:10 (process) #56183][ERROR] Not starting, no valid config for this environment
+[2017-08-16T12:17:06 (process) #56460][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-16T12:17:06 (process) #56460][ERROR] appsignal: Push api key not set after loading config
+[2017-08-16T12:17:06 (process) #56460][ERROR] Not starting, no valid config for this environment
+[2017-08-22T11:44:05 (process) #6943][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-22T11:44:05 (process) #6943][ERROR] appsignal: Push api key not set after loading config
+[2017-08-22T11:44:05 (process) #6943][ERROR] Not starting, no valid config for this environment
+[2017-08-24T11:10:41 (process) #45284][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-24T11:10:41 (process) #45284][ERROR] appsignal: Push api key not set after loading config
+[2017-08-24T11:10:41 (process) #45284][ERROR] Not starting, no valid config for this environment
+[2017-08-28T17:27:28 (process) #94964][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-28T17:27:29 (process) #94964][ERROR] appsignal: Push api key not set after loading config
+[2017-08-28T17:27:29 (process) #94964][ERROR] Not starting, no valid config for this environment
+[2017-08-29T10:49:19 (process) #3220][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-08-29T10:49:19 (process) #3220][ERROR] appsignal: Push api key not set after loading config
+[2017-08-29T10:49:19 (process) #3220][ERROR] Not starting, no valid config for this environment
+[2017-09-13T16:37:34 (process) #15044][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-13T16:37:34 (process) #15044][ERROR] appsignal: Push api key not set after loading config
+[2017-09-13T16:37:34 (process) #15044][ERROR] Not starting, no valid config for this environment
+[2017-09-14T17:01:42 (process) #43344][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-14T17:01:42 (process) #43344][ERROR] appsignal: Push api key not set after loading config
+[2017-09-14T17:01:42 (process) #43344][ERROR] Not starting, no valid config for this environment
+[2017-09-26T19:50:25 (process) #36271][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-26T19:50:25 (process) #36271][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-09-26T19:50:25 (process) #36271][INFO] Installing active_support_notifications hook
+[2017-09-26T19:50:25 (process) #36271][INFO] Installing net_http hook
+[2017-09-26T19:50:26 (agent) #36286][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-09-26T19:50:26 (agent) #36286][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-09-27T15:22:59 (process) #49159][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-27T15:22:59 (process) #49159][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-09-27T15:22:59 (process) #49159][INFO] Installing active_support_notifications hook
+[2017-09-27T15:22:59 (process) #49159][INFO] Installing net_http hook
+[2017-09-27T15:22:59 (agent) #49175][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-09-27T15:22:59 (agent) #49175][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-09-27T18:00:11 (process) #52261][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-27T18:00:11 (process) #52261][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-09-27T18:00:11 (process) #52261][INFO] Installing active_support_notifications hook
+[2017-09-27T18:00:11 (process) #52261][INFO] Installing net_http hook
+[2017-09-27T18:00:12 (agent) #52276][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-09-27T18:00:12 (agent) #52276][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-09-27T18:19:15 (process) #53321][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-27T18:19:16 (process) #53321][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-09-27T18:19:16 (process) #53321][INFO] Installing active_support_notifications hook
+[2017-09-27T18:19:16 (process) #53321][INFO] Installing net_http hook
+[2017-09-27T18:19:16 (agent) #53340][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-09-27T18:19:16 (agent) #53340][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-09-27T18:29:37 (process) #54285][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-09-27T18:29:37 (process) #54285][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-09-27T18:29:37 (process) #54285][INFO] Installing active_support_notifications hook
+[2017-09-27T18:29:37 (process) #54285][INFO] Installing net_http hook
+[2017-09-27T18:29:38 (agent) #54300][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-09-27T18:29:38 (agent) #54300][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-09-28T11:20:22 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't connect to server
+[2017-09-28T21:23:10 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:42:22 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-29T17:42:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:43:02 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:43:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:44:02 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:44:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:45:02 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:45:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:46:02 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:46:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:47:02 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:47:32 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:48:03 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:48:33 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:49:03 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:49:33 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:50:03 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:50:33 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:51:03 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:51:33 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:52:04 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:52:34 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:53:04 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:53:34 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:54:04 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:54:34 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:55:05 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:55:35 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:56:05 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:56:35 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:57:05 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:57:36 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:58:06 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:58:36 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:59:06 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T17:59:36 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:00:06 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:00:37 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:01:07 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:01:37 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:02:07 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:02:37 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:03:07 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T18:03:38 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-29T19:29:04 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-09-30T02:51:35 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-30T04:51:27 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-30T06:52:00 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-30T08:51:52 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-30T20:37:16 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-09-30T20:37:18 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-10-01T05:55:56 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-01T07:56:09 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-01T09:56:22 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-01T10:56:14 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-01T13:25:08 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-03T12:14:39 (agent) #54300][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2017-10-03T12:58:04 (process) #26919][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T12:58:05 (process) #26919][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T12:58:05 (process) #26919][INFO] Installing active_support_notifications hook
+[2017-10-03T12:58:05 (process) #26919][INFO] Installing net_http hook
+[2017-10-03T12:58:05 (agent) #26934][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T12:58:05 (agent) #26934][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-03T13:22:48 (process) #28182][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T13:22:49 (process) #28182][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T13:22:49 (process) #28182][INFO] Installing active_support_notifications hook
+[2017-10-03T13:22:49 (process) #28182][INFO] Installing net_http hook
+[2017-10-03T13:22:49 (agent) #28192][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T13:22:49 (agent) #28192][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-03T13:25:19 (process) #28487][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T13:25:20 (process) #28487][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T13:25:20 (process) #28487][INFO] Installing active_support_notifications hook
+[2017-10-03T13:25:20 (process) #28487][INFO] Installing net_http hook
+[2017-10-03T13:25:20 (agent) #28507][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T13:25:20 (agent) #28507][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-03T13:28:38 (process) #28733][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T13:28:38 (process) #28733][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T13:28:38 (process) #28733][INFO] Installing active_support_notifications hook
+[2017-10-03T13:28:38 (process) #28733][INFO] Installing net_http hook
+[2017-10-03T13:28:39 (agent) #28742][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T13:28:39 (agent) #28742][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-03T14:18:21 (process) #30068][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T14:18:21 (process) #30068][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T14:18:21 (process) #30068][INFO] Installing active_support_notifications hook
+[2017-10-03T14:18:21 (process) #30068][INFO] Installing net_http hook
+[2017-10-03T14:18:21 (agent) #30084][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T14:18:21 (agent) #30084][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-03T14:19:50 (process) #30257][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-03T14:19:50 (process) #30257][INFO] Starting AppSignal 2.2.1 (bin/rails, Ruby 2.3.3, x86_64-darwin16)
+[2017-10-03T14:19:50 (process) #30257][INFO] Installing active_support_notifications hook
+[2017-10-03T14:19:50 (process) #30257][INFO] Installing net_http hook
+[2017-10-03T14:19:50 (agent) #30272][Info] Started appsignal-agent Config { active: true, running_in_container: false, app_path: "/Users/vilka/Documents/project/noabox", agent_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/ext"), debug_logging: false, log: File, log_file_path: Some("/Users/vilka/Documents/project/noabox/log/appsignal.log"), working_dir_path: "/private/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "13665fbc-3ccf-4eeb-a1da-fbe0aabf590e", environment: "development", app_name: Some("Noabox"), agent_version: "d54a76a", language_integration_version: Some("ruby-2.2.1"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("MBP-Violetta"), ca_file_path: Some("/Users/vilka/.rvm/gems/ruby-2.3.3/gems/appsignal-2.2.1/resources/cacert.pem"), diagnose_mode: false, dns_servers: None }
+[2017-10-03T14:19:50 (agent) #30272][Info] Listening on /private/tmp/appsignal/agent.socket
+[2017-10-04T11:00:01 (agent) #30272][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2017-10-04T15:52:16 (process) #47380][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-04T15:52:17 (process) #47380][INFO] Not starting, not active for development
+[2017-10-04T21:20:36 (process) #51682][INFO] appsignal: Loading Rails (5.0.2) integration
+[2017-10-04T21:20:36 (process) #51682][INFO] Not starting, not active for development
+[2018-07-25T17:33:39 (process) #71660][INFO] appsignal: Loading Rails (5.0.2) integration
+[2018-07-25T17:33:43 (process) #71660][INFO] Not starting, not active for development
+[2018-07-25T20:44:38 (process) #83540][INFO] appsignal: Loading Rails (5.0.2) integration
+[2018-07-25T20:44:38 (process) #83540][INFO] Not starting, not active for development
+[2018-07-26T23:20:13 (process) #18842][INFO] appsignal: Loading Rails (5.0.2) integration
+[2018-07-26T23:20:13 (process) #18842][INFO] Not starting, not active for development

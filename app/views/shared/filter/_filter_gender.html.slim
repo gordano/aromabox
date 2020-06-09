@@ -1,0 +1,19 @@
+- unless controller_name == 'closed_section'
+  dt.filter__title Пол
+dd.filter__checkbox-group
+  ul
+    li.filter-checkbox
+      label.label-chk
+        | Женские
+        input type="checkbox" name="female" id="female" value="female"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Мужские
+        input type="checkbox" name="male" id="male" value="male"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Унисекс
+        input type="checkbox" name="unisex" id="unisex" value="unisex"
+        span.pseudo-chk.icon.icon_close

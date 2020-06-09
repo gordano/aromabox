@@ -1,0 +1,94 @@
+.instagram__feed
+  width: 100%
+  // height: 580px
+  margin: 0
+  padding: 0
+  padding-top: 11px
+
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+
+  text-align: center
+  overflow: hidden
+
+.instagram__logo
+  width: 235px
+  height: 67px
+  margin: 28px 0
+
+  display: none
+
+.index-page
+
+  .instagram__feed
+    padding-top: 0
+
+  .instagram__list
+    height: 360px
+
+  .instagram__logo
+    display: block
+
+.instagram__list
+  height: 180px
+  width: calc(100% + 180px)
+
+  ul
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: flex-start
+
+    margin: 0
+    padding: 0
+
+    list-style: none
+
+    li
+      width: 180px
+      height: 180px
+      margin: 0
+      padding: 0
+
+      a
+        display: block
+        width: inherit
+        height: inherit
+        margin: 0
+        padding: 0
+
+        cursor: pointer
+
+        position: relative
+        z-index: 2
+
+        img
+          display: inline-block
+          width: inherit
+          height: auto
+
+          position: absolute
+          left: 0
+          top: 0
+          z-index: 1
+
+        .hover
+          display: inline-block
+          width: inherit
+          height: inherit
+
+          background: asset-url('icon_loupe.png') rgba(0, 0, 0, 0.3) center center no-repeat
+          background-size: 50px
+          opacity: 0
+
+          position: absolute
+          left: 0
+          top: 0
+          z-index: 3
+
+        &:hover,
+        &:active
+          .hover
+            opacity: 1
+            transition: opacity .3s ease-in

@@ -1,0 +1,37 @@
+@import 'web/animation'
+@import 'web/variables'
+
+.heartbeat
+  .icon_heart,
+  .icon_heart_full
+    animation: heartbeat .6s linear
+
+.in-favorite
+  .catalog__item__controllers
+    display: block
+
+    .icon_eye
+      visibility: hidden
+
+  .icon_heart
+    &:before
+      content: $icon_heart_full
+      color: #222
+
+  &:hover
+    .icon_eye
+      visibility: visible
+
+.broken-heart
+  .catalog__item__controllers
+    display: block
+
+    .icon_eye
+      visibility: hidden
+
+  .icon_heart_full
+    &:before
+      animation: brokenHeart .25s ease-in-out both
+      font-size: 16px
+
+

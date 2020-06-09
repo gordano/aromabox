@@ -1,0 +1,73 @@
+.modal__container.modal__animated@@modal@modal_about_yourself
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.private-office__modal
+    .modal__title Измените информацию о себе
+
+    form.form
+      table.form__fields
+        tr.field__fio
+          th: label ФИО
+          td
+            input type="text" placeholder="фамилия"
+            input type="text" placeholder="имя"
+            input type="text" placeholder="отчество"
+
+        tr.field__gender
+          th: label Пол
+          td
+            .radio-buttons
+
+              .radio-buttons__item
+                input type="radio" name="gender" id="gender1"
+                label for="gender1"
+                  span.gender.icon.icon_gender_female
+                  | Женский
+
+              .radio-buttons__item
+                input type="radio" name="gender" id="gender2"
+                label for="gender2"
+                  span.gender.icon.icon_gender_male
+                  | Мужской
+
+        tr.field__phone
+          th: label Телефон
+          td
+            input type="text" placeholder="+7 (___) ___-__-__"
+
+        tr.field__email
+          th: label Эл. почта
+          td
+            input type="text" placeholder="E-mail"
+
+        tr.field__city
+          th: label Населенный пункт
+          td
+            select@@custom_select
+              option Москва
+              option Санкт-Петербург
+              option Оренбург
+
+        tr.field__adress
+          th: label Адрес
+          td
+            input type="text" placeholder="Улица"
+            input type="text" placeholder="Дом"
+            input type="text" placeholder="кв./офис"
+            input type="text" placeholder="индекс"
+
+        tr.field__password
+          th: label Текущий пароль
+          td
+            input type="password" placeholder="********"
+
+        tr.field__password
+          th: label Новый пароль
+          td
+            input type="password"
+
+        tr.field__password
+          th: label Повторите<br>новый пароль
+          td
+            input type="password"
+
+      button.modal__button.button.button__green@close_link type="submit" Сохранить

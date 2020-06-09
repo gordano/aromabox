@@ -1,0 +1,31 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+.private-office__nav, .info-page__nav
+  width: 200px
+  margin-top: 2px
+  margin-right: 40px
+
+  box-sizing: border-box
+
+  .nav__item
+    list-style: none
+    display: block
+
+    a
+      padding-top: 7px
+      padding-bottom: 6px
+      padding-right: 5px
+
+      color: #888
+      font-size: 14px
+      font-weight: 500
+      line-height: 30px
+
+      text-transform: uppercase
+      cursor: pointer
+
+      &.active
+        color: $color_brand
+
+      +hover

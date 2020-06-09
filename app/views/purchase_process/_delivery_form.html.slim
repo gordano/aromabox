@@ -1,0 +1,27 @@
+.delivery__form
+  .fio.form__item
+    span.choice-delivery__title Как вас зовут
+    .fio__items.row.start-xs.middle-xs
+      input type='text' name='first_name' placeholder='Имя'
+      input type='text' name='last_name' placeholder='Фамилия'
+      input type='text' name='patronymic' placeholder='Отчество'
+
+  .phone.form__item
+    span.choice-delivery__title Телефон
+    .phone__items.row.start-xs.middle-xs
+      input@@phone_mask type='tel' name='tel' placeholder='+7 (___) ___-__-__'
+      span.phone__description Для подтверждения заказа оператором
+
+  .addres.form__item
+    span.choice-delivery__title Адрес
+    .addres__items.row.start-xs.middle-xs
+      input.street type='text' name='street' placeholder='Улица'
+      input type='text' name='house_number' placeholder='Дом'
+      input type='text' name='apartment_number' placeholder='Кв./Офис'
+      input type='text' name='postcode' placeholder='Индекс'
+
+  .comment.form__item
+    span.choice-delivery__title
+      | Комментарий
+      span.title__comment не обязательно
+    textarea

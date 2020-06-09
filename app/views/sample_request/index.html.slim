@@ -1,0 +1,181 @@
+.wrapper
+  .info-page.row.top-xs.between-xs
+    aside.info-page__nav
+      ul.nav__list
+        li.nav__item
+          a href=news_path title="Новости" Новости
+        li.nav__item
+          a href=about_path title="О магазине" О магазине
+        li.nav__item
+          a href=about_samples_path title="О пробниках" О пробниках
+        li.nav__item
+          a href=about_sets_path title="О наборах" О наборах
+        li.nav__item
+          a href=faq_path title="Вопросы и ответы" Вопросы и ответы
+        li.nav__item
+          a href=partners_path title="Наши партнеры" Наши партнеры
+        li.nav__item
+          a href=store_reviews_path title="Отзывы о магазине" Отзывы о магазине
+        li.nav__item
+          a href=howto_path title="Как сделать заказ" Как сделать заказ
+        li.nav__item
+          a href=payment_methods_path title="Способы оплаты" Способы оплаты
+        li.nav__item
+          a href="#" title="Способы доставки" Способы доставки
+        li.nav__item
+          a href=return_product_path title="Возврат товара" Возврат товара
+        li.nav__item
+          a href=cert_path title="Сертификаты" Сертификаты
+        li.nav__item
+          a href=confidentiality_path title="Конфиденциальность" Конфиденциальность
+        li.nav__item
+          a href=rules_path title="Правила продажи" Правила продажи
+        li.nav__item
+          a href=public_offer_path title="Публичная оферта" Публичная оферта
+        li.nav__item
+          a href=press_path title="Пресса о нас" Пресса о нас
+        li.nav__item
+          a.active href=sample_request_path title="Запрос на пробник" Запрос на пробник
+
+
+    .info-page__content
+      h1 Добавьте пробник на сайт
+
+      p Здесь вы можете оставить комментарий с названием аромата, который вы не нашли на нашем сайте, но очень хотите его попробовать. Мы рассмотрим ваше предложение и сообщим, если этот аромат появится на нашем сайте.
+
+      .sample-request__frame
+        .frame__inside.sample-request__frame__inside
+
+          form.form.inside__form.sample-request__form.col.middle-xs.center-xs
+            .form__group
+              label.form__label Ваше имя
+              input.form__element type='text'
+            .form__group
+              label.form__label Ваш e-mail
+              input.form__element type='email'
+            .form__group
+              label.subscribe-to-news__label for='subscribe_to_news'
+                | Подписаться на новости
+                input type='checkbox' id='subscribe_to_news' name='subscribe_to_news' checked='checked'
+                span.icon.icon_check.subscribe-to-news__pseudo
+            .form__group
+              label.form__label Комментарий
+              textarea
+
+            .form__group
+              button.button.button__blue type='submit' Отправить
+
+      .sample-request__list
+        h2.list__header
+          ' Предыдущие комментарии
+          span.counter 320
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Антон Константинов
+            time.author__published 25 августа
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Amouage Lilac Love for woman
+            .description__status.description__status__wait.col.center-xs.middle-xs
+              span.status__icon.icon__wait__big
+              span.status Ожидается
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Боря
+            time.author__published 22 июля
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Escentric Molecules Molecule 01
+            .description__status.description__status__wait.col.center-xs.middle-xs
+              span.status__icon.icon__wait__big
+              span.status Ожидается
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name antonina615
+            time.author__published 12 июня
+          .item__description.row.between-xs.top-xs
+            .description__sample-name The Beautiful Mind Series Intelligence & Fantas
+            .description__status.description__status__wait.col.center-xs.middle-xs
+              span.status__icon.icon__wait__big
+              span.status Ожидается
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Александр
+            time.author__published 15 мая
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Montale Chocolate Greedy
+            .description__status.description__status__wait.col.center-xs.middle-xs
+              span.status__icon.icon__wait__big
+              span.status Ожидается
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Василиса Пыпина
+            time.author__published 4 апреля
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Byredo Mojave Ghost
+            .description__status.description__status__wait.col.center-xs.middle-xs
+              span.status__icon.icon__wait__big
+              span.status Ожидается
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Антон Константинов
+            time.author__published 25 августа
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Amouage Lilac Love for woman
+            .description__status.description__status__end.col.center-xs.middle-xs
+              span.status__icon.icon__end__big
+              span.status Добавлен
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Боря
+            time.author__published 22 июля
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Escentric Molecules Molecule 01
+            .description__status.description__status__end.col.center-xs.middle-xs
+              span.status__icon.icon__end__big
+              span.status Добавлен
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name antonina615
+            time.author__published 12 июня
+          .item__description.row.between-xs.top-xs
+            .description__sample-name The Beautiful Mind Series Intelligence & Fantas
+            .description__status.description__status__end.col.center-xs.middle-xs
+              span.status__icon.icon__end__big
+              span.status Добавлен
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Александр
+            time.author__published 15 мая
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Montale Chocolate Greedy
+            .description__status.description__status__end.col.center-xs.middle-xs
+              span.status__icon.icon__end__big
+              span.status Добавлен
+
+        .sample-request__item.row.start-xs.top-xs
+          .item__author.col.start-xs
+            .author__name Василиса Пыпина
+            time.author__published 4 апреля
+          .item__description.row.between-xs.top-xs
+            .description__sample-name Byredo Mojave Ghost
+            .description__status.description__status__end.col.center-xs.middle-xs
+              span.status__icon.icon__end__big
+              span.status Добавлен
+
+        = render 'shared/pagination'
+
+
+
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'
+

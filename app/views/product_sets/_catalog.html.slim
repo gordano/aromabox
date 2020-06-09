@@ -1,0 +1,309 @@
+.product-sets__catalog.col-xs-12
+  .catalog__sorting__top
+    - unless controller_name == 'private'
+      = render 'shared/sorting'
+
+  .catalog__list.row.between-xs.top-xs
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_limited@@favorite@@heartbeat  data-id='1'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-1.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Невероятная парфюмерия
+                span Yves Saint Laurent
+              span.description__content
+                | Нам все равно, есть ли у наших мастеров бороды и татуировки. Нам не важно, кого стричь.
+              .description__price
+                span.price 14&nbsp;900&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_limited.badge_hit@@favorite@@heartbeat  data-id='2'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-2.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор мужского парфюма
+                span Viktor & Rolf
+              span.description__content
+                | Можно взять наборы для конкретного типа кожи, если вы его знаете, а можно подобрать.
+              .description__price
+                .previous_price
+                  span.price 16&nbsp;200&nbsp;
+                  span.currency руб.
+                .actual_price
+                  span.price 15&nbsp;200&nbsp;
+                  span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item.badge.badge_new@@favorite@@heartbeat  data-id='3'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-3.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор женского парфюма
+                span Moschino
+              span.description__content
+                | Ни одна из наших парикмахерских, в которых вы побываете, не будет похожа на другую. Иначе и быть.
+              .description__price
+                span.price 13&nbsp;200&nbsp;
+                span.currency руб.
+
+              span.button.button__black Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='4'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-4.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Невероятная парфюмерия
+                span Yves Saint Laurent
+              span.description__content
+                | Нам все равно, есть ли у наших мастеров бороды и татуировки. Нам не важно, кого стричь.
+              .description__price
+                span.price 14&nbsp;900&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='5'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-5.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор мужского парфюма
+                span Viktor & Rolf
+              span.description__content
+                | Можно взять наборы для конкретного типа кожи, если вы его знаете, а можно подобрать.
+              .description__price
+                span.price 12&nbsp;500&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='6'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-6.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор женского парфюма
+                span Moschino
+              span.description__content
+                | Ни одна из наших парикмахерских, в которых вы побываете, не будет похожа на другую. Иначе и быть.
+              .description__price
+                span.price 13&nbsp;200&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='7'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-7.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Невероятная парфюмерия
+                span Yves Saint Laurent
+              span.description__content
+                | Нам все равно, есть ли у наших мастеров бороды и татуировки. Нам не важно, кого стричь.
+              .description__price
+                span.price 14&nbsp;900&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='8'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-8.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор мужского парфюма
+                span Viktor & Rolf
+              span.description__content
+                | Можно взять наборы для конкретного типа кожи, если вы его знаете, а можно подобрать.
+              .description__price
+                span.price 12&nbsp;500&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='9'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-9.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор женского парфюма
+                span Moschino
+              span.description__content
+                | Ни одна из наших парикмахерских, в которых вы побываете, не будет похожа на другую. Иначе и быть.
+              .description__price
+                span.price 13&nbsp;200&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='10'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-10.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Невероятная парфюмерия
+                span Yves Saint Laurent
+              span.description__content
+                | Нам все равно, есть ли у наших мастеров бороды и татуировки. Нам не важно, кого стричь.
+              .description__price
+                span.price 14&nbsp;900&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='11'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-11.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор мужского парфюма
+                span Viktor & Rolf
+              span.description__content
+                | Можно взять наборы для конкретного типа кожи, если вы его знаете, а можно подобрать.
+              .description__price
+                span.price 12&nbsp;500&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+    .catalog__item.catalog__item__animated.product-sets__item@@favorite@@heartbeat  data-id='12'
+      a href=product_sets_show_path title=""
+        figure
+          = image_tag('product_sets/photo-12.jpg', alt: '')
+
+          figcaption
+            .description.center-xs
+              h2.description__title
+                span Набор женского парфюма
+                span Moschino
+              span.description__content
+                | Ни одна из наших парикмахерских, в которых вы побываете, не будет похожа на другую. Иначе и быть.
+              .description__price
+                span.price 13&nbsp;200&nbsp;
+                span.currency руб.
+
+              span.button.button__black href=product_sets_show_path Подробнее
+
+        - if controller_name == 'private'
+          .catalog__item__controllers
+            span.icon__catalog.icon.icon_heart.hidden@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full@favourite_remove title="Удалить из избранного"
+
+
+  .catalog__sorting__bottom
+    = render 'shared/sorting'
+
+
+
+
+
+/ Для адаптива я использовала такие классы
+  / .catalog__list.row.between-xs.center-sm.center-md.between-lg.top-xs

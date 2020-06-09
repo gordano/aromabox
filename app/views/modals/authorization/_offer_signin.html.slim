@@ -1,0 +1,15 @@
+.modal__container.modal__animated@@modal@modal_offer_signin
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__auth.modal__offer-signin
+
+    .auth__content.login__content.start-xs
+      .authorization__form
+        .form__title.form__title__signin
+          span.title Войдите или зарегистрируйтесь,
+          span.subtitle чтобы оставить отзыв
+
+        .form__controller.row.middle-xs.between-xs
+
+          a.button.button__blue@@modal_toggler@close_link data-modal-selector='@modal_login' href="#" Войти
+
+          button.button.button__quick-registration.button__transparent__blue@@modal_toggler@close_link data-modal-selector='@modal_registration' type='submit' form='authorization_form' Быстрая регистрация

@@ -1,0 +1,60 @@
+@import 'web/variables'
+
+.bottle
+  display: block
+  min-width: 409px
+  height: 50px
+  margin-top: 10px
+  margin-bottom: 22px
+  padding: 0
+
+  background: asset-url('product_samples/bottle.png') no-repeat
+  background-size: 409px 50px
+
+.bottle-properties__col
+  padding: 0
+
+  &:first-of-type
+    padding-right: 4%
+
+.bottle-properties__item
+  height: $bottle_propertie_height
+  margin-bottom: 15px
+  padding-left: calc(#{$bottle_propertie_width} + 14px)
+
+  background: asset-url('product_samples/bottle-item_1.png') no-repeat
+  background-size: $bottle_propertie_width
+
+  &.bottle_item_1
+    background-image: asset-url('product_samples/bottle-item_1.png')
+
+  &.bottle_item_2
+    background-image: asset-url('product_samples/bottle-item_2.png')
+
+  &.bottle_item_3
+    background-image: asset-url('product_samples/bottle-item_3.png')
+
+  &.bottle_item_4
+    background-image: asset-url('product_samples/bottle-item_4.png')
+
+
+  &.pack-properties__item
+
+    &.pack_item_1
+      background-image: asset-url('product_sets/pack-item_1.png')
+
+    &.pack_item_2
+      background-image: asset-url('product_sets/pack-item_2.png')
+
+    &.pack_item_3
+      background-image: asset-url('product_sets/pack-item_3.png')
+
+    &.pack_item_4
+      background-image: asset-url('product_sets/pack-item_4.png')
+
+
+  p
+    color: #555
+    font-size: 13px
+    font-weight: 300
+    line-height: 19px

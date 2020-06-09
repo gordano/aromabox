@@ -1,0 +1,95 @@
+@import 'web/variables'
+
+.product-samples__header
+  padding: 0
+  overflow: hidden
+
+  .about__text
+    position: relative
+
+  .about__photo
+    height: auto
+
+    img
+      width: 240px
+
+  .about__sales
+    position: relative
+    z-index: 3
+
+    .offers
+      flex-wrap: nowrap
+      white-space: nowrap
+
+    .offers__item
+      max-width: 110px
+      margin-right: 3%
+
+      &:last-child
+        margin-right: 0
+
+      .size
+        position: relative
+        min-width: 90px
+        // height: 90px
+
+        img
+          width: 80px
+          height: 80px
+          position: absolute
+          top: -30px
+          left: 50%
+          transform: translate(-50%, 0)
+
+        .value
+          position: absolute
+          top: 8px
+          left: 50%
+          transform: translate(-50%, 0)
+
+          color: #fff
+          font-weight: 700
+          line-height: 24px
+          text-transform: uppercase
+          font-size: 30px
+
+          .persent
+            font-size: 20px
+
+      .description
+        padding-top: 59px
+        color: #222
+        font-size: 12px
+        font-weight: 300
+        line-height: 16px
+        text-align: center
+
+      &:first-child
+        .size
+          img
+            opacity: 0.7
+
+      &:nth-child(2)
+        .size
+          img
+            opacity: 0.85
+
+      &:last-child
+        .size
+          img
+            opacity: 1
+
+    .slogan
+      margin: 0
+      padding-left: 4%
+
+      color: $color_brand
+      font-size: 20px
+      font-weight: 700
+      line-height: 40px
+      text-transform: uppercase
+      text-align: left
+      white-space: nowrap
+
+
+

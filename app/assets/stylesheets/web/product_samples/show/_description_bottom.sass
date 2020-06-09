@@ -1,0 +1,207 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+.description__bottom
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+
+  .icon__share
+    margin-right: 8px
+
+  .add-favourite
+    margin-left: 30px
+
+    color: #888
+    font-size: 14px
+    line-height: 27px
+    font-weight: 500
+
+    cursor: pointer
+
+    position: relative
+
+    &.active
+      color: #222
+
+    .icon
+      display: inline-block
+      width: 19px
+      height: 17px
+      margin-right: 5px
+      margin-bottom: -3px
+
+      position: relative
+
+      &::before
+        font-size: 17px
+
+        position: absolute
+        left: 50%
+        top: 5px
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    +hover(#222)
+
+.description__price
+  margin-bottom: 5px
+
+  .price
+    font-size: 35px
+    font-weight: 700
+    line-height: 28px
+    text-transform: uppercase
+
+  .currency
+    font-size: 35px
+    font-weight: 300
+    line-height: 28px
+
+  .previous-price
+    display: inline-block
+    margin-right: 18px
+
+    .price
+      color: #222222
+      position: relative
+      padding: 0 5px
+
+      &:before
+        content: ''
+        display: block
+        width: 100%
+        height: 2px
+
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translate(0, -50%)
+
+        background-color: $color_brand
+
+  .actual-price
+    display: inline-block
+
+    span
+      color: $color_brand
+
+
+.vial-information
+  margin-bottom: 11px
+
+  span
+    display: inline-block
+    vertical-align: middle
+
+    color: #555
+    font-size: 14px
+    font-weight: 500
+    line-height: 24px
+
+    &.weight
+      margin-right: 10px
+
+    &.type
+      margin-right: 1px
+
+.add-to-cart
+  margin-bottom: 11px
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+
+    -webkit-appearance: none
+    margin: 0
+
+  input[type=number]
+
+    -moz-appearance: textfield
+
+.quantity
+  position: relative
+
+  display: inline-block
+  height: 51px
+
+  vertical-align: middle
+
+  input
+    width: 81px
+    height: 49px
+    float: left
+    display: block
+    padding: 0
+    margin: 0
+    padding-left: 17px
+    border: 1px solid #aaa
+    color: #222
+    font-size: 20px
+    font-weight: 300
+    line-height: 30px
+
+    &:focus
+      outline: 0
+      border-color: #aaa !important
+
+  .quantity-nav
+    float: left
+    position: relative
+    height: 49px
+
+  .quantity-button
+    position: absolute
+    width: 26px
+    height: 50%
+    transform: translateX(-100%)
+
+    border-left: 1px solid #aaa
+    color: #222
+
+    text-align: center
+    user-select: none
+    cursor: pointer
+
+    .icon_arrow_bold
+      display: block
+      width: 11px
+      height: 6px
+
+      position: relative
+
+      &:before
+        position: absolute
+        top: 0
+        left: 0
+
+    &:hover
+      .icon
+        &:before
+          color: $color_brand
+
+    // &:before
+    //   position: absolute
+    //   top: 50%
+    //   left: 50%
+    //   transform: translate(-50%, -50%)
+
+    &.quantity-up
+      top: 1px
+      border-bottom: 1px solid #aaa
+
+    &.quantity-down
+      bottom: -1px
+
+      .icon
+        &:before
+          transform: rotate(180deg)
+
+.description__bottom
+  .button__blue
+    width: 230px
+    height: 51px
+
+    vertical-align: middle
+
+  .add-to-cart .button__blue
+    margin-left: 10px

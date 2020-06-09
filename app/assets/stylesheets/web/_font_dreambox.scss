@@ -1,0 +1,184 @@
+@import "variables";
+
+.icon::before,
+.icon::after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dreambox' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_arrow_bold {
+  &:before {
+    content: $icon_arrow_bold;
+  }
+}
+.icon_arrow_thin {
+  &:before {
+    content: $icon_arrow_thin;
+  }
+}
+.icon_arrow {
+  &:before {
+    content: $icon_arrow;
+  }
+}
+.icon_login {
+  &:before {
+    content: $icon_login;
+  }
+}
+.icon_loupe {
+  &:before {
+    content: $icon_loupe;
+  }
+}
+.icon_cart {
+  &:before {
+    content: $icon_cart;
+  }
+}
+.icon_collection {
+  &:before {
+    content: $icon_collection;
+  }
+}
+.icon_heart_full {
+  &:before {
+    content: $icon_heart_full;
+  }
+}
+.icon_heart {
+  &:before {
+    content: $icon_heart;
+  }
+}
+.icon_heart_levin {
+  &:before {
+    content: $icon_heart_levin;
+  }
+}
+.icon_heart_crack_1 {
+  &:before {
+    content: $icon_heart_crack_1;
+  }
+}
+.icon_heart_crack_2 {
+  &:before {
+    content: $icon_heart_crack_2;
+  }
+}
+.icon_heart_crack_3 {
+  &:before {
+    content: $icon_heart_crack_3;
+  }
+}
+.icon_heart_crack_4 {
+  &:before {
+    content: $icon_heart_crack_4;
+  }
+}
+.icon_eye {
+  &:before {
+    content: $icon_eye;
+  }
+}
+.icon_star {
+  &:before {
+    content: $icon_star;
+  }
+}
+.icon_star_full {
+  &:before {
+    content: $icon_star_full;
+  }
+}
+.icon_check_frame {
+  &:before {
+    content: $icon_check_frame;
+  }
+}
+.icon_check {
+  &:before {
+    content: $icon_check;
+  }
+}
+.icon_circle {
+  &:before {
+    content: $icon_circle;
+  }
+}
+.icon_close_thin {
+  &:before {
+    content: $icon_close_thin;
+  }
+}
+.icon_close {
+  &:before {
+    content: $icon_close;
+  }
+}
+.icon_gender_female {
+  &:before {
+    content: $icon_gender_female;
+  }
+}
+.icon_gender_male {
+  &:before {
+    content: $icon_gender_male;
+  }
+}
+.icon_gender_unisex {
+  &:before {
+    content: $icon_gender_unisex;
+  }
+}
+.icon_gift {
+  &:before {
+    content: $icon_gift;
+  }
+}
+.icon_question {
+  &:before {
+    content: $icon_question;
+  }
+}
+.icon_zoom {
+  &:before {
+    content: $icon_zoom;
+  }
+}
+.icon_arrow_back {
+  &:before {
+    content: $icon_arrow_back;
+  }
+}
+.icon_back {
+  &:before {
+    content: $icon_back;
+  }
+}
+.icon_back_dotted {
+  &:before {
+    content: $icon_back_dotted;
+  }
+}
+.icon_stop {
+  &:before {
+    content: $icon_stop;
+  }
+}
+.icon_wait {
+  &:before {
+    content: $icon_wait;
+  }
+}
+

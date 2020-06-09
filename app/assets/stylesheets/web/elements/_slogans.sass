@@ -1,0 +1,85 @@
+.italic
+  h1, h2, h3, h4, h5, h6
+    margin-top: 0
+    margin-bottom: 0
+
+    font:
+      family: "Noto Serif"
+      weight: 100
+      style: italic
+
+.title-strike
+  position: relative
+  display: block
+  width: 100%
+  margin: 0 auto
+  margin-top: 48px
+  margin-bottom: 32px
+
+  &:before
+    content: ''
+    display: table
+    width: 100%
+    height: 1px
+
+    background-color: #555
+
+    position: absolute
+    // left: 0
+    top: 50%
+    z-index: 1
+
+  h1, h2, h3, h4, h5, h6
+    display: inline-block
+
+    margin: 0 100px
+
+    padding-left: 95px
+    padding-right: 95px
+
+    position: relative
+    z-index: 2
+
+    background: #fff
+
+  &.italic
+    h1, h2, h3, h4, h5, h6
+      margin-left: 170px
+      margin-right: 170px
+
+      padding-left: 60px
+      padding-right: 60px
+
+
+.title-strike__wrapper
+  .title-strike
+    min-width: 60%
+    width: calc((800px - 100%) * 1000)
+    max-width: 100%
+
+    h1, h2, h3
+      margin: 0
+      padding-left: 8%
+      padding-right: 8%
+      left: 50%
+      transform: translateX(-50%)
+
+
+.title-separator
+  margin-top: 58px
+  padding-left: 7%
+  padding-right: 7%
+  padding-bottom: 8px
+
+  .separator
+    margin-top: 20px
+    margin-bottom: 20px
+
+  p
+    margin: 0
+    font-size: 17px
+    font-weight: 500
+    line-height: 30px
+
+.slogan
+  text-align: center

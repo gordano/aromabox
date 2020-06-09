@@ -1,0 +1,88 @@
+.wrapper
+  .info-page.row.top-xs.between-xs
+    aside.info-page__nav
+      ul.nav__list
+        li.nav__item
+          a href=news_path title="Новости" Новости
+        li.nav__item
+          a href=about_path title="О магазине" О магазине
+        li.nav__item
+          a href=about_samples_path title="О пробниках" О пробниках
+        li.nav__item
+          a href=about_sets_path title="О наборах" О наборах
+        li.nav__item
+          a href=faq_path title="Вопросы и ответы" Вопросы и ответы
+        li.nav__item
+          a.active href=partners_path title="Наши партнеры" Наши партнеры
+        li.nav__item
+          a href=store_reviews_path title="Отзывы о магазине" Отзывы о магазине
+        li.nav__item
+          a href=howto_path title="Как сделать заказ" Как сделать заказ
+        li.nav__item
+          a href=payment_methods_path title="Способы оплаты" Способы оплаты
+        li.nav__item
+          a href="#" title="Способы доставки" Способы доставки
+        li.nav__item
+          a href=return_product_path title="Возврат товара" Возврат товара
+        li.nav__item
+          a href=cert_path title="Сертификаты" Сертификаты
+        li.nav__item
+          a href=confidentiality_path title="Конфиденциальность" Конфиденциальность
+        li.nav__item
+          a href=rules_path title="Правила продажи" Правила продажи
+        li.nav__item
+          a href=public_offer_path title="Публичная оферта" Публичная оферта
+        li.nav__item
+          a href=press_path title="Пресса о нас" Пресса о нас
+        li.nav__item
+          a href=sample_request_path title="Запрос на пробник" Запрос на пробник
+
+
+    .info-page__content
+      h1 Наши партнеры
+      h6 Вся продукция нашего интернет-магазина наивысшего качества и имеет различные сертификаты ведущих мировых удостоверяющих центров.
+
+      .partners__list
+        ul.row.start-xs.top-xs
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_1.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_2.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_3.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_4.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_5.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_6.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_7.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_8.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_9.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_10.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_11.png', alt: '')
+          li.partners__item
+            .image__wrapper.row.middle-xs.center-xs
+              = image_tag('info_pages/partners/logo_12.png', alt: '')
+
+
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'

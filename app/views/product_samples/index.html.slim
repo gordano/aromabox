@@ -1,0 +1,32 @@
+aside.product-samples__header
+  .wrapper
+    .row.start-xs
+      .about__text.col-xs.start-xs
+        .text__title.center-xs
+          h1
+            | Каталог пробников
+          span.separator
+          p Оригинальные ароматы в миниатюре
+
+      .about__sales.col-xs.col-xs-offset-1
+        = render 'about_sales'
+
+      .about__photo.col-xs
+        = image_tag('catalog/product-samples_header_box.png', alt: 'Пробники')
+.wrapper
+  .product-samples.row.top-xs.center-xs
+
+    = render 'shared/catalog/brand'
+    = render 'shared/catalog/category'
+
+    = render 'shared/filter/filter'
+
+    = render 'catalog'
+
+    = render 'modals/quick_view'
+    .modal__overlay@modal_overlay
+
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'

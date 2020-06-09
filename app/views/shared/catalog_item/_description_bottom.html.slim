@@ -1,0 +1,57 @@
+.description__bottom
+
+  .description__price.row.start-xs
+    .previous-price
+      span.price 240
+    .actual-price
+      span.price 216&nbsp;
+      span.currency руб.
+
+  .vial-information.row.start-xs.popover__container
+
+    - if controller_name == 'product_samples'
+      span.weight 1 флакон / 1,5 мл.
+
+    - if controller_name == 'product_sets'
+      span.weight 8 флаконов / 12 мл.
+
+    - if controller_name == 'product_samples'
+      span.type парфюмированная вода
+      span.icon.icon_question@@popover data-placement='bottom' data-offset-top='-1'
+      .webui-popover-content.question__popover
+        p Парфюмированная вода или туалетные духи (Eau de Parfum, Parfum de Toilette) содержит 10-20% ароматических веществ. Хорошо сохраняют аромат в течение 4-6 часов.
+        a.glossary__link@@modal_toggler data-modal-selector='@modal_glossary' href="#" Словарь терминов
+
+  .add-to-cart.row.start-xs
+    = render 'shared/catalog_item/quantity'
+
+    button.button.button__blue@add_to_cart@@disabled_button data-remote='true' data-selector='@cart' data-trigger='add_to_cart' В корзину
+
+    - if controller_name == 'product_sets'
+      .one-click@@show_closed_form data-animation='drop' data-duration='300'
+        .one-click__link-wrapper@hided_links
+          a.one-click__link@trigger_closed_form href='#' title='Заказ в 1 клик' Заказ в 1 клик
+        form.form.one-click__form@closed_form
+          input@@phone_mask type='tel' name='tel' placeholder='+7 (___) ___-__-__'
+          button.button.button__transparent__gray type='submit' Заказать
+
+  .social-share.row.start-xs@@favorite@@heartbeat data-id='123456'
+    a.icon__share.icon__share_vk href="#" title="Поделиться в Контакте"
+    a.icon__share.icon__share_fb href="#" title="Поделиться на Фэйсбуке"
+    a.icon__share.icon__share_ig href="#" title="Запостить в Инстаграме"
+
+    a.add-favourite@favourite_add@heart title="Добавить в избранное" href='#'
+      span.icon__catalog.icon.icon_heart
+      | Добавить в избранное
+
+    a.add-favourite.active.hidden@favourite_remove title="Удалить из избранного" href='#'
+      span.icon__catalog.icon.icon_heart_full
+      | Удалить из избранного
+
+
+
+
+
+
+
+

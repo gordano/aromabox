@@ -1,0 +1,59 @@
+{
+    "master_picture": "app/assets/images/original-260x260.png",
+    "favicon_design": {
+        "ios": {
+            "picture_aspect": "background_and_margin",
+            "background_color": "#ffffff",
+            "margin": "18%",
+            "assets": {
+                "ios6_and_prior_icons": false,
+                "ios7_and_later_icons": false,
+                "precomposed_icons": false,
+                "declare_only_default_icon": true
+            },
+            "app_name": "DreamBox Perfume"
+        },
+        "desktop_browser": [
+
+        ],
+        "windows": {
+            "picture_aspect": "white_silhouette",
+            "background_color": "#b91d47",
+            "on_conflict": "override",
+            "assets": {
+                "windows_80_ie_10_tile": true,
+                "windows_10_ie_11_edge_tiles": {
+                    "small": true,
+                    "medium": true,
+                    "big": true,
+                    "rectangle": true
+                }
+            },
+            "app_name": "DreamBox Perfume"
+        },
+        "android_chrome": {
+            "picture_aspect": "shadow",
+            "theme_color": "#f9f9f9",
+            "manifest": {
+                "name": "DreamBox Perfume",
+                "display": "standalone",
+                "orientation": "not_set",
+                "on_conflict": "override",
+                "declared": true
+            },
+            "assets": {
+                "legacy_icon": false,
+                "low_resolution_icons": false
+            }
+        },
+        "safari_pinned_tab": {
+            "picture_aspect": "silhouette",
+            "theme_color": "#5bbad5"
+        }
+    },
+    "settings": {
+        "compression": 4,
+        "scaling_algorithm": "Mitchell",
+        "error_on_image_too_small": false
+    }
+}

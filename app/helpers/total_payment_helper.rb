@@ -1,0 +1,2 @@
+module TotalPaymentHelper
+end

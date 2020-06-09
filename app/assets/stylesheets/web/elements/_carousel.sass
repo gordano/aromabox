@@ -1,0 +1,167 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+.carousel__wrapper
+  margin-bottom: 50px
+  padding-bottom: 1px
+
+section.carousel
+  height: 315px
+  margin-bottom: 50px
+
+.carousel__item
+
+  .product
+    display: block
+    width: 160px
+    height: 290px
+    margin: 0 auto
+    padding-bottom: 12px
+
+    .product__image
+      width: 160px
+      height: 187px
+      margin-bottom: 6px
+      background: #fff
+
+    figure
+      width: inherit
+      height: inherit
+      margin: 0
+      overflow: hidden
+
+    figcaption
+      width: 100%
+      margin: 0 auto
+      padding-left: 10px
+      padding-right: 10px
+      box-sizing: border-box
+
+      span
+        display: block
+        width: 100%
+        margin: 0 auto
+
+        font-size: 12px
+        text-align: center
+        color: #222
+
+      .description__price
+        text-align: center
+
+        span
+          display: inline
+
+        .actual_price
+          span
+            color: $color_brand
+
+    .product__name
+      margin-bottom: 7px
+      font-weight: 700
+      line-height: 22px
+      text-transform: uppercase
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+
+    .product__subname
+      height: 38px
+      margin-bottom: 7px
+      font-weight: 300
+      line-height: 18px
+      text-overflow: ellipsis
+      overflow: hidden
+
+    .product__buyer
+      color: #888
+      font-weight: 300
+      line-height: 25px
+
+  .index-page &
+    figcaption
+      .description__price
+        display: none
+        visibility: hidden
+
+  .carousel-base &
+
+    .product
+      display: block
+      width: 220px
+      height: 350px
+      margin: 0 auto
+      padding-bottom: 12px
+
+      .product-image
+        height: 256px
+        margin-bottom: 6px
+        background: #fff
+
+        img
+          width: 220px
+          margin: 0 auto
+
+    .product__subname
+      margin-bottom: 0
+
+  &.catalog__item
+    figcaption
+      position: relative
+
+      .catalog__button__in-cart
+        position: absolute
+        top: -33px
+        left: 0
+        opacity: 0
+
+    &:hover
+      figcaption
+        .catalog__button__in-cart
+          opacity: 1
+
+.slick-dots
+  li
+    button
+      &::before
+        content: ''
+        width: 12px
+        height: 12px
+        background-color: #bbb
+        border-radius: 50%
+        opacity: 1
+
+    &.slick-active
+      button
+        &::before
+          background-color: #222
+          opacity: 1
+
+.slick-prev,
+.slick-next
+  width: 25px
+  height: 49px
+
+  &::before
+    color: #909090
+
+  &:hover
+    &::before
+      color: $color_brand
+
+  &.slick-disabled
+    cursor: default
+
+    &::before
+      opacity: .4
+      cursor: default
+
+    &:hover,
+    &:active
+      &::before
+        opacity: .4
+        color: #909090
+
+.slick-prev
+  top: calc(50% - 25px)
+  transform: rotate(180deg)

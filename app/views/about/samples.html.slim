@@ -1,0 +1,64 @@
+.wrapper
+  .info-page.row.top-xs.between-xs
+    aside.info-page__nav
+      ul.nav__list
+        li.nav__item
+          a href=news_path title="Новости" Новости
+        li.nav__item
+          a href=about_path title="О магазине" О магазине
+        li.nav__item
+          a.active href=about_samples_path title="О пробниках" О пробниках
+        li.nav__item
+          a href=about_sets_path title="О наборах" О наборах
+        li.nav__item
+          a href=faq_path title="Вопросы и ответы" Вопросы и ответы
+        li.nav__item
+          a href=partners_path title="Наши партнеры" Наши партнеры
+        li.nav__item
+          a href=store_reviews_path title="Отзывы о магазине" Отзывы о магазине
+        li.nav__item
+          a href=howto_path title="Как сделать заказ" Как сделать заказ
+        li.nav__item
+          a href=payment_methods_path title="Способы оплаты" Способы оплаты
+        li.nav__item
+          a href="#" title="Способы доставки" Способы доставки
+        li.nav__item
+          a href=return_product_path title="Возврат товара" Возврат товара
+        li.nav__item
+          a href=cert_path title="Сертификаты" Сертификаты
+        li.nav__item
+          a href=confidentiality_path title="Конфиденциальность" Конфиденциальность
+        li.nav__item
+          a href=rules_path title="Правила продажи" Правила продажи
+        li.nav__item
+          a href=public_offer_path title="Публичная оферта" Публичная оферта
+        li.nav__item
+          a href=press_path title="Пресса о нас" Пресса о нас
+        li.nav__item
+          a href=sample_request_path title="Запрос на пробник" Запрос на пробник
+
+
+    .info-page__content
+      h1 О пробниках
+      h6.info-page__subtitle Видео-инструкция по оформлению заказа
+      p Сделать заказ могут только зарегистрированные пользователи. Пожалуйста, войдите на сайт под своим логином или зарегистрируйтесь, это займет не более 2 минут. Сделать заказ могут только зарегистрированные пользователи.
+
+      iframe.video width="750" height="422" src="https://www.youtube.com/embed/dxaNwse496k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen
+
+      h6.info-page__subtitle Регистрация или вход
+      p Сделать заказ могут только зарегистрированные пользователи. Пожалуйста, войдите на сайт под своим логином или зарегистрируйтесь, это займет не более 2 минут. Сделать заказ могут только зарегистрированные пользователи.
+
+      = image_tag('info_pages/about_3.jpg', alt:'')
+
+      p Вы можете добавлять товар в корзину без регистрации, но чтобы оформить заказ, Вам нужно зарегистрироваться.
+
+      = image_tag('info_pages/about_4.jpg', alt:'')
+
+      h6.beautiful__subtitle.info-page__subtitle Поздравляем! Ваш заказ принят.
+
+      p В течение нескольких минут Вам перезвонит наш оператор или поступит оповещение на e-mail с подтверждением о приеме заказа. Желаем приятных покупок!
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'
+

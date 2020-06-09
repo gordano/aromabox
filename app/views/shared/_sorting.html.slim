@@ -1,0 +1,34 @@
+.sorting.row.middle-xs.between-xs
+  / этот блок убирать, когда он реквайрится в нижний блок сортировки
+  .sorting__left.row.middle-xs.start-xs
+    - unless controller_name == 'private'
+      span.product-counter
+        - unless controller_name == 'product_samples'
+          | 254 набора
+        - else
+          | 254 аромата
+
+      ul.sorted
+        li.active.sorted__up
+          a href="#"
+            | по популярности
+            span.icon.icon_arrow
+        li.active.sorted__down
+          a href="#"
+            | по цене
+            span.icon.icon_arrow
+
+  .sorting__right.row.middle-xs.start-xs
+    .output-counter
+      span.output-counter__title На странице:
+      ul
+        - unless controller_name == 'product_samples'
+          li.active
+            a href="#" 12
+        - else
+          li.active
+            a href="#" 24
+        li
+          a href="#" 72
+    / Этот блок выводить только в нижний блок сортировки
+    = render 'shared/pagination'

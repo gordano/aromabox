@@ -1,0 +1,162 @@
+.reviews@reviews
+  .reviews__full.row.between-xs
+    .rating__full.row
+      .stars-apiece
+        ul
+
+          li.row.middle-xs
+            .streak
+              .streak__filled
+                span.reviews-counter 166
+            .star
+              span.star__name 5
+              span.icon.icon_star_full
+
+          li.row.middle-xs
+            .streak
+              .streak__filled
+                span.reviews-counter 95
+            .star
+              span.star__name 4
+              span.icon.icon_star_full
+
+          li.row.middle-xs
+            .streak
+              .streak__filled
+                span.reviews-counter 34
+            .star
+              span.star__name 3
+              span.icon.icon_star_full
+
+          li.row.middle-xs
+            .streak
+              .streak__filled
+                span.reviews-counter 1
+            .star
+              span.star__name 2
+              span.icon.icon_star_full
+
+          li.row.middle-xs
+            .streak
+              span.reviews-counter 0
+            .star
+              span.star__name 1
+              span.icon.icon_star_full
+      .stars-together.center-xs.between-xs
+        .rating.row.nowrap.between-xs
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+        span.reviews-counter 256 отзывов
+        - if controller_name == 'product_sets' || controller_name == 'store_reviews'
+          / a.button.button__green@@modal_toggler data-modal-selector='@modal_offer_signin' href="#" Оставить отзыв
+          a.button.button__green@review_set_form_open href="#" Оставить отзыв
+        - if controller_name == 'product_samples'
+          a.button.button__green@review_sample_form_open href="#" Оставить отзыв
+
+
+    - if controller_name == 'product_samples'
+      = render 'product_samples/show/table_opinions'
+
+    - if controller_name == 'product_sets' || controller_name == 'store_reviews'
+
+      .reviews-reply
+        / Заглушка на то место, где будет появляться форма отправки отзыва. Пока что закомментирована, чтобы показать форму.
+
+        .reviews-reply__suggestion@hide_for_review
+          span.first-line Оставьте свой отзыв, возможно он поможет
+          span.second-line сделать правильный выбор другим пользователям
+        = render 'shared/forms/reviews_reply_form'
+
+  .reviews__all
+    h2.h4 Отзывы покупателей
+
+    .reviews__item.row
+      .review__title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+
+        span.author Антон Константинов
+        span.date 25 января, Москва
+
+      .review__text.col-xs
+        p Том Форд, сегодня известный парфюмер, сначала пробовал себя в роли директора, архитектора, дизайнера одежды. В каждом из видов деятельности он добивался успеха. Достаточно вспомнить о том, что благодаря усилиям Тома Форда концерн Gucci смог вернуть утраченные ранее позиции.
+
+    .reviews__item.row
+      .review__title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+          .icon.icon_star
+
+        span.author Александра Злополучникова
+        span.date 20 января, Санкт-Петербург
+
+      .review__text.col-xs
+        p Том Форд, сегодня известный парфюмер, сначала пробовал себя в роли директора, архитектора, дизайнера одежды. В каждом из видов деятельности он добивался успеха. Достаточно вспомнить о том, что благодаря усилиям Тома Форда концерн Gucci смог вернуть утраченные ранее позиции.
+
+    .reviews__item.row
+      .review__title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+
+        span.author Марат Ка
+        span.date
+          ' 16 декабря 2015,
+          span.city Архангельск
+
+      .review__text.col-xs
+        p На камере 5D Mark III он ведёт себя превосходнейшим образом. Юстировку не проводил. При съёмке пейзажей придраться совершенно не к чему
+        button.button.button__transparent__black@@modal_toggler data-modal-selector='@modal_response_feedback' type='button' Есть ответ
+
+
+        = render 'modals/response_feedback'
+        .modal__overlay@modal_overlay
+
+    .reviews__item.row
+      .review__title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+          .icon.icon_star
+          .icon.icon_star
+
+        span.author Андромеда Иванова
+        span.date 10 декабря 2015, Ногинск
+
+      .review__text.col-xs
+        p Достаточно вспомнить о том, что благодаря усилиям Тома Форда концерн Gucci смог вернуть утраченные ранее позиции.
+
+    .reviews__item.row
+      .review__title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+          .icon.icon_star
+
+        span.author Марина Вагина
+        span.date 10 декабря 2014, Саранск
+
+      .review__text.col-xs
+        p Объектив имеет добротный конструктив, приятные массо-габаритные показатели.
+        p Может быть использован как нормальный на кроп-камерах, так как его значение фокусного расстояния почти точно совпадает со значением диагонали матрицы.
+
+    = render 'shared/pagination'
+
+- if controller_name == 'product_samples'
+  = render 'shared/forms/reviews_reply_form'

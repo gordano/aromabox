@@ -1,0 +1,10 @@
+.modal__container.modal__animated@@modal@modal_remember_send_mail
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__end
+
+    .modal__end__content.center-xs.middle-xs
+      = image_tag('cart/check.png', class:'modal-check', alt:'')
+      .modal__end__description.row.center-xs.middle-xs
+        p Ссылка для восстановления пароля выслана на указанный E-mail. Проверьте почту.
+
+      button.button.button__blue@@modal_toggler@close_link data-modal-selector='@modal_remember_ok' Ok

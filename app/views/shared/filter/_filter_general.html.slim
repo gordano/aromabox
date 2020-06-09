@@ -1,0 +1,41 @@
+dd.filter__checkbox-group
+  ul
+    li.filter-checkbox
+      label.label-chk
+        | Новинки
+        input type="checkbox" name="novelties" id="novelties" value="novelties"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Бестселллеры
+        input type="checkbox" name="bestsellers" id="bestsellers" value="bestsellers"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Ограниченный тираж
+        input type="checkbox" name="limited" id="limited" value="limited"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Премиум сегмент
+        input type="checkbox" name="premium" id="premium" value="premium"
+        span.pseudo-chk.icon.icon_close
+    li.filter-checkbox
+      label.label-chk
+        | Скидки
+        input type="checkbox" name="sales" id="sales" value="sales"
+        span.pseudo-chk.icon.icon_close
+
+    - unless controller_name == 'product_sets' || controller_name == 'gifts'
+      li.filter-checkbox
+        label.label-chk
+          | Скрыть ароматы из прошлых заказов
+          input type="checkbox" name="close" id="close" value="close"
+          span.pseudo-chk.icon.icon_close
+
+    - if controller_name == 'gifts'
+      li.filter-checkbox
+        label.label-chk
+          | В подарок
+          input type="checkbox" name="gifts" id="gifts" value="gifts" checked="checked"
+          span.pseudo-chk.icon.icon_close

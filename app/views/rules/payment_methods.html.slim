@@ -1,0 +1,121 @@
+.wrapper
+  .info-page.row.top-xs.between-xs
+    aside.info-page__nav
+      ul.nav__list
+        li.nav__item
+          a href=news_path title="Новости" Новости
+        li.nav__item
+          a href=about_path title="О магазине" О магазине
+        li.nav__item
+          a href=about_samples_path title="О пробниках" О пробниках
+        li.nav__item
+          a href=about_sets_path title="О наборах" О наборах
+        li.nav__item
+          a href=faq_path title="Вопросы и ответы" Вопросы и ответы
+        li.nav__item
+          a href=partners_path title="Наши партнеры" Наши партнеры
+        li.nav__item
+          a href=store_reviews_path title="Отзывы о магазине" Отзывы о магазине
+        li.nav__item
+          a href=howto_path title="Как сделать заказ" Как сделать заказ
+        li.nav__item
+          a.active href=payment_methods_path title="Способы оплаты" Способы оплаты
+        li.nav__item
+          a href="#" title="Способы доставки" Способы доставки
+        li.nav__item
+          a href=return_product_path title="Возврат товара" Возврат товара
+        li.nav__item
+          a href=cert_path title="Сертификаты" Сертификаты
+        li.nav__item
+          a href=confidentiality_path title="Конфиденциальность" Конфиденциальность
+        li.nav__item
+          a href=rules_path title="Правила продажи" Правила продажи
+        li.nav__item
+          a href=public_offer_path title="Публичная оферта" Публичная оферта
+        li.nav__item
+          a href=press_path title="Пресса о нас" Пресса о нас
+        li.nav__item
+          a href=sample_request_path title="Запрос на пробник" Запрос на пробник
+
+
+    .info-page__content
+      h1 Способы оплаты
+
+      ol.list__dotted.list__dotted__gray.info-page__list__separated
+        li
+          a@@scroll_to data-selector='#rule_1' data-offset='45' href="#" Наличными при получении
+        li
+          a@@scroll_to data-selector='#rule_2' data-offset='45' href="#" Оплата онлайн
+        li
+          a@@scroll_to data-selector='#rule_3' data-offset='45' href="#" Банковский перевод
+
+
+      ol.list__content.list__content__dotted
+        li
+          h6#rule_1.list__title Наличными при получении
+          .list__container
+            p Произвести оплату наличными средствами можно при получении заказа.
+            p Предварительно, Вы можете открыть упаковку и примерить заказанные позиции. Таким образом, Вы оплачиваете только те наименования, которые Вам понравились и подошли.
+            p Обращаем Ваше внимание, что услуга примерки и выбора размера доступна в следующих городах: Москва, Санкт-Петербург.
+        li
+          h6#rule_2.list__title Оплата онлайн
+          .list__container
+            .delivery-and-payment__payment-methods
+              span.icon__visa
+              span.icon__mastercard
+              span.icon__webmoney
+              span.icon__yandex-money
+              span.icon__qiwi
+              span.icon__rbk-money
+              span.icon__paypal
+              span.icon__verified-by-visa
+              span.icon__mastercard-secure-code
+            p Вы всегда можете оплатить заказ банковской картой или электронными деньгами. Оплата заказов производится моментально, в любое время дня и ночи. Платежи осуществляются через процессинговый центр PayOnline, который использует лучшую на рынке технологию защиты данных  в Интернет SSL (Secure Socket Layer) версии 3.0.
+            p Обращаем Ваше внимание, что NAME'S не получает и не сохраняет данные Вашей кредитной карты.
+        li
+          h6#rule_3.list__title Банковский перевод
+          .list__container
+            p Вы можете оплатить заказ через любой банк, действующий на территории России. Оплату по заказу необходимо внести в течение 3 суток с момента оформления заказа. Срок зачисления денежных средств - 2-3 рабочих дня.
+            p При оплате банковского перевода дополнительно взимается комиссионный сбор банка за перевод денежных средств, который составляет в среднем до 4% от стоимости заказа. Если Вы заполняете бланк банковского или почтового перевода вручную, обязательно указывайте в комментарии к платежу - номер Вашего заказа.
+
+            .requisites
+              p Реквизиты нашего банковского счета:
+
+              table.property__list
+
+                tr.property__item
+                  td: span Наименование
+                  td: span ООО&nbsp;"Мегаперфюме"
+                tr.property__item
+                  td: span Фактический адрес
+                  td: span 127018&nbsp;г.&nbsp;Москва ул.&nbsp;Складочная, д.&nbsp;1, стр.&nbsp;27, оф.&nbsp;310
+                tr.property__item
+                  td: span Юридический адрес
+                  td: span 771501001
+                tr.property__item
+                  td: span КПП
+                  td: span 7715489209
+                tr.property__item
+                  td: span ИНН
+                  td: span 7715489209
+                tr.property__item
+                  td: span Р/сч
+                  td: span 40702810301100005706
+                tr.property__item
+                  td: span Банк
+                  td: span АО "Альфа - Банк"
+                tr.property__item
+                  td: span Бик
+                  td: span 044525593
+                tr.property__item
+                  td: span К/сч
+                  td: span 30101810200000000593
+                tr.property__item
+                  td: span Генеральный директор
+                  td: span Завгородний Константин Анатольевич
+
+            p В случае, если у Вас возникнут какие-либо вопросы по указанному способу оплаты, Вы можете обратиться в службу клиентской поддержки с 9.00 до 22.00 по тел. 8 800 500-31-82.
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'

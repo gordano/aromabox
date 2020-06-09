@@ -1,0 +1,49 @@
+.modal__container.modal__animated@@modal@modal_response_feedback
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__footer.modal__response-feedback
+    .modal__header
+      .title
+        .rating
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star_full
+          .icon.icon_star
+      span.title__separator
+
+    .modal__content
+      .reviews__item
+        - if controller_name == 'product_samples'
+          .flavor-rating.row.start-xs.middle-xs
+            span.flavor-rating__title Оценки аромата:
+            ul.flavor-rating__list.row.start-xs.middle-xs
+              li
+                ' слабый
+                span.thin 0,5–1 ч.
+              li 18­­–26 лет
+              li далее вытянутой руки
+
+        .review__text.col-xs
+          p На камере 5D Mark III он ведёт себя превосходнейшим образом. Юстировку не проводил. При съёмке пейзажей придраться совершенно не к чему
+        .review__title.row.start-xs
+          span.author Марат Ка
+          span.date
+            ' 16 декабря 2015
+            span.city Архангельск
+
+      .feedback__item
+        .feedback__text.col-xs
+          p Здравствуйте! Мы приносим Вам свои извинения за данную ситуацию. Такое предоставление информации не допустимо для нашего магазина.
+        .feedback__title.row.start-xs
+          span.author Ответ магазина
+          span.date 16 декабря 2015
+
+      button.button.button__transparent__black@close_link type='button' Закрыть
+
+
+
+
+
+
+
+

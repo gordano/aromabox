@@ -1,0 +1,75 @@
+.sample-request__list
+  width: 100%
+  margin-top: 32px
+
+  .list__header
+    margin: 17px 0
+
+    font-size: 17px
+    line-height: 23px
+    text-transform: uppercase
+    color: #222
+    font-weight: 700
+
+    .counter
+      color: #888
+      font-weight: 500
+
+.sample-request__item
+  width: 100%
+  margin: 0
+  padding-top: 24px
+  padding-bottom: 23px
+
+  border-bottom: 1px solid #e3e3e3
+
+  &:first-of-type
+    border-top: 1px solid #e3e3e3
+
+  .item__author
+    width: 230px
+    padding: 0 10px
+    box-sizing: border-box
+
+    .author__name
+      color: #222
+      font-size: 13px
+      line-height: 22px
+      font-weight: 700
+
+    .author__published
+      color: #888
+      font-size: 13px
+      line-height: 22px
+      font-weight: 500
+
+  .item__description
+    width: calc(100% - 230px)
+
+    .description__sample-name
+      color: #222
+      font-size: 13px
+      line-height: 24px
+      font-weight: 500
+
+    .description__status
+      padding: 0 16px
+
+      .status
+        display: block
+        margin-top: 9px
+
+        opacity: 0.8
+
+        font-size: 11px
+        line-height: 12px
+        font-weight: 500
+
+      &.description__status__wait
+        .status
+          color: #aaa
+
+      &.description__status__end
+        .status
+          color: #64ac3d
+

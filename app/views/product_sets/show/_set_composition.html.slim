@@ -1,0 +1,130 @@
+aside.set-composition
+
+  h2.set-composition__title Состав набора
+  / a.icon.icon_heart href="#" Добавить в избранное
+
+  / ul.set-composition__tabs
+  /   li
+  /     a.tab-links.active href="#" флаконы
+  /   li
+  /     a.tab-links.active названия
+
+  .set-composition__content.row.between-xs.middle-xs
+
+    .set-composition__left.col-xs
+
+      / Флаконы попросили пока что не отображать
+
+      / section#tab1.tab-content
+      /   .set-composition__bottles.center-xs.middle-xs
+
+      /     .bottles__list.row.center-xs
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_1.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_2.png', alt: '')
+      /       a.bottles__image.active-image href="#"
+      /         = image_tag('product_sets/set_composition/photo_3.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_4.png', class: 'active-image', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_5.png', class: 'active-image', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_6.png', class: 'active-image', alt: '')
+
+      /     .bottles__list.row.center-xs
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_1.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_2.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_3.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_4.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_5.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_6.png', alt: '')
+
+      /     .bottles__list.row.center-xs
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_1.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_2.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_3.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_4.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_5.png', alt: '')
+      /       a.bottles__image href="#"
+      /         = image_tag('product_sets/set_composition/photo_6.png', alt: '')
+
+      / Эта строка нужна будет в будущем, с этими классами и id
+      / section#tab2.tab-content
+      section
+        .set-composition__names
+
+          table.names__list
+            = balanced_cols(@samples, @samples_per_row) do |sample, index|
+              / Активной ячейке добавлять класс .active
+              td
+                a href="#"
+                  em.names__counter => "%02d." % index
+                  span.names__brand => sample.title
+                  <br>
+                  span.names__aroma => sample.description
+
+
+    /  Блок-заглушка, на тот момент пока не выбран пробник. Класс .arrow-composition убирается при выборе пробника. Меняется содержание блока .about-probe
+
+    / .set-composition__right.arrow-composition
+    /   .about-probe
+    /     span.about-probe__suggestion Выберите аромат, чтобы<br>увидеть его подробное описание
+
+    .set-composition__right
+      .about-probe
+        span.about-probe__close.icon.icon_close_thin title="Закрыть описание пробника"
+        .about-probe__content.row
+          h3.h4 Tom Ford Fleur de Portofino
+          .catalog__item__controllers.about-probe__controllers@@favorite@@heartbeat data-id='1'
+
+            = render 'shared/catalog_item/description_raiting'
+            span.icon__catalog.icon.icon_heart@favourite_add@heart title="Добавить в избранное"
+
+            span.icon__catalog.icon.icon_heart_full.hidden@favourite_remove title="Удалить из избранного"
+
+            span.icon__catalog.icon.icon_eye@@modal_toggler  data-modal-selector='@modal_quick_view' title="Быстрый просмотр"
+
+          table.property__list
+
+            tr.property__item
+              td
+                span Бренд
+              td
+                span Escentric Molecules
+            tr.property__item
+              td
+                span Страна
+              td
+                span Великобритания
+            tr.property__item
+              td
+                span Год создания
+              td
+                span 1995
+            tr.property__item
+              td
+                span Пол
+              td
+                span.gender.icon.icon_gender_male мужской
+            tr.property__item
+              td
+                span Группы
+              td
+                span фруктовые, шипровые
+            tr.property__item
+              td
+                span Ноты
+              td
+                span ветивер, мускус, дубовый мох, древесные ноты, ваниль, амбретта

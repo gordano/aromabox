@@ -1,0 +1,258 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+header
+  background-color: #fff
+
+  &.header-top
+    height: 32px
+    background-color: #f7f7f7
+
+    .header-top__content
+      height: 32px
+
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: flex-end
+      align-items: center
+
+      position: relative
+
+    i
+      width: 100%
+      height: 32px
+      line-height: 32px
+
+      position: absolute
+      top: 0
+      left: 0
+
+
+      font-family: Arial, sans-serif
+      font-size: 11px
+      text-align: center
+      color: #555
+
+      a
+        margin-left: 5px
+
+        font-family: inherit
+        font-size: inherit
+        color: $color_brand
+        text-decoration: none
+
+        position: relative
+
+        &:hover
+          text-decoration: underline
+
+          .small-arrow
+            text-decoration: none
+
+        .small-arrow
+          text-decoration: none
+
+          position: absolute
+          left: calc(100% + 2px)
+          top: 50%
+          transform: translate(0, -50%)
+
+    .header__login
+      position: relative
+      margin-left: 20px
+      margin-right: -4px
+      padding-right: 5px
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 20px
+
+      font-size: 12px
+      color: #555
+
+      +hover
+
+      &:before
+        position: absolute
+        left: 5px
+        top: 50%
+        transform: translate(0, -50%)
+
+
+  &.header
+    height: 102px
+
+    .header__content
+      -webkit-display: box
+
+      height: 102px
+      position: relative
+
+    .header__content-left
+      max-width: calc(50% - 90px)
+      padding-left: 0
+
+      .nav-menu
+        ul
+          display: flex
+          flex-direction: row
+          flex-wrap: nowrap
+          justify-content: space-between
+          align-items: center
+
+          li
+            display: inline-block
+            list-style: none
+
+            &:first-child .nav__link,
+            &:first-child .nav__span
+              padding-left: 0
+
+      .nav__link, .nav__span
+        padding: 10px
+
+        color: #222
+        font-size: 14px
+        line-height: 25px
+        font-weight: 700
+        text-transform: uppercase
+
+      .nav__link
+        &:hover, &:active
+          text-decoration: underline
+
+        +hover
+
+      .nav__span
+        color: $color_brand
+        text-decoration: underline
+
+      .nav__closed-section
+        color: #aaa
+        text-decoration: none
+
+    .header__content-right
+      display: flex
+      flex-direction: row-reverse
+      flex-wrap: wrap
+
+      max-width: calc(50% - 90px)
+      padding: 0
+
+      .icons
+        margin-left: 3%
+        margin-top: -5px
+
+        .icons__item
+          // height: 27px
+          cursor: pointer
+
+          .icon__link
+            display: block
+            padding: 5px 6px
+
+          &:hover
+            .icon__link
+              color: $color_brand
+
+              &:before, &:after
+                color: $color_brand
+
+          &.cart
+            margin-right: -5px
+            cursor: pointer
+
+          .cart-counter
+            display: block
+            height: 17px
+            line-height: 17px
+
+            padding-top: 3px
+            padding-left: 20px
+
+            font-size: 13px
+
+      .phone
+        margin-top: 1px
+        text-transform: uppercase
+
+      .phone__numper
+        margin-right: 9px
+        font-size: 17px
+        font-weight: 700
+
+      .phone__free
+        font-size: 10px
+        font-weight: 300
+
+        @media all and (max-width: 1023px)
+          display: none
+
+      .icon_heart_full
+        font-size: 15px
+
+  &.header__ordering
+    margin-bottom: 25px
+
+    .header__content-left
+      .ssl
+        img
+          display: inline-block
+          width: 38px
+          height: 42px
+          margin-right: 12px
+
+        .ssl__description
+          display: inline-block
+
+          span
+            display: block
+            color: #555555
+            font-size: 13px
+            font-weight: 500
+            line-height: 20px
+
+            &:first-child
+              text-transform: uppercase
+
+  .cart
+    .icon__link
+      display: block
+      position: relative
+
+      // vertical-align: bottom
+      cursor: pointer
+
+      &:before
+        width: 13px
+        height: 17px
+        position: absolute
+        left: 5px
+        // top: 50%
+        // transform: translate(0, -50%)
+
+
+a.logo
+  display: block
+
+
+  // width: 180px
+  // height: 62px
+  // overflow: hidden
+
+  img
+    width: 180px
+
+  .logo__placeholder
+    display: none
+
+  header &
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+
+
+
+

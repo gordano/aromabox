@@ -1,0 +1,64 @@
+.product-sample
+  = render 'shared/breadcrumbs'
+
+  .wrapper
+    .product-samples__item.badge.badge_new.badge_limited.row.center-xs.between-md
+      .samples-item__photo.popover__container@@popover_just_bought data-animation='fade' data-placement='bottom' data-offset-top='-125'
+        = image_tag('product_samples/photo_item.jpg', alt: '')
+
+      .webui-popover-content
+        span.title Этот товар последний раз купила
+        span.buyer Антонина из Санкт-Петербурга
+        span.when 9 минут назад
+
+      .samples-item__description.description.start-xs
+
+        = render 'product_samples/show/description_top'
+
+        = render 'shared/catalog_item/description_bottom'
+
+
+      = render 'product_samples/show/advantage'
+
+    .product-samples__tale@@tabs
+      = render 'shared/catalog_item/nav_tabs'
+
+
+      section#tab1.tabcontent@tab style="display: block;"
+        = render 'product_samples/show/description_full'
+
+      section#tab2.tabcontent@tab
+        = render 'product_samples/show/brand_parfumer'
+
+      section#tab3.tabcontent@tab@@show_review_form
+        = render 'shared/catalog_item/reviews'
+        = render 'shared/forms/reviews_reply_form_sample'
+
+      section#tab4.tabcontent@tab
+        = render 'shared/catalog_item/delivery_and_payment'
+
+
+    .title-strike__wrapper
+      .title-strike
+        h3 Аромат присутствует в наборе
+    = render 'product_samples/show/in_set'
+
+    .carousel__wrapper.title-strike__wrapper
+      .title-strike
+        h3 Похожие ароматы
+      = render 'shared/carousel/carousel_base'
+
+    .carousel__wrapper.title-strike__wrapper
+      .title-strike
+        h3 Популярные ароматы
+      = render 'shared/carousel/carousel_base'
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'
+
+= render 'modals/glossary'
+
+.modal__overlay@modal_overlay
+
+

@@ -1,0 +1,85 @@
+.wrapper
+  .authorization
+    .authorization__title.title-strike.center-xs
+      h1.h3 Оформить заказ как
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__left.authorization__form.row.between-xs
+        h6.form__title Новый пользователь
+
+        div
+          .form__description
+            p Введите свой e-mail, чтобы продолжить оформление.
+            p На него придет вся информация по вашему заказу.
+          form#authorization_form_left.form
+            input type='email' placeholder='E-mail' autofocus="autofocus"
+        .form__controller
+          / button.button.button__blue.button__opacity type='submit' form='authorization_form_left' Продолжить оформление
+
+          a.button.button__blue.button__opacity href=delivery_path Продолжить оформление
+
+      .registration.authorization__right.authorization__form.row.between-xs
+        h6.form__title Зарегистрированный пользователь
+
+        div
+          form#authorization_form_right.form
+            input type='email' placeholder='E-mail'
+            label.password
+              input type='password' placeholder='Пароль'
+              a href=remember_password_path title="Напомнить пароль" Забыли?
+        .form__controller
+          / button.button.button__transparent__blue type='submit' form='authorization_form_right' Войти и продолжить
+
+          a.button.button__transparent__blue href=delivery_path Войти и продолжить
+
+
+
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__left.authorization__form.row.between-xs
+        h6.form__title Новый пользователь
+
+        div.error
+          .form__description
+            p Введите свой e-mail, чтобы продолжить оформление.
+            p На него придет вся информация по вашему заказу.
+          form#authorization_form_left.form
+            input type='email' placeholder='E-mail'
+            span.error__description Это поле обязательно для заполнения
+        .form__controller
+          / button.button.button__blue.button__opacity type='submit' form='authorization_form_left' Продолжить оформление
+
+          a.button.button__blue.button__opacity href=delivery_path Продолжить оформление
+
+      .registration.authorization__right.authorization__form.row.between-xs
+        h6.form__title Зарегистрированный пользователь
+
+        div.error
+          form#authorization_form_right.form
+            input type='email' placeholder='E-mail'
+            span.error__description Пожалуйста, введите действительный адрес электронной почты
+
+            label.password
+              input type='password' placeholder='Пароль'
+              a href="#" title="Напомнить пароль" Забыли?
+            span.error__description Минимальная длина пароля – 6 символов
+        .form__controller
+          / button.button.button__transparent__blue type='submit' form='authorization_form_right' Войти и продолжить
+
+          a.button.button__transparent__blue href=delivery_path Войти и продолжить
+
+
+
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__bottom-title.title-strike.center-xs
+        h3.h3 Или войдите при помощи
+      .authorization__social.row.center-xs.middle-xs
+        a.icon.icon__authorization_vk href="" title="Авторизоваться через Вконтакте"
+        a.icon.icon__authorization_fb href="" title="Авторизоваться через Facebook"
+        a.icon.icon__authorization_ok href="" title="Авторизоваться через Одноклассники"
+        a.icon.icon__authorization_gg href="" title="Авторизоваться через Google+"
+
+
+
+

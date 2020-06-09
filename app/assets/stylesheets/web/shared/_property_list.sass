@@ -1,0 +1,138 @@
+.property__list
+  min-width: 60%
+  width: 100%
+  background-color: #fff
+  text-align: left
+
+  td
+    font-size: 14px
+    font-weight: 500
+    line-height: 24px
+    vertical-align: top
+
+  td:first-child
+    width: 23%
+
+    color: #888
+
+    position: relative
+
+    &:before
+      content: ''
+      display: block
+      width: 100%
+      height: 1px
+      background-color: #e3e3e3
+
+      position: absolute
+      top: 13px
+      right: 0
+      z-index: 1
+
+    span
+      display: inline-block
+      padding: 0
+      padding-right: 10px
+      background-color: #fff
+
+      position: relative
+      z-index: 2
+
+  td:last-child
+    padding-left: 10px
+
+    color: #222
+
+  .property__item
+    .gender
+      position: relative
+      margin-right: 10px
+
+      // &.icon
+      //   &:before
+      //     position: absolute
+      //     left: 0
+      //     top: 50%
+      //     transform: translate(0, -50%)
+
+
+      &.icon_gender_male
+        padding-left: 17px
+
+      &.icon_gender_female
+        padding-left: 14px
+
+      &.icon_gender_unisex
+        padding-left: 17px
+
+
+    .dotted
+      display: inline-block
+      width: 5px
+      height: 5px
+      margin-right: 3px
+      margin-bottom: 1px
+
+      border-radius: 50%
+      background-color: #222
+      font-size: 0
+
+
+.property__list__frame
+  position: relative
+
+  width: 800px
+  margin: 0 auto
+  margin-bottom: 42px
+
+  padding-top: 38px
+  padding-left: 80px
+  padding-right: 50px
+  padding-bottom: 18px
+
+  box-sizing: border-box
+  border: 1px solid #e8e8e8
+
+  text-align: center
+
+  .title
+    display: inline-block
+
+    margin: 0
+    margin-bottom: 3px
+    padding: 0 50px
+    box-sizing: border-box
+
+    position: absolute
+    top: -13px
+    left: 50%
+    transform: translate(-50%, 0)
+
+    background: #fff
+
+    font-size: 25px
+    line-height: 25px
+    text-transform: uppercase
+
+  .property__list
+    td
+      padding-top: 3px
+      padding-bottom: 1px
+
+      line-height: 18px
+
+      &:first-child
+        width: 46.6%
+
+        vertical-align: top
+
+        &:before
+          top: 13px
+
+      span
+        font-size: 13px
+        line-height: 20px
+
+  .property__list_separator-after
+    td
+      padding-bottom: 14px

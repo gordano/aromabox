@@ -1,0 +1,110 @@
+.modal__container.modal__animated@@modal@modal_quick_view
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__quick-view
+
+    .quick-view__content.start-xs
+      .product-samples__item.badge.badge_new.badge_limited.row.center-xs.between-md
+        .samples-item__photo
+          = image_tag('product_samples/photo_item.jpg', alt: '')
+
+        .samples-item__description.description.start-xs
+
+          .description__top
+            h1.description__title
+              span.brand-name Escentric Molecules
+              span.perfume-name The Beautiful Mind Series
+
+            = render 'shared/catalog_item/description_raiting'
+
+            table.property__list
+              tr.property__item
+                td
+                  span Сегмент
+                td
+                  span нишевая, винтажная
+              tr.property__item
+                td
+                  span Группы
+                td
+                  span восточные, ванильные
+              tr.property__item
+                td
+                  span Пол
+                td
+                  span.gender.icon.icon_gender_male мужской
+
+          .description__bottom
+            .description__price.row.start-xs
+              .previous-price
+                span.price 240
+              .actual-price
+                span.price 216&nbsp;
+                span.currency руб.
+
+            .vial-information.row.start-xs.popover__container
+              span.weight 1 флакон / 1,5 мл.
+              span.type парфюмированная вода
+              span.icon.icon_question@@popover data-placement='bottom' data-offset-top='-1'
+              .webui-popover-content.question__popover
+                p Парфюмированная вода или туалетные духи (Eau de Parfum, Parfum de Toilette) содержит 10-20% ароматических веществ.
+                a.glossary__link@@modal_toggler data-modal-selector='@modal_glossary' href="#" Словарь терминов
+
+            .add-to-cart.row.start-xs
+              = render 'shared/catalog_item/quantity'
+              button.button.button__blue data-remote='true' data-disable="true" В корзину
+
+            .social-share.row.start-xs@@favorite@@heartbeat
+              a.icon__share.icon__share_vk href="#" title="Поделиться в Контакте"
+              a.icon__share.icon__share_fb href="#" title="Поделиться на Фэйсбуке"
+              a.icon__share.icon__share_ig href="#" title="Запостить в Инстаграме"
+
+              a.add-favourite@favourite_add@heart title="Добавить в избранное" href='#'
+                span.icon__catalog.icon.icon_heart
+                | Добавить в избранное
+
+              a.add-favourite.active.hidden@favourite_remove title="Удалить из избранного" href='#'
+                span.icon__catalog.icon.icon_heart_full
+                | Удалить из избранного
+
+      .quick-view__description
+        .description__header Описание
+        .row
+          .quick-view__description__left
+            table.property__list
+              tr.property__item
+                td
+                  span Бренд
+                td
+                  span Escentric Molecules
+              tr.property__item
+                td
+                  span Страна
+                td
+                  span Великобритания
+              tr.property__item
+                td
+                  span Год создания
+                td
+                  span 1995
+              tr.property__item
+                td
+                  span Пол
+                td
+                  span мужской
+              tr.property__item
+                td
+                  span Группы
+                td
+                  span восточные, ванильные
+              tr.property__item
+                td
+                  span Ноты
+                td
+                  span ветивер, мускус, дубовый мох, древесные ноты, ваниль, амбретта
+
+          .quick-view__description__right.start-xs
+            p Еще один парфюм, созданный в 2009 году и вошедший в популярную линию ароматов, посвященных мистическим картам Таро от Dolce & Gabbana. Презентует третью карту Старших Арканов Наоми Кэмпбелл. Королева, Императрица, Мать. Она величественна и необычайно прекрасна в своем могуществе, она гордо восседает на своем троне. Посвященных мистическим картам Таро от Dolce. Презентует третью карту Старших Арканов Наоми Кэмпбелл. Королева, Императрица, Мать.
+
+    a.quick-view__button.button.button__in-cart href=product_samples_show_path title='Посмотреть подробное описание товара' Подробное описание
+
+.modal__overlay

@@ -1,0 +1,127 @@
+.reviews-reply-form@review_reply_form
+  form.form-legend.product-samples__form
+    fieldset
+      legend Оставьте отзыв
+
+      table.form__fields
+        tr
+          th: label Ваша оценка
+          td
+            .rating__form
+              input type='radio' id='star5' name='rating' value='5'
+              label for='star5'
+              input type='radio' id='star4' name='rating' value='4'
+              label for='star4'
+              input type='radio' id='star3' name='rating' value='3'
+              label for='star3'
+              input type='radio' id='star2' name='rating' value='2'
+              label for='star2'
+              input type='radio' id='star1' name='rating' value='1'
+              label for='star1'
+
+        tr
+          th: label Как долго держится
+          td
+            .radio-buttons
+
+              .radio-buttons__item
+                input type="radio" name="long" id="long1"
+                label for="long1"
+                  | слабый&nbsp;
+                  span.thin 0,5–1 ч.
+
+              .radio-buttons__item
+                input type="radio" name="long" id="long2"
+                label for="long2"
+                  | нестойкий&nbsp;
+                  span.thin 1–2 ч.
+
+              .radio-buttons__item
+                input type="radio" name="long" id="long3"
+                label for="long3"
+                  | средний&nbsp;
+                  span.thin 3–6 ч.
+
+              .radio-buttons__item
+                input type="radio" name="long" id="long4"
+                label for="long4"
+                  | стойкий&nbsp;
+                  span.thin 7–12 ч.
+
+              .radio-buttons__item
+                input type="radio" name="long" id="long5"
+                label for="long5"
+                  | очень стойкий&nbsp;
+                  span.thin от 12 ч.
+
+        tr
+          th: label Для какого возраста
+          td
+            .radio-buttons
+
+              .radio-buttons__item
+                input type="radio" name="old" id="old1"
+                label for="old1"
+                  | до 18
+
+              .radio-buttons__item
+                input type="radio" name="old" id="old2"
+                label for="old2"
+                  | 18­­–26 лет
+
+              .radio-buttons__item
+                input type="radio" name="old" id="old3"
+                label for="old3"
+                  | 26–35 лет
+
+              .radio-buttons__item
+                input type="radio" name="old" id="old4"
+                label for="old4"
+                  | 35–45 лет
+
+              .radio-buttons__item
+                input type="radio" name="old" id="old5"
+                label for="old5"
+                  | от 45 лет
+
+        tr
+          th: label Чувствуется на расстоянии
+          td
+            .radio-buttons
+
+              .radio-buttons__item
+                input type="radio" name="far" id="far1"
+                label for="far1"
+                  | нет шлейфа
+
+              .radio-buttons__item
+                input type="radio" name="far" id="far2"
+                label for="far2"
+                  | близко к коже
+
+              .radio-buttons__item
+                input type="radio" name="far" id="far3"
+                label for="far3"
+                  | вытянутой руки
+
+              .radio-buttons__item
+                input type="radio" name="far" id="far4"
+                label for="far4"
+                  | далее вытянутой руки
+
+              .radio-buttons__item
+                input type="radio" name="far" id="far"
+                label for="far"
+                  | заполняет комнату
+
+        tr
+          th: label Комментарий
+          td
+            textarea
+
+        tr
+          th: label
+          td
+            .button-group.row.start-xs.middle-xs
+              button.button.button__green type='submit' data-remote='true' data-disable="true" Отправить
+              button.button.button__transparent__black@review_sample_form_close type='button' Отменить

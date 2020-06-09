@@ -1,0 +1,171 @@
+@import 'web/animation'
+
+.button
+  display: inline-block
+  padding: 0 60px
+  padding-top: 10px
+  padding-bottom: 6px
+  box-sizing: border-box
+
+  text-transform: uppercase
+  font-family: 'Museo Sans Cyrl', sans-serif
+  font-size: 18px
+  line-height: 30px
+  color: #fff
+  text-align: center
+  cursor: pointer
+  border: none
+
+  transition: all .2s ease-in-out
+
+  &:hover, &:active
+    color: #fff
+    text-decoration: underline
+
+.button__transparent__white
+  border: 2px solid #fff
+  background-color: rgba(0, 0, 0, 0.1)
+  opacity: 0.6
+  transition: none
+
+  &:hover, &:active
+    border-color: #fff
+    opacity: 0.9
+
+.button__transparent__black
+  color: #222
+  // border: 1px solid #bbb
+  border: 1px solid #222
+  background: transparent
+
+  &:hover, &:active
+    color: #222
+    // border: 1px solid #888
+    border: 1px solid #222
+
+.button__transparent__gray
+  color: #888
+  border: 1px solid #e8e8e8
+  background: transparent
+
+  &:hover, &:active
+    color: #222
+    border: 1px solid #222
+
+.button__transparent__tiffany
+  color: #4c9eab
+  border: 1px solid #4c9eab
+  background-color: rgba(255, 255, 255, 0)
+
+  &:hover, &:active
+    color: #4c9eab
+    border: 1px solid #007689
+
+.button__transparent__blue
+  color: #3399fe
+  border: 1px solid #3399fe
+  background-color: rgba(255, 255, 255, 0)
+
+  &:hover, &:active
+    color: #3399fe
+    border: 1px solid #3399fe
+
+.button__green
+  border-bottom: 3px solid #68ab44
+  background-color: #70b849
+
+  &:hover, &:active
+    border-bottom: 3px solid #5b9e37
+    background-color: #64ac3d
+
+.button__red
+  border-bottom: 3px solid #c96a67
+  background-color: #e07672
+
+  &:hover, &:active
+    border-bottom: 3px solid #bd5a57
+    background-color: #d36561
+
+.button__tiffany
+  border-bottom: 3px solid #519aa6
+  background-color: #5caab8
+
+  &:hover, &:active
+    border-bottom: 3px solid #438e99
+    background-color: #4c9eab
+
+.button__brown
+  border-bottom: 3px solid #96484b
+  background-color: #b35255
+
+  &:hover, &:active
+    border-bottom: 3px solid #8c3e40
+    background-color: #9e4548
+
+.button__black
+  border-bottom: 3px solid #1a1a1a
+  background-color: #303030
+
+  &:hover, &:active
+    border-bottom: 3px solid #000
+    background-color: #222
+
+.button__in-cart
+  border-bottom: 3px solid #000
+  background-color: #000
+  color: #fff
+
+  &:hover, &:active
+    border-bottom: 3px solid #000
+    background-color: #000
+    color: #fff
+
+.button__blue
+  border-bottom: 3px solid #3b98f5
+  background-color: #48a4ff
+
+  &:hover, &:active
+    border-bottom: 3px solid #2e8be8
+    background-color: #3399fe
+
+.button__disable
+  background-color: #ccc
+  border-bottom: none
+
+  &:hover, &:active
+    background-color: #ccc
+    border-bottom: none
+    text-decoration: none
+    cursor: default
+
+// Класс для кнопок процесса покупки.
+// Убирается когда выбирается способ оплаты или доставки.
+.button__opacity
+  opacity: 0.8
+
+
+// Анимированная кнопка В корзину
+.button
+  &:disabled
+    &, &:hover, &:active, &:focus
+      pointer-events: none
+      position: relative
+      text-decoration: none
+
+      &:after
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+
+        animation: btn-loading 1s linear infinite
+        background: repeating-linear-gradient(-60deg, rgba(white, .15), rgba(white, .15) .5em, rgba(black, .05) .5em, rgba(black, .05) 1em)
+        background-size: 200%
+
+
+
+
+
+

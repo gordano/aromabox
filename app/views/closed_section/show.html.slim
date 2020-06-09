@@ -1,0 +1,81 @@
+.closed-section__landing
+  .closed
+    .wrapper
+      .closed__header.row.middle-xs
+        .title Здесь оживает история<br>парфюмерных<br>шедевров
+  .wrapper.closed-section__landing__wrapper
+    .closed__description.popover__container
+      | В этом разделе собраны редкие винтажные ароматы, слава которых все еще жива, но найти их практически невозможно
+      span.closed__answer
+        | Что такое винтажные духи
+        span.icon.icon_question@@popover data-placement='bottom' data-offset-top='-2'
+        .webui-popover-content.question__popover
+          p Винтаж (раритет) - старинная вещь, которая была актуальна в эпоху ее создания, отражающая стиль и дух своего времени.
+
+
+    .closed__frame
+      .frame__angle.frame__angle__left-top
+      .frame__angle.frame__angle__right-top
+      .frame__angle.frame__angle__right-bottom
+      .frame__angle.frame__angle__left-bottom
+
+      .frame__inside.col.middle-xs.center-xs@@show_closed_form data-animation='blind' data-duration='600'
+        .inside__header
+          span Чтобы получить доступ, нужно<br>заполнить мини-анкету из 6 пунктов
+        .inside__links@hided_links
+          a.link__base href=closed_index_path title='У меня уже есть доступ' У меня уже есть доступ
+          a.button.button__brown@trigger_closed_form href='#' title='Открыть анкету' Открыть анкету
+
+        form.form.inside__form@closed_form
+          .form__group
+            label.form__label Как вас зовут
+            input.form__element type='text'
+            / label.label__error Поле необходимо заполнить
+
+          .radio-buttons.form__group
+            label.form__label Вы
+            .radio-buttons__item
+              input type="radio" name="gender" id="gender1" checked='checked'
+              label for="gender1"
+                span.gender.icon.icon_gender_female Женщина
+
+            .radio-buttons__item
+              input type="radio" name="gender" id="gender2"
+              label for="gender2"
+                span.gender.icon.icon_gender_male Мужчина
+
+          .form__group
+            label.form__label Сколько вам лет
+            input.form__element type='text'
+            / label.label__error Поле необходимо заполнить
+
+          .form__group
+            label.form__label Ваш любимый парфюм
+            input.form__element type='text' placeholder='Нужно выбрать только один'
+            / label.label__error Поле необходимо заполнить
+
+          .form__group
+            label.form__label Укажите вашу почту
+            input.form__element type='email'
+            / label.label__error Поле необходимо заполнить
+
+          .form__group
+            label.subscribe-to-news__label for='subscribe_to_news'
+              | Подписаться на новости
+              input type='checkbox' id='subscribe_to_news' name='subscribe_to_news' checked='checked'
+              span.icon.icon_check.subscribe-to-news__pseudo
+
+          .form__group
+            label.form__label Придумайте пароль
+            input.form__element type='password' placeholder='Для вас будет создан аккаунт'
+            / label.label__error Поле необходимо заполнить
+
+          .form__group
+            button.button.button__blue type='submit' Получить доступ в закрытый раздел
+
+    .closed__result
+      .closed__decor.closed__decor__top
+      p Пусть последние нотки исчезающих шедевров  порадуют<br>и удивят как можно больше ценителей парфюма
+      .closed__decor.closed__decor__bottom
+
+= render 'shared/instagram_feed'

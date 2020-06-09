@@ -1,0 +1,389 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.active.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+
+        section#promo_gifts.office-content.promo-gifts
+          h1 Подарки и промо-коды
+
+          .promo-gifts__personal-promo.badge.badge_premium
+            .personal-promo__wrapper.row.between-xs
+              .personal-promo__left.row.start-xs.between-xs
+                .personal-promo__header
+                  .personal-promo__title Ваш персональный промо-код
+                  .personal-promo__subtitle на бесплатный пробник из премиум сегмента
+
+                .personal-promo__footer
+                  span * можно применить не более 6 раз
+
+              .personal-promo__right.row.middle-xs
+                .personal-promo__content@@clipboard
+                  #promo_key.personal-promo__promo-key DFO305G
+                  button.button.personal-promo__kopy-key.button__transparent__gray@button data-clipboard-target="#promo_key" type='button' Скопировать
+
+
+          .promo-gifts__set-as-gift
+            .set-as-gift__header
+              .set-as-gift__title Наборы DREAMBOX <i class='important'>в подарок</i>
+              .set-as-gift__subtitle + бесплатная доставка
+            .set-as-gift__description
+              span.description__title У вас есть возможность получать подарки от DreamBox в неограниченном количестве!
+              ul.list__dotted.description__list
+                li Подарком могут стать наборы на 8, 12 или 16 пробников.
+                li Каждый заказ с вашим промо-кодом, приближает вас на 1 шаг к подарку.
+                li
+                  i.important Делитесь своим персональным промо-кодом с друзьями и получайте подарки!
+
+              a.button.button__transparent__black.description__button@@modal_toggler data-modal-selector='@modal_promo_offer' href='#' title='Подробные условия акции' Подробные условия акции
+
+            .set-as-gift__presentation.row.between-xs.top-xs
+
+              .presentation__left
+                .presentation__title Заказы с вашим промо-кодом
+
+                .promotional-code-orders
+
+                  .icon.icon_arrow.promotional-code-orders__arrow.promotional-code-orders__arrow__top.hidden
+
+                  .promotional-code-orders__scrolled-block
+                    table.promotional-code-orders__table
+                      tr
+                        td.item__number 01.
+                        td.item__name Подарок от DreamBox
+                        td.item__date
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 02.
+                        td.item__name Подарок от DreamBox
+                        td.item__date
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 03.
+                        td.item__name Александр К.
+                        td.item__date 25.09.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 04.
+                        td.item__name Константин Ж.
+                        td.item__date 24.08.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 05.
+                        td.item__name Рудольф Ш.
+                        td.item__date 23.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 06.
+                        td.item__name Арнольд Х.
+                        td.item__date 21.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 07.
+                        td.item__name Георгий Ч.
+                        td.item__date 20.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr
+                        td.item__number 08.
+                        td.item__name Евстафий П.
+                        td.item__date 15.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+
+                  .icon.icon_arrow.promotional-code-orders__arrow.promotional-code-orders__arrow__bottom.promotional-code-orders__arrow__active.hidden
+
+              .presentation__right.center-xs
+                .presentation__title Прогресс
+
+                .presentation__set-pallet.row.start-xs.top-xs
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.logo
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.logo
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Людмила К.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Дмитрий Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                .presentation__set-controlls.row.between-xs.middle-xs
+                  .set-controlls__info
+                    .row.start-xs.middle-xs
+                      .info__title Набор:
+                      ul.info__list.row.start-xs.middle-xs
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check.active
+                          span 8
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check
+                          span 12
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check
+                          span 16
+
+                  a.button.button__blue.set-controlls__button href='#' title='Забрать подарок' Забрать подарок
+
+
+
+            .set-as-gift__presentation.row.between-xs.top-xs class='set-as-gift__presentation__double-decker'
+
+              .presentation__left
+                .presentation__title Заказы с вашим промо-кодом
+
+                .promotional-code-orders@@scrollable data-do-not-scroll-rows-max='14'
+
+                  .icon.icon_arrow.promotional-code-orders__arrow.promotional-code-orders__arrow__top@scroll_up
+
+                  .promotional-code-orders__scrolled-block@scrollable_container
+
+                    table.promotional-code-orders__table
+                      tr@scrollable_item
+                        td.item__number 01.
+                        td.item__name Подарок от DreamBox
+                        td.item__date
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 02.
+                        td.item__name Подарок от DreamBox
+                        td.item__date
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 03.
+                        td.item__name Александр К.
+                        td.item__date 25.09.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 04.
+                        td.item__name Константин Ж.
+                        td.item__date 24.08.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 05.
+                        td.item__name Рудольф Ш.
+                        td.item__date 23.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 06.
+                        td.item__name Арнольд Х.
+                        td.item__date 21.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 07.
+                        td.item__name Георгий Ч.
+                        td.item__date 20.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 08.
+                        td.item__name Евстафий П.
+                        td.item__date 15.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 09.
+                        td.item__name Александр К.
+                        td.item__date 25.09.17
+                        td.item__status
+                          span.status__icon.icon.icon_check
+                      tr@scrollable_item
+                        td.item__number 10.
+                        td.item__name Константин Ж.
+                        td.item__date 24.08.17
+                        td.item__status
+                          span.status__icon.icon.icon_wait
+                      tr@scrollable_item
+                        td.item__number 11.
+                        td.item__name Александр К.
+                        td.item__date 25.09.17
+                        td.item__status
+                          span.status__icon.icon.icon_wait
+                      tr@scrollable_item
+                        td.item__number 12.
+                        td.item__name Константин Ж.
+                        td.item__date 24.08.17
+                        td.item__status
+                          span.status__icon.icon.icon_stop
+                      tr@scrollable_item
+                        td.item__number 13.
+                        td.item__name Рудольф Ш.
+                        td.item__date 23.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_stop
+                      tr@scrollable_item
+                        td.item__number 14.
+                        td.item__name Арнольд Х.
+                        td.item__date 21.07.17
+                        td.item__status
+                          span.status__icon.icon.icon_stop
+                      tr@scrollable_item
+                        td.item__number 15.
+                        td.item__name Георгий Ч.
+                        td.item__date 20.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_stop
+                      tr@scrollable_item
+                        td.item__number 16.
+                        td.item__name Евстафий П.
+                        td.item__date 15.05.17
+                        td.item__status
+                          span.status__icon.icon.icon_stop
+
+                  .icon.icon_arrow.promotional-code-orders__arrow.promotional-code-orders__arrow__bottom@scroll_down
+
+
+              .presentation__right.center-xs
+                .presentation__title Прогресс
+
+                .presentation__set-pallet.row.start-xs.top-xs
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.logo
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.logo
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Людмила К.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Людмила К.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Людмила К.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Дмитрий Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Людмила К.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Дмитрий Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet.set-pallet__active
+                    span.vial
+                    span.name Константин Ж.
+
+                  .set-pallet
+                    span.vial
+                    span.name
+
+                  .set-pallet
+                    span.vial
+                    span.name
+
+                .presentation__set-controlls.row.between-xs.middle-xs
+                  .set-controlls__info
+                    .row.start-xs.middle-xs
+                      .info__title Набор:
+                      ul.info__list.row.start-xs.middle-xs
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check.active
+                          span 8
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check.active
+                          span 12
+                        li.row.start-xs.middle-xs
+                          .check.icon.icon_check
+                          span 16
+
+                  a.button.button__blue.set-controlls__button href='#' title='Забрать подарок' Забрать подарок
+
+
+
+          .promo-gifts__personal-gift
+            .personal-gift__wrapper.row.center-xs.middle-xs
+
+              .icon.icon_gift.personal-gift__image
+
+              .personal-gift__title Поздравляем!
+              .personal-gift__title Ваш подарок, «Набор Супер-пупер» уже в пути к вам!
+              .personal-gift__subtitle
+                | Номер подарка&nbsp;
+                span.gift-number 1111-65588-56
+
+              .personal-gift__description * Информацию о сроках доставки подарка вы можете уточнить у наших операторов<br>по телефону <strong>8 800 000 0000</strong> или по электронной почте <strong>info@dreambox.ru</strong>
+
+
+
+= render 'modals/promo_offer'
+.modal__overlay@modal_overlay
+
+
+
+
+
+

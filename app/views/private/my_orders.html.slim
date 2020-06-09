@@ -1,0 +1,114 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.active.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+
+        section#my_orders.office-content.my-orders
+          h1 Мои заказы
+
+          .my-orders__list
+
+            .my-orders__item.row.between-xs.middle-xs
+
+              .item__name
+                .order__number
+                  | Заказ №3214&nbsp;
+                  span.order__date
+                    | от&nbsp;
+                    time datetime="2016-05-28T12:45" 28.05.2016 12:45
+                .order__counter 12 товаров
+
+              .item__controllers.row.end-xs.middle-xs
+                .item__price.end-xs
+                  .price
+                    | 12&nbsp;500&nbsp;
+                    span.rub руб.
+                  .status отправлен
+                a.button.item__button.button__transparent__black href=private_order_item_path title="Посмотреть состав заказа" Состав заказа
+
+            .my-orders__item.row.between-xs.middle-xs
+
+              .item__name
+                .order__number
+                  | Заказ 2432&nbsp;
+                  span.order__date
+                    | от&nbsp;
+                    time datetime="2015-02-20T10:33" 20.02.2015 10:33
+                .order__counter 12 товаров
+
+              .item__controllers.row.end-xs.middle-xs
+                .item__price.end-xs
+                  .price
+                    | 25&nbsp;100&nbsp;
+                    span.rub руб.
+                  .status отменен
+                a.button.item__button.button__transparent__black href=private_order_item_path title="Посмотреть состав заказа" Состав заказа
+
+            .my-orders__item.row.between-xs.middle-xs
+
+              .item__name
+                .order__number
+                  | Заказ 2355&nbsp;
+                  span.order__date
+                    | от&nbsp;
+                    time datetime="2014-02-15T11:43" 15.02.2014 11:43
+                .order__counter 12 товаров
+
+              .item__controllers.row.end-xs.middle-xs
+                .item__price.end-xs
+                  .price
+                    | 110&nbsp;200&nbsp;
+                    span.rub руб.
+                  .status доставлен
+                a.button.item__button.button__transparent__black href=private_order_item_path title="Посмотреть состав заказа" Состав заказа
+
+            .my-orders__item.row.between-xs.middle-xs
+
+              .item__name
+                .order__number
+                  | Заказ 2432&nbsp;
+                  span.order__date
+                    | от&nbsp;
+                    time datetime="2015-02-20T10:33" 20.02.2015 10:33
+                .order__counter 12 товаров
+
+              .item__controllers.row.end-xs.middle-xs
+                .item__price.end-xs
+                  .price
+                    | 25&nbsp;100&nbsp;
+                    span.rub руб.
+                  .status отменен
+                a.button.item__button.button__transparent__black href=private_order_item_path title="Посмотреть состав заказа" Состав заказа
+
+            .my-orders__item.row.between-xs.middle-xs
+
+              .item__name
+                .order__number
+                  | Заказ 2355&nbsp;
+                  span.order__date
+                    | от&nbsp;
+                    time datetime="2014-02-15T11:43" 15.02.2014 11:43
+                .order__counter 12 товаров
+
+              .item__controllers.row.end-xs.middle-xs
+                .item__price.end-xs
+                  .price
+                    | 110&nbsp;200&nbsp;
+                    span.rub руб.
+                  .status доставлен
+                a.button.item__button.button__transparent__black href=private_order_item_path title="Посмотреть состав заказа" Состав заказа
+

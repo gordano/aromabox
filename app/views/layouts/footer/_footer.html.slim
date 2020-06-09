@@ -1,0 +1,108 @@
+footer.footer
+  .wrapper
+    .footer-inner.row.top-xs.between-xs
+
+      .footer__description
+        a.logo.row.center-xs href=root_path title="Главная DreamBox"
+          = render 'layouts/header/logo_svg'
+        p
+          | DreamBox.ru самый большой икрупнейший в России интернет-магазин, представляющий более 55 000 товаров и 1 200 00 подлинных мировых брендов парфюмерии, косметики и ароматов для дома в различныхторговых и тривиальных ценовых категориях представляющий более 55 видов провокационных тридермальных палепипедов.
+
+
+      .footer__center-block.row.top-xs.start-xs
+        .footer__menu
+          span.footer__title Помощь и сервис
+          ul
+            li.menu__item
+              a href=faq_path title="Вопросы и ответы" Вопросы и ответы
+            li.menu__item
+              a href=howto_path title="Как сделать заказ" Как сделать заказ
+            li.menu__item
+              a href=payment_methods_path title="Способы оплаты" Способы оплаты
+            li.menu__item
+              a href="#" title="Способы доставки" Способы доставки
+            li.menu__item
+              a href=return_product_path title="Возврат товара" Возврат товара
+            li.menu__item
+              a href=rules_path title="Правила продажи" Правила продажи
+            li.menu__item
+              a href=public_offer_path title="Публичная оферта" Публичная оферта
+            li.menu__item
+              a href=confidentiality_path title="Конфиденциальность" Конфиденциальность
+            li.menu__item
+              a href=sample_request_path title="Запрос на пробник" Запрос на пробник
+
+        .footer__menu
+          span.footer__title О DreamBox
+          ul
+            li.menu__item
+              a href=news_path title="" Новости
+            li.menu__item
+              a href=about_path title="О магазине" О магазине
+            li.menu__item
+              a href=about_samples_path title="О пробниках" О пробниках
+            li.menu__item
+              a href=about_sets_path title="О наборах" О наборах
+            li.menu__item
+              a href=partners_path title="Наши партнеры" Наши партнеры
+            li.menu__item
+              a href=store_reviews_path title="Отзывы о магазине" Отзывы о магазине
+            li.menu__item
+              a href=cert_path title="Сертификаты" Сертификаты
+            li.menu__item
+              a href=press_path title="Пресса о нас" Пресса о нас
+            li.menu__item
+              a href=contacts_path title="Контакты" Контакты
+
+        .footer__menu
+          span.footer__title Личный кабинет
+          ul
+            li.menu__item
+              a@@login_toggler href="#" title="" Войти
+            li.menu__item
+              a href=private_path title="" Личные данные
+            li.menu__item
+              a href=private_orders_path title="" Мои заказы
+            li.menu__item
+              a href=private_favorites_path title="" Избранное
+            li.menu__item
+              a href=private_promo_gifts_path title="" Подарки и промо-коды
+
+
+      .footer__contacts
+        span.footer__title Контактная информация
+        .contacts
+          .contacts__call
+            span Звоните с 9:00 до 21:00
+          .phone-number
+            span 8 800 775-05-26
+          .contacts__call
+            span Или пишите на почту
+          .email
+            a href="mailto:info@dreambox.ru" info@dreambox.ru
+        a.button.button__transparent__black href=contacts_path title="Адреса и телефоны" Адреса и телефоны
+
+    = render 'layouts/footer/footer_bottom'
+
+    .copyright
+      span © DREAMBOX, 2017
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

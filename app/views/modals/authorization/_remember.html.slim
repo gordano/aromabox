@@ -1,0 +1,29 @@
+.modal__container.modal__animated@@modal@modal_remember
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__auth
+
+    .auth__content.remember__content.start-xs
+      .authorization__form
+        .form__title
+          span.remember__title Восстановление пароля
+          span.title-separator
+
+        form#remember_form.form.row.center-xs.top-xs
+          .form__description
+            p Укажите адрес электронной почты, который<br>вы использовали при регистрации
+          input type='email' placeholder='E-mail'
+
+        .form__controller.row.middle-xs.between-xs
+
+          a.icon__pagination__arrow-left@@modal_toggler@close_link data-modal-selector='@modal_login' href="#" Вспомнил пароль
+
+          button.button.button__blue@@modal_toggler@close_link data-modal-selector='@modal_remember_password' type='submit' form='remember_form' Восстановить
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__bottom-title.title-strike.center-xs
+        h3.h3 Или
+      .authorization__social.row.center-xs.middle-xs
+        a.icon.icon__authorization_vk href="" title="Авторизоваться через Вконтакте"
+        a.icon.icon__authorization_fb href="" title="Авторизоваться через Facebook"
+        a.icon.icon__authorization_ok href="" title="Авторизоваться через Одноклассники"
+        a.icon.icon__authorization_gg href="" title="Авторизоваться через Google+"

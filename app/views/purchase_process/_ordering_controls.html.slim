@@ -1,0 +1,9 @@
+.ordering__controls.row.middle-xs.between-xs
+
+  - if controller_name == 'purchase_process' && action_name == 'delivery'
+    a.return-to.icon.icon_back_dotted href=cart_path Вернуться в корзину
+    a.button.button__blue.button__opacity href=payment_path title='Перейти к оплате' Перейти к оплате
+
+  - if controller_name == 'purchase_process' && action_name == 'payment'
+    a.return-to.icon.icon_back_dotted href=delivery_path К предыдущему шагу
+    a.button.button__blue.button__opacity href=payment_go_path title='Перейти к оплате' Завершить оформление

@@ -1,0 +1,74 @@
+.header__content-right.col-xs-6
+
+  .icons.row.middle-xs.end-xs@@heartbeat
+    .search__reveal-box@@search
+      .search__reveal.row.end-xs.middle-xs@search_open
+        .icons__item.row.center-xs.middle-xs
+          span.icon.icon_loupe.icon__link title='Поиск бренда или аромата'
+        form.search__form
+          input@search_trigger type='text' name='q' autocomplete='off' title='Поиск' placeholder='Поиск бренда или аромата'
+          button type='submit'
+          .search__result@@scrollbar
+            ul
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Eau de Lacoste L.12.12
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Booster
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | for Women
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | pour Femme (новый дизайн)
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Touch of Spring
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Eau de Lacoste L.12.12 Noir
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Style in Play
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | 2000
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Dream of Pink
+              li
+                a href=product_samples_show_path
+                  b
+                    ' Lacoste
+                  | Femme de Lacoste
+
+    / a.icons__item.icon__collection href="#" title="Подборки"
+    .icons__item
+      a.icon.icon_heart_full.icon__link@heart href=private_favorites_path title="Избранное"
+    .icons__item.cart
+      a.icon.icon_cart.icon__link@cart href=cart_path title="Корзина"
+        span.cart-counter 23
+
+      = render 'modals/popap_cart'
+  .phone
+    span.phone__numper 8&nbsp;800&nbsp;775-05-26
+    span.phone__free Звонок&nbsp;бесплатный

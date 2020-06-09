@@ -1,0 +1,28 @@
+footer.footer
+  .wrapper
+    .footer__ordering.row.middle-xs
+
+      ul.footer-nav.row.center-xs
+        li
+          a@@modal_toggler data-modal-selector='@modal_delivery' href="#" О доставке
+        li
+          a@@modal_toggler data-modal-selector='@modal_payment' href="#" Об оплате
+        li
+          a@@modal_toggler data-modal-selector='@modal_return' href="#" О возврате
+        li
+          a@@modal_toggler data-modal-selector='@modal_original_product' href="#" Оригинальная продукция
+        li
+          a@@modal_toggler data-modal-selector='@modal_public_offer' href="#" Публичная оферта
+
+      .separator
+
+    .copyright
+      span © DREAMBOX, 2017
+
+  = render 'modals/modals_footer/delivery'
+  = render 'modals/modals_footer/payment'
+  = render 'modals/modals_footer/return'
+  = render 'modals/modals_footer/original_product'
+  = render 'modals/modals_footer/public_offer'
+
+  .modal__overlay@modal_overlay

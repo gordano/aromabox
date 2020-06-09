@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title DreamBox
+    = stylesheet_link_tag 'web/application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Noto+Serif:400i&amp;subset=cyrillic', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    = render 'application/favicon'
+
+
+  body@@cartbeat
+
+    = render 'layouts/header/header'
+
+    .main
+      = yield
+
+    = render 'modals/authorization/login'
+    = render 'modals/authorization/login_ok'
+    = render 'modals/authorization/registration'
+    = render 'modals/authorization/registration_errors'
+    = render 'modals/authorization/registration_ok'
+    = render 'modals/authorization/remember'
+    = render 'modals/authorization/remember_password'
+    = render 'modals/authorization/remember_send_mail'
+    = render 'modals/authorization/remember_ok'
+    = render 'modals/authorization/offer_signin'
+
+    .modal__overlay@modal_overlay
+
+    = render 'layouts/footer/footer'
+
+    .wrapper
+      .scroll__top.icon.icon_arrow_thin.hide@@scroll_to_top
+
+

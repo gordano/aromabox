@@ -1,0 +1,56 @@
+.subscribe
+  margin-top: 15px
+
+  .subscribe__title
+    margin-right: 20px
+    font-size: 17px
+    font-weight: 700
+    line-height: 50px
+    text-transform: uppercase
+
+  .subscribe__form
+
+    .input__email, input[type='email']
+      display: inline-block
+      width: 430px
+      height: 44px
+      margin-right: 5px
+      padding: 0 19px
+
+      box-sizing: border-box
+      // margin-top: 20px
+      // margin-bottom: 20px
+
+      font:
+        family: Arial
+        size: 17px
+        weight: 400
+      line-height: 26px
+
+      border: 1px solid #ccc
+      background-color: #fff
+      text-align: left
+
+      &:focus
+
+        &::placeholder
+          opacity: 0.4
+          transition: opacity 0.2s ease-in
+
+    ::placeholder
+      @extend %placeholder
+
+    %placeholder
+      color: #aaaaaa
+      font:
+        family: Arial
+        size: 17px
+        style: italic
+        weight: 100
+      opacity: 1
+
+    .button
+      padding: 0 14px
+      padding-top: 8px
+      padding-bottom: 3px
+      font-size: 14px

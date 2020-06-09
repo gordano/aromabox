@@ -1,0 +1,19 @@
+.wrapper
+  .product-samples.row.top-xs.center-xs
+
+    aside.category.col-xs-10
+      .row
+        h2.col-xs-12 Исчезающие винтажные ароматы
+        p.col-xs-12 Весь парфюм, представленный в этом разделе, относится к категории винтажных ароматов, которые сняты с производства, но в свое время были хитами. Этим ароматам не менее 15 лет,  они были крайне популярны, отражали свою эпоху, их носили звезды и известные политики.
+
+
+    = render 'shared/filter/filter'
+
+    = render 'product_samples/catalog'
+
+    = render 'modals/quick_view'
+    .modal__overlay@modal_overlay
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'

@@ -1,0 +1,14 @@
+.set-item__photo_carousel@@carousel_3d
+  ul
+    li
+      = image_tag('product_sets/carousel_item_1.jpg', alt: '')
+    li
+      = image_tag('product_sets/carousel_item_2.jpg', alt: '')
+    li
+      = image_tag('product_sets/carousel_item_3.jpg', alt: '')
+
+  .popover__container@@popover_just_bought data-animation='fade' data-placement='bottom-left' data-offset-top='-105' data-offset-left='-160'
+  .webui-popover-content
+    span.title Этот товар последний раз купила
+    span.buyer Антонина из Санкт-Петербурга
+    span.when 9 минут назад

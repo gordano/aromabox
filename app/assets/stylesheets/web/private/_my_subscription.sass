@@ -1,0 +1,99 @@
+@import 'web/variables'
+
+.my-subscription__item
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+
+  width: 200px
+  margin-top: 30px
+
+  .item__circle
+    width: 150px
+    height: 150px
+    margin-bottom: 20px
+
+    border-radius: 50%
+
+  .circle__new
+    font-size: 40px
+    font-weight: 700
+    text-transform: uppercase
+
+  .circle__20
+    font-size: 50px
+    font-weight: 700
+    text-transform: uppercase
+
+    .persent
+      font-size: 30px
+
+  .circle__star
+    width: 79px
+    height: 76px
+
+    &::before
+      font-size: 76px
+
+  .item__title
+    margin-bottom: 25px
+
+    color: #222
+    font-size: 17px
+    font-weight: 700
+    line-height: 25px
+    text-transform: uppercase
+
+  .button
+    height: 37px
+    line-height: 37px
+    padding: 0 20px
+
+    font-size: 14px
+
+    &:disabled
+      &, &:hover, &:active, &:focus
+        color: #888
+        border: 1px solid #e8e8e8
+        background: transparent
+
+        // &:after
+        //   animation: btn-loading .9s linear
+
+  .item__status
+    margin-top: 5px
+
+    color: #888
+    font-size: 12px
+    font-weight: 500
+    line-height: 25px
+    text-transform: lowercase
+
+.my-subscription__item__inactive
+  .item__circle
+    border: 2px solid #bababa
+    background-color: #fff
+    color: #aaa
+
+  .circle__star
+    &::before
+      color: #aaa
+
+.my-subscription__item__active
+  .item__circle
+    border: 2px solid $color_brand
+    background-color: $color_brand
+    color: #fff
+
+  .circle__star
+    &::before
+      color: #fff
+
+
+
+
+
+
+
+
+

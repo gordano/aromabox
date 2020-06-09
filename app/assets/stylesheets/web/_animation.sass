@@ -1,0 +1,131 @@
+@import 'web/variables'
+
+// Анимация для эффектного появления поповера
+// "Только что купили" на странице товара
+
+@keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+@keyframes fadeOutLeft
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+  100%
+    opacity: 1
+    transform: none
+
+@keyframes fadeOutRight
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+
+// Можно использовать эти анимации, передавая элементу классы:
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.animated.infinite
+  animation-iteration-count: infinite
+
+.animated.hinge
+  animation-duration: 2s
+
+.fadeInLeft
+  animation-name: fadeInLeft
+
+.fadeOutLeft
+  animation-name: fadeOutLeft
+
+.fadeInRight
+  animation-name: fadeInRight
+
+.fadeOutRight
+  animation-name: fadeOutRight
+
+
+// Анимация для голубой кнопки В корзину,
+// пока она задизейблена после нажатия на нее
+@keyframes btn-loading
+  from
+    background-position: -4em 0
+  to
+    background-position: -1.7em 0
+
+
+// Анимация появления контентной области табов
+@keyframes fadeEffectTab
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+
+// Анимация для плавного сворачивания шапки
+@keyframes headerPadding
+  0%
+    padding-top: 102px
+  50%
+    padding-top: 70px
+  100%
+    padding-top: 55px
+
+
+// Анимация для иконки корзины в шапке
+@keyframes cartbeat
+  0%
+    transform: scale(.75)
+  33%
+    transform: scale(1)
+  66%
+    transform: scale(.75)
+  100%
+    transform: scale(1)
+
+
+// Анимация для иконки "В избранное"" (сердечко) в шапке и в каталоге
+@keyframes heartbeat
+  0%
+    transform: scale(.75)
+  33%
+    transform: scale(1)
+  66%
+    transform: scale(.75)
+  100%
+    transform: scale(1)
+
+
+// Анимация для иконки "В избранное"" (сердечко) в каталоге - Удаление из избранного
+@keyframes brokenHeart
+  0%
+    content: $icon_heart_crack_1
+    transform: translate(-50%, -50%) scale(1)
+    opacity: 1
+  35%
+    content: $icon_heart_crack_2
+  60%
+    content: $icon_heart_crack_3
+  85%
+    content: $icon_heart_crack_4
+    font-size: 12px
+  100%
+    content: $icon_heart_crack_4
+    font-size: 12px
+    transform: translate(-50%, -50%) scale(1.4)
+    opacity: 0
+
+

@@ -1,0 +1,42 @@
+table.property__list
+
+  - if controller_name == 'product_samples' || controller_name == 'closed_section'
+    tr.property__item
+      td
+        span Сегмент
+      td
+        span нишевая, винтажная
+    tr.property__item
+      td
+        span Группы
+      td
+        span восточные, ванильные
+    tr.property__item
+      td
+        span Пол
+      td
+        span.gender.icon.icon_gender_male мужской
+
+  - if controller_name == 'product_sets'
+    tr.property__item
+      td
+        span Тип набора
+      td
+        span парфюмерный
+    tr.property__item.composition
+      td
+        span Состав
+      td
+        span 8 ароматов по 1,5 мл
+    tr.property__item
+      td
+        span Сегмент
+      td
+        span селективная, винтажная
+    tr.property__item
+      td
+        span Пол
+      td
+        span.gender.icon.icon_gender_female  2 женских
+        span.gender.icon.icon_gender_male 2 мужских
+        span.gender.icon.icon_gender_unisex 2 унисекс

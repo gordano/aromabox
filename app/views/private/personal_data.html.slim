@@ -1,0 +1,86 @@
+.ordering__wrapper
+  .wrapper
+    .private-office.row.top-xs.between-xs
+      aside.private-office__nav
+        ul.nav__list
+          li.nav__item
+            a.active.office-links href=private_path title="Личные данные" Личные данные
+          li.nav__item
+            a.office-links href=private_orders_path title="Мои заказы" Мои заказы
+          li.nav__item
+            a.office-links href=private_favorites_path title="Избранное" Избранное
+          li.nav__item
+            a.office-links href=private_promo_gifts_path title="Подарки и промо-коды" Подарки и промо-коды
+          li.nav__item
+            a.office-links href=private_subscription_path title="Подписка" Подписка
+
+
+      .private-office__content.col-xs.row.top-xs.start-xs
+
+        section.office-content.personal-data
+          h1 Личные данные
+
+          .row.top-xs.start-xs
+
+            .personal-data__left
+              .private-office__subtitle Основное
+
+              table.property__list
+
+                tr.property__item
+                  td: span ФИО
+                  td: span Ковриков Илья Олегович
+                tr.property__item
+                  td: span Пол
+                  td: span.gender.icon.icon_gender_male мужской
+                tr.property__item
+                  td: span Телефон
+                  td: span +7 929 609-33-44
+                tr.property__item
+                  td: span Электронная почта
+                  td: span yandex@mail.ru
+                tr.property__item
+                  td: span Адрес
+                  td: span 142400, Москва, ул. Декабристов, д. 1, кв. 45
+                tr.property__item
+                  td: span Пароль
+                  td
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+                    span.dotted
+
+              button.button.button__transparent__black@@modal_toggler data-modal-selector='@modal_about_yourself' type="button" Изменить
+
+            .personal-data__right
+              .private-office__subtitle Привязанные соцсети
+
+              .personal-data__attached-social.row.center-xs.middle-xs
+                ul.attached-social__list.row.center-xs
+                  li.row.center-xs.middle-xs
+                    span.icon__authorization_vk
+                    span.icon__description ВКонтакте
+                  li.row.center-xs.middle-xs
+                    span.icon__authorization_fb
+                    span.icon__description Facebook
+                  li.row.center-xs.middle-xs
+                    span.icon__authorization_ok
+                    span.icon__description ОK
+                  li.row.center-xs.middle-xs
+                    span.icon__authorization_gg
+                    span.icon__description Google+
+
+                button.modal__button.button.button__transparent__black@@modal_toggler' data-modal-selector='@modal_attached_social' type="button" Настроить
+
+
+          = render 'modals/private_about_yourself'
+          = render 'modals/private_attached_social'
+
+          .modal__overlay@modal_overlay

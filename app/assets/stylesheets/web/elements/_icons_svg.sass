@@ -1,0 +1,118 @@
+@import 'web/variables'
+@import 'web/mixins'
+
+.icon
+  &:before
+    color: #222
+
+.icon_login
+  &:before
+    font-size: 11px
+    color: #888
+
+.icon_cart
+  &:before
+    font-size: 16px
+
+.icon_heart_full,
+.icon_heart,
+.icon_heart_levin,
+.icon_heart_crack_1,
+.icon_heart_crack_2,
+.icon_heart_crack_3
+  font-size: 17px
+
+.icon_eye
+  &:before
+    color: #909090
+    font-size: 13px
+  +hover(#222)
+
+.icon_heart
+  &:before
+    color: #909090
+  &:hover, &.active
+    &:before
+      content: $icon_heart_full
+      color: #222
+
+.icon_loupe
+  font-size: 16px
+
+.icon_arrow_thin
+  &:before
+    font-size: 49px
+
+.icon_arrow_bold
+  &::before
+    font-size: 6px
+    color: #222
+
+  &:hover
+    &:before
+      color: $color_brand
+
+.icon_gender_female
+  &:before
+    font-size: 15px
+
+.icon_gender_male
+  &:before
+    font-size: 13px
+
+.icon_gender_unisex
+  &:before
+    font-size: 18px
+
+.icon_gender_female,
+.icon_gender_male,
+.icon_gender_unisex
+  &:before
+    color: #afafaf
+
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+
+.icon_question
+  display: inline-block
+  vertical-align: middle
+
+  width: 16px
+  height: 16px
+  padding: 5px
+
+  cursor: pointer
+  position: relative
+
+  &:before
+    color: #9b9b9b
+    font-size: 16px
+
+    position: absolute
+    left: 5px
+
+  +hover(#222)
+
+.icon_close_thin
+  &::before
+    font-size: 20px
+    color: #bbb
+
+.icon_check
+  &::before
+    color: #64ac3d
+
+.icon_stop
+  &::before
+    color: #ff6868
+
+.icon_wait
+  &::before
+    color: #ccc
+
+.icon_gift
+  &::before
+    font-size: 84px
+    color: $color_brand

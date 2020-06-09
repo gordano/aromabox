@@ -1,0 +1,193 @@
+@import 'web/mixins'
+@import 'web/variables'
+
+.catalog__sorting__top
+  margin-top: 5px
+  margin-bottom: 16px
+
+  .pagination
+    display: none
+    visibility: hidden
+
+.catalog__sorting__bottom
+  .sorting__left
+    display: none
+    visibility: hidden
+
+  .sorting
+    justify-content: flex-end
+
+  .sorting__right
+    width: 100%
+    justify-content: space-between
+
+
+.sorting__left
+  .product-counter, .sorted
+    display: block
+    color: #222
+
+  .product-counter
+    margin-right: 30px
+    font-size: 13px
+    line-height: 35px
+    font-weight: 700
+
+  ul.sorted
+    list-style: none
+    font-size: 0
+
+    li
+      display: inline-block
+      margin-right: 13px
+
+      &:last-child
+        margin-right: 0
+
+      a
+        padding: 5px 0
+        padding-right: 12px
+        padding-left: 8px
+
+        font-size: 13px
+        line-height: 35px
+        font-weight: 300
+
+        position: relative
+
+      .icon_arrow
+        &::before
+          visibility: hidden
+
+      &.active
+        a
+          font-weight: 700
+          text-decoration: underline
+
+          &:hover
+            .icon_arrow
+              &:before
+                color: $color_brand
+
+        .icon_arrow
+          display: inline-block
+          vertical-align: middle
+
+          width: 7px
+          height: 8px
+          line-height: 35px
+          margin-left: 4px
+
+          position: relative
+
+          &::before
+            visibility: visible
+            // overflow-y: hidden
+
+            color: #909090
+            font-size: 8px
+
+            position: absolute
+            top: 0
+            right: 0
+
+        &.sorted__up
+          .icon_arrow
+            &::before
+              transform: rotate(-90deg)
+        &.sorted__down
+          .icon_arrow
+            &::before
+              transform: rotate(90deg) translate(1px, 1px)
+
+.sorting__right
+  .output-counter
+    .output-counter__title
+      display: inline-block
+      margin-right: 15px
+      font-size: 13px
+      line-height: 35px
+      font-weight: 300
+      color: #222
+
+    ul
+      display: inline-block
+      color: #222
+      list-style: none
+      font-size: 0
+
+      li
+        display: inline-block
+
+        &:last-child
+          margin-right: -8px
+
+        a
+          padding: 5px 8px
+          font-size: 13px
+          line-height: 35px
+          font-weight: 300
+
+        &.active
+          a
+            font-weight: 700
+            text-decoration: underline
+
+
+.pagination
+  font-size: 0
+
+  li
+    display: inline-block
+    vertical-align: middle
+
+    margin: 0
+    padding: 0
+    position: relative
+
+    a, span
+      position: relative
+      display: block
+      padding: 5px
+      color: #888
+      font-size: 13px
+      font-weight: 300
+      line-height: 35px
+
+      +hover
+
+    &.active span
+      color: #222
+      font-size: 14px
+      font-weight: 700
+      text-decoration: underline
+
+    &.dotted
+      vertical-align: bottom
+
+    &.prev, &.next
+
+      a
+        padding: 5px 8px
+
+      .icon_arrow
+        &::before
+          font-size: 11px
+          color: #909090
+        +hover
+
+    &.prev
+      .icon_arrow
+        transform: rotate(180deg)
+
+    &.next
+      a
+        padding-right: 0
+
+    &:last-child
+      margin-right: 0
+
+.sorting__right
+  .pagination
+    margin-left: 58px
+

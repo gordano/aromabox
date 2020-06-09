@@ -1,0 +1,42 @@
+.modal__container.modal__animated@@modal@modal_attached_social
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.private-office__modal
+    .modal__title Настройте свои соцсети
+
+    p Эта страница предназначена для управления профилями, привязанными к вашей учетной записи.
+    p С их помощью вы можете мгновенно войти на сайт, не вводя логин и пароль.
+
+    .modal__attached-social
+
+      .attached-social__item.row.middle-xs.between-xs
+        .attached-social__item__left.col-xs.row.middle-xs
+          .attached-social__separator-stub
+            span.icon__authorization_vk__min
+            span.name Илья Ковриков
+
+        .attached-social__item__right
+          button.button.button__transparent__black Отвязать
+
+      .attached-social__item.row.middle-xs.between-xs
+        .attached-social__item__left.col-xs.row.middle-xs
+          .attached-social__separator-stub
+            span.icon__authorization_fb__min
+            span.name Ilya Kovrikov
+
+        .attached-social__item__right
+          button.button.button__transparent__black Отвязать
+
+
+    .personal-data__attached-social.row.center-xs.middle-xs
+
+      .attached-social__title Привяжите профиль
+
+      ul.attached-social__list.row.center-xs
+        li.row.center-xs.middle-xs
+          a.icon__authorization_ok href="#"
+          span.icon__description ОK
+        li.row.center-xs.middle-xs
+          a.icon__authorization_gg href="#"
+          span.icon__description Google+
+
+    button.modal__button.button.button__green@close_link Сохранить

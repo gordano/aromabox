@@ -1,0 +1,123 @@
+@import 'web/mixins'
+
+.ordering__info
+  margin-top: 10px
+  padding: 0 23px
+  padding-top: 17px
+  padding-bottom: 20px
+
+  border: 1px solid #e3e3e3
+  background-color: transparent
+
+  .info__title
+    margin: 0
+    margin-bottom: 6px
+
+    color: #222
+    font-size: 14px
+    font-weight: 700
+    line-height: 25px
+    text-transform: uppercase
+
+  ul
+    li
+      list-style: none
+
+      display: block
+      margin: 0
+
+      color: #222
+      font-size: 13px
+      font-weight: 300
+      line-height: 21px
+
+      p
+        margin-top: 5px
+        margin-bottom: 10px
+
+        font-size: 12px
+        font-weight: 300
+        line-height: 18px
+
+        &.ui-accordion-content
+          padding: 0
+          border: 0
+          border-radius: 0
+          background: none
+          overflow: hidden
+
+  a
+    display: inline
+    color: #222
+    font-size: 13px
+    font-weight: 300
+    line-height: 16px
+
+    outline: 0
+    border: 0
+    border-bottom: 1px dotted #222
+    border-radius: 0
+    background: none
+
+    &.ui-accordion-header
+      display: inline
+      margin: 0
+      padding: 0
+
+    &.ui-accordion-header-active
+      font-weight: 500
+
+    +hover
+
+    // &.active
+    //   font-weight: 500
+
+  span
+    display: block
+    margin: 0
+
+    color: #222
+    font-size: 13px
+    font-weight: 300
+    line-height: 22px
+
+    &.work-time
+      color: #555
+      line-height: 17px
+
+  p
+    margin: 0
+
+    color: #222
+    font-size: 13px
+    font-weight: 300
+    line-height: 21px
+
+  .phone
+    display: block
+
+    color: #222
+    font-size: 25px
+    font-weight: 700
+    line-height: 39px
+    text-transform: uppercase
+
+  .payment__list
+    ul
+      margin-top: 14px
+
+      li
+        margin-right: 15px
+
+        &:last-child
+          margin-right: 0
+
+      &:last-child
+        li
+          margin-right: 20px
+
+          &:last-child
+            margin-right: 0
+
+
+

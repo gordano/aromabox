@@ -1,0 +1,53 @@
+.modal__glossary
+  width: 800px
+  max-height: 90vh
+  padding-top: 20px
+  padding-left: 30px
+  padding-right: 10px
+  padding-bottom: 10px
+  overflow: hidden
+
+  .modal__title
+    margin-bottom: 10px
+
+.glossary__content
+  max-height: calc(90vh - 70px)
+  margin: 0
+  margin-right: 10px
+  margin-bottom: 20px
+  padding-right: 20px
+  overflow-y: auto
+
+  dt, dd
+    display: inline
+    margin: 0
+
+    font-size: 13px
+    line-height: 20px
+    font-weight: 500
+
+    small
+      font-size: inherit
+      font-weight: 500
+
+      &:before, &:after
+        content: ' '
+
+  dt
+    font-weight: 700
+
+  dd + dt
+    &:before
+      content: "\A \A"
+      white-space: pre
+
+  dd
+    &:before
+      content: ' – '
+      white-space: nowrap
+
+  dd + dd
+    &:before
+      content: ' '
+      font-weight: normal
+      margin-left: -.25em

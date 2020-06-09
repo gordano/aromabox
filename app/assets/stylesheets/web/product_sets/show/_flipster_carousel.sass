@@ -1,0 +1,74 @@
+@import 'web/variables'
+
+.flipster
+  overflow: hidden
+
+.flipster__button
+  top: calc(50% - 20px)
+
+  width: 50px
+  height: 80px
+  border-top: 5px solid transparent
+  border-bottom: 5px solid transparent
+
+  svg
+    display: none
+    visibility: hidden
+
+  &:focus
+    opacity: .5
+
+  &:hover,
+  &:active
+    opacity: 1
+
+  &:before
+    content: $icon_arrow_thin
+    display: block
+    width: 15px
+
+    font-family: 'dreambox' !important
+    font-size: 30px
+    color: #fff
+
+    position: absolute
+    top: 20px
+
+  &.flipster__button--prev
+    margin-left: 0
+    border-left: 50px solid #000
+
+    &:before
+      transform: rotateY(-185deg)
+      right: 20px
+
+  &.flipster__button--next
+    margin-right: 0
+    border-right: 50px solid #000
+
+    &:before
+      transform: rotateY(5deg)
+      left: 20px
+
+
+.flipster--infinite-carousel .flipster__item--past-1
+  opacity: .5
+
+  .flipster__item__content
+    transform: translateX(-50%) rotateY(45deg) scale(0.7)
+
+.flipster--infinite-carousel .flipster__item--future-1
+  opacity: .5
+
+  .flipster__item__content
+    transform: translateX(50%) rotateY(-45deg) scale(0.7)
+
+.flipster--infinite-carousel .flipster__item--past-2,
+.flipster--infinite-carousel .flipster__item--future-2,
+.flipster--infinite-carousel .flipster__item--past-3,
+.flipster--infinite-carousel .flipster__item--future-3,
+.flipster--infinite-carousel .flipster__item--past-4,
+.flipster--infinite-carousel .flipster__item--future-4,
+.flipster--infinite-carousel .flipster__item--past-5,
+.flipster--infinite-carousel .flipster__item--future-5
+  opacity: 0

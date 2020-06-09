@@ -1,0 +1,40 @@
+.modal__container.modal__animated@@modal@modal_registration_errors
+  a.modal__close.icon.icon_close_thin@close_link href="#" title="Закрыть"
+  .modal.modal__auth
+
+    .auth__content.signin__content.start-xs
+      .authorization__form
+        .form__title
+          span.signin__title Регистрация
+          span.title-separator
+
+        form#registration_form.form.row.center-xs.top-xs class='form__error'
+          .form__item
+            input type='email' id='email' placeholder='E-mail'
+            label.label__error for='email' Пожалуйста, введите действительный адрес электронной почты
+          .form__item
+            label.subscribe-to-news__label for='subscribe_to_news'
+              | Подписаться на новости
+              input type='checkbox' id='subscribe_to_news' name='subscribe_to_news' checked='checked'
+              span.icon.icon_check.subscribe-to-news__pseudo
+          .form__item
+            input type='password' id='password' placeholder='Придумайте пароль'
+            label.label__error for='password' Минимальная длина пароля – 6 символов
+          .form__item
+            input type='text' id='name' placeholder='Ваше имя'
+            label.label__error for='name' Это поле обязательно для заполнения
+
+        .form__controller.row.middle-xs.between-xs
+
+          a.icon__pagination__arrow-left@@modal_toggler@close_link data-modal-selector='@modal_login' href="#" Войти
+
+          button.button.button__blue@@modal_toggler@close_link data-modal-selector='@modal_registration_ok' type='submit' form='registration_form' Зарегистрироваться
+
+    .authorization__wrapper.row.top-xs.center-xs
+      .authorization__bottom-title.title-strike.center-xs
+        h3.h3 Или
+      .authorization__social.row.center-xs.middle-xs
+        a.icon.icon__authorization_vk href="" title="Авторизоваться через Вконтакте"
+        a.icon.icon__authorization_fb href="" title="Авторизоваться через Facebook"
+        a.icon.icon__authorization_ok href="" title="Авторизоваться через Одноклассники"
+        a.icon.icon__authorization_gg href="" title="Авторизоваться через Google+"

@@ -1,0 +1,122 @@
+.cart__in-total.popover__container@@sticky_block data-parent='#sticky_parent' data-offset-top='25'
+  .in-total__content
+    h5.in-total__title Итого
+
+    table.in-total__list
+      tr
+        td
+          span.table__item Набор DREAMBOX
+          span.table-separator
+        td
+          .item__price
+            .actual-price
+              span.price 2900&nbsp;
+              span.currency руб.
+      tr
+        td
+          span.table__item
+            | 12 пробников
+            span.sale.sale-10 -10%
+          span.table-separator
+        td
+          .item__price
+            .previous-price
+              span.price 3300&nbsp;
+              span.currency руб.
+            .actual-price
+              span.price 2900&nbsp;
+              span.currency руб.
+      tr
+        td
+          span.table__item
+            | 1 подарок
+
+            span.icon.icon_question@@popover data-placement='bottom' data-offset-top='-2'
+            .webui-popover-content.question__popover
+              span.popover__title Пробник
+              p Пробники имеют компактный размер и привлекательный вид, их очень удобно брать ссобой на любое мероприятие. Флаконы наполняются духами без контакта с воздухом, это позволяет сохранить самые мельчайшие нотки аромата.
+
+          span.table-separator
+        td
+          .item__price
+            .actual-price
+              span.price 0&nbsp;
+              span.currency руб.
+
+      - if controller_name == 'purchase_process'
+
+        tr
+          td.surcharge__price
+            span.table__item Доставка курьером
+            span.table-separator
+          td
+            .item__price
+              .actual-price
+                span.price 100&nbsp;
+                span.currency руб.
+
+      - if controller_name == 'purchase_process' && action_name == 'payment'
+        tr
+          td.surcharge__price
+            span.table__item
+              | Оплата при получении
+              span.icon.icon_question@@popover data-placement='bottom' data-offset-top='-2'
+              .webui-popover-content.question__popover
+                span.popover__title Пробник
+                p Пробники имеют компактный размер и привлекательный вид, их очень удобно брать ссобой на любое мероприятие. Флаконы наполняются духами без контакта с воздухом, это позволяет сохранить самые мельчайшие нотки аромата.
+            span.table-separator
+          td
+            .item__price
+              .actual-price
+                span.price 200&nbsp;
+                span.currency руб.
+      tr
+        td
+          span Всего
+        td
+          .item__price
+            .actual-price
+              span.price 22&nbsp;100&nbsp;
+              span.currency руб.
+
+    - if controller_name == 'cart'
+
+      a.button.button__blue href=authorization_path title="Перейти к оформлению" Оформить заказ
+
+      .payment__list.row.middle-xs.start-xs
+        span.payment__title Принимаем к оплате
+        ul.row.start-xs.middle-xs
+          li.icon__visa__min
+            span.hidden Оплата банковскими картами Visa
+          li.icon__mastercard__min
+            span.hidden Оплата банковскими картами MasterCard
+          li.icon__webmoney__min
+            span.hidden Оплата платёжной системой WebMoney
+          li.icon__yandex-money__min
+            span.hidden Оплата платёжной системой Яндекс.Деньги
+          li.icon__qiwi__min
+            span.hidden Оплата платёжной системой Qiwi
+
+  - if controller_name == 'cart'
+    .in-total__offer
+      span.offer__description
+        | Скидка&nbsp; <span class='percentages'> 10%&nbsp;</span> на все пробники
+        span.icon.icon_question@@popover data-placement='auto-bottom' data-offset-top='-2' data-offset-left='-1'
+        .webui-popover-content
+          p Скидка 10% имеет компактный размер и привлекательный вид, их очень удобно брать ссобой на любое мероприятие.
+
+      span.offer__description
+        | Вам доступна бесплатная доставка
+
+
+
+
+
+
+
+
+
+
+
+
+

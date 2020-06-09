@@ -1,0 +1,90 @@
+.in_set
+  flex-direction: column
+  flex-wrap: nowrap
+
+  &.product-sets__catalog
+    flex-basis: 100%
+    width: 100%
+    max-width: 100%
+
+    .product-sets__item
+      cursor: default
+
+      .description__title
+        span:before
+          display: none
+
+  h3, .h3
+    font-size: 35px
+    line-height: 50
+
+  .catalog__item
+    width: 100%
+    height: 360px
+    margin-bottom: 0
+
+    position: relative
+    overflow: hidden
+
+    figure
+      width: 920px
+      height: 360px
+      position: absolute
+      right: 0
+
+      img
+        width: auto
+        height: auto
+
+      figcaption
+        width: 440px
+        height: 320px
+
+        position: absolute
+        top: 50%
+        left: -268px
+        transform: translate(0, -50%)
+
+        .description
+          display: flex
+          flex-flow: column nowrap
+
+          width: 100%
+          height: 100%
+
+          .button
+            width: 180px
+            height: 41px
+            line-height: 41px
+            padding: 0
+
+            font-size: 14px
+            text-align: center
+
+            &:hover
+              color: #fff
+
+        .description__title
+          font-size: 30px
+          font-weight: 500
+          line-height: 35px
+          text-transform: none
+
+          span
+            height: auto
+
+        .description__content
+          margin-top: 4px
+
+          color: #555
+          font-size: 14px
+          font-weight: 500
+          line-height: 22px
+
+        .description__price
+          .price, .currency
+            font-size: 35px
+            line-height: 50px
+
+
+

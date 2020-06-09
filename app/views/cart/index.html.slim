@@ -1,0 +1,78 @@
+- content_for(:page_class, 'ordering-page')
+
+.ordering__wrapper
+  .wrapper
+    #sticky_parent.row.between-xs
+      .cart__composition.center-xs
+        .cart__title.title-strike
+          h1.h3 Корзина
+
+        = render 'cart/cart_list'
+
+        .special-sales.row.between-xs.middle-xs
+          span.sales__info.popover__container
+            | Добавьте еще 3 пробника и получите скидку 15%
+            span.icon.icon_question@@popover data-placement='auto-bottom' data-offset-top='-2'
+            .webui-popover-content
+              p Скидка 10% имеет компактный размер и привлекательный вид, их очень удобно брать ссобой на любое мероприятие.
+          a.look-recomendation@@scroll_to data-selector='@@recommend' data-duration='600'
+            | Посмотреть рекомендации
+            span.icon.icon_arrow_thin
+
+      .cart__information
+        = render 'cart/cart_in_total'
+
+      form.promo-kod__form.row.middle-xs
+        input type='text' placeholder='Промо-код'
+        button.button.button__black.button__disable type='submit' disable='disable' Применить
+
+      .about__purchase.row.between-xs.top-xs
+        .purchase__item.center-xs.middle-xs
+          span.purchase__title Безопасность и варианты оплаты
+          .purchase__description
+            p Ваши покупки онлайн под надежной защитой. Если вы не получили товар или полученный товар значительно отличается от описания, мы поможем вам вернуть деньги.
+          .purchase__methods
+            span.icon.icon__verified-by-visa__min
+            span.icon.icon__mastercard-secure-code__min
+            span.icon.icon__visa__min
+            span.icon.icon__mastercard__min
+            span.icon.icon__webmoney__min
+            span.icon.icon__yandex-money__min
+            span.icon.icon__qiwi__min
+
+        .purchase__item.row.center-xs.middle-xs
+          span.purchase__title Подробно о доставке
+          .purchase__description
+            ul
+              li Бесплатная доставка по Москве в день заказа
+              li В любую точку России и СНГ от 750 руб
+              li Бесплатная доставка в регионы службой Pickpoint
+              li Оплата картой (для желающих сэкономить)
+              li Оплата при получении (для сомневающихся)
+
+        .purchase__item.row.center-xs.middle-xs
+          span.purchase__title Как с нами связаться
+          .purchase__description
+            span Звоните с 9:00 до 21:00
+            span.phone 8&nbsp;800&nbsp;775-05-26
+            span Или пишите на почту
+            span.email info@dreambox.ru
+
+
+
+  .carousel__wrapper@@recommend
+    .wrapper.row.center-xs
+      .title-strike
+        h3 Рекомендуем
+      = render 'shared/carousel/carousel_base'
+
+
+
+
+
+
+
+
+
+
+

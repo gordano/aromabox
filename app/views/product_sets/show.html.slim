@@ -1,0 +1,49 @@
+.product-set.product__item
+  = render 'shared/breadcrumbs'
+
+  .wrapper
+    = render 'product_sets/show/item_photo_carousel'
+
+    h1.description__title
+      span.set-identify Набор
+      span.set-name Tom Ford Collection
+
+    = render 'shared/catalog_item/description_raiting'
+
+    .set-item__description.row.start-xs.top-xs
+
+      = render 'product_sets/show/description_left'
+
+      = render 'product_sets/show/description_right'
+
+    = render 'product_sets/show/set_composition'
+
+    .samples__tale@@tabs
+      = render 'shared/catalog_item/nav_tabs'
+
+      section#tab1.tabcontent@tab style="display: block;"
+        = render 'product_sets/show/description_full'
+
+      section#tab2.tabcontent@tab
+        = render 'product_sets/show/pack'
+
+      section#tab3.tabcontent@tab@@show_review_form
+        = render 'shared/catalog_item/reviews'
+
+      section#tab4.tabcontent@tab
+        = render 'shared/catalog_item/delivery_and_payment'
+
+
+    .title-strike__wrapper
+      .title-strike
+        h3 Рекомендуем
+    = render 'product_sets/show/recommended'
+
+    = render 'modals/quick_view'
+    .modal__overlay@modal_overlay
+
+    = render 'shared/forms/subscribe'
+
+= render 'shared/instagram_feed'
+
+

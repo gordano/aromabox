@@ -1,0 +1,42 @@
+@import 'web/animation'
+
+header
+
+  &.header__fixed
+    height: 0
+
+    .header__container
+      width: 100%
+
+      border-bottom: 1px solid #e8e8e8
+      background-color: rgba(255, 255, 255, 0.97)
+
+      position: fixed
+      top: -100%
+      z-index: 10000
+      transition: top .5s ease-in-out
+
+    .header__content
+      height: 44px
+
+      transition: height 0.6s ease
+
+    a.logo
+      padding-top: 10px
+
+  &.header__sticky
+    height: 45px
+    .header__container
+      top: 0
+
+
+
+
+
+
+
+
+
+
+
+
